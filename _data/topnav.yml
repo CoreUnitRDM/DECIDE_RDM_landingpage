@@ -22,12 +22,14 @@ topnav_dropdowns:
 
       - title: RDM Tools
         folderitems:
-          - title: JupyterHub
-            external_url: http://132.187.22.206:8000/
           - title: Cloud
             external_url: https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php
           - title: Labfolder
             external_url: https://labfolder.rz.uni-wuerzburg.de/eln/access/login?redirect=1
+          - title: InfectionAtlas
+            external_url: https://
+          - title: JupyterHub
+            external_url: http://132.187.22.206:8000/
           - title: Scripts (GitHub)
             external_url: https://github.com/CoreUnitRDM
           - title: MetaDataGenerator
@@ -35,7 +37,7 @@ topnav_dropdowns:
           - title: Archiving
             external_url: https://www.rz.uni-wuerzburg.de/dienste/rzserver/svb/archivserver/
           
-      - title: Bioinfo Tools
+      - title: Analysis Tools
         folderitems:
           - title: Prosimat
             external_url: https://prosimat.bioinfo-wuerz.de/

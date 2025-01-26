@@ -1,46 +1,73 @@
 entries:
+
 - title: DECIDE Documentation
   product: Research Data Management
   version: 1.0
+
   folders:
-  - title: Overview
+
+  - title: About
     output: web, pdf
     folderitems:
-    - title: Landing Page
-      url: /index.html
+    - title: DECIDE
+      url: /about_decide.html
       output: web
-      type: homepage
-    - title: About DECIDE
-      url: /pages/mydoc/about-decide.html
+    - title: RDM
+      url: /about_rdm.html
       output: web
-  - title: RDM Overview
+    - title: FAIR
+      url: /about_FAIR.html
+      output: web
+    - title: MetaData
+      url: /about_metadata.html
+      output: web
+
+  - title: RDM in DECIDE
     output: web, pdf
     folderitems:
-    - title: What is FAIR?
-      url: /pages/mydoc/fair.html
+    - title: RDM plan
+      url: /RDM_plan.html
       output: web
-    - title: RDM in DECIDE
-      url: /pages/mydoc/rdm-plan.html
+    - title: RDM planer
+      url: /RDM_planer.html
       output: web
-  - title: Tools for RDM
+
+  - title: Guide
     output: web, pdf
     folderitems:
-    - title: Prosimat
+    - title: Nextcloud
+      url: /pages/mydoc/nextcloud.html
+      output: web
+    - title: Infection Atlas
+      url: /pages/mydoc/infection_atlas.html
+      output: web
+    - title: JupyterHub
+      url: /pages/mydoc/jupyterhub.html
+      output: web
+    - title: Labfolder
+      url: /pages/mydoc/labfolder.html
+      output: web
+    - title: MetaDataGen
+      url: /pages/mydoc/metadata-gen.html
+      output: web
+    - title: Archiving
+      url: /pages/mydoc/archiving.html
+      output: web
+    - title: GitHub
+      url: /pages/mydoc/github.html
+      output: web
+
+  - title: Analyis
+    output: web, pdf
+    folderitems:
+    - title: Bioinfo Tools
       url: /pages/mydoc/tools-prosimat.html
       output: web
-    - title: Cat-E
-      url: /pages/mydoc/tools-cate.html
-      output: web
-    - title: Metadata Generator
-      url: /pages/mydoc/metadata-generator.html
-      output: web
+
   - title: External Resources
-    output: web
+    output: web, pdf
     folderitems:
-    - title: NCBI GEO
-      external_url: https://www.ncbi.nlm.nih.gov/geo/
-    - title: EGA Archive
-      external_url: https://ega-archive.org/
-    - title: Human Cell Atlas
-      external_url: https://www.humancellatlas.org/
+    - title: External Resources
+      url: /pages/mydoc/exterbal_resources.html
+      output: web
 
