@@ -26,7 +26,7 @@ entries:
     output: web, pdf
     folderitems:
     - title: RDM plan
-      url: /RDM_plan.html
+      url: /rdm_plan.html
       output: web
     - title: RDM planer
       url: /RDM_planer.html
