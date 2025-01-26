@@ -16,7 +16,7 @@ entries:
       url: /about_rdm.html
       output: web
     - title: FAIR
-      url: /about_FAIR.html
+      url: /about_fair.html
       output: web
     - title: MetaData
       url: /about_metadata.html
