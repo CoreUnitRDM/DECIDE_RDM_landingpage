@@ -1,10 +1,43 @@
 ---
-title: "Getting started with the Documentation Theme for Jekyll"
+title: "DECIDE Research Data Management"
 keywords: sample homepage
-tags: [getting_started]
-sidebar: mydoc_sidebar
+tags: [rdm, decide]
+sidebar: decide_sidebar
 permalink: index.html
 summary: These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
+---
+# Welcome to DECIDE Research Data Management
+
+The DECIDE consortium investigates critical decision points within the host that influence infectious disease progression.
+
+---
+
+## Key Focus Areas
+- **Containment vs. Active Infection**: Understanding the host’s initial response.
+- **Acute vs. Chronic Infection**: Identifying factors for infection persistence.
+- **Localized vs. Systemic Spread**: Examining infection spread mechanisms.
+
+[Learn more](https://www.crc-decide.de/de)
+
+---
+
+
+## Tools and Resources
+DECIDE uses advanced tools for data analysis and research management:
+- [Prosimat](tools/prosimat.html): Multi-omics analysis.
+- [Cat-E](tools/cate.html): Data integration.
+- [Metadata Generator](tools/metadata-generator.html): Standardized metadata creation.
+
+
+---
+
+
+## External Repositories
+Explore infectious disease datasets:
+- [NCBI GEO](https://www.ncbi.nlm.nih.gov/geo/): Gene Expression Omnibus.
+- [EGA Archive](https://ega-archive.org/): European Genome-Phenome Archive.
+
+
 ---
 
 {% include note.html content="If you're cloning this theme, you're probably writing documentation of some kind. I have a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='https://tinyletter.com/tomjoht'>subscribing</a>. I also have a site on <a href='http://idratherbewriting.com/learnapidoc'>writing API documentation</a>." %}

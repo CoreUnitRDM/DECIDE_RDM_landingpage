@@ -1,0 +1,37 @@
+## Topnav single links
+## Use external_url for external links; the theme applies a different link style.
+topnav:
+- title: Home
+  url: /index.html
+
+- title: DECIDE
+  external_url: https://www.crc-decide.de/
+
+- title: Cloud
+  external_url: https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php
+
+- title: GitHub
+  external_url: https://github.com/CoreUnitRDM
+
+- title: About
+  url: /about.html
+
+## Topnav dropdowns
+topnav_dropdowns:
+- title: Tools
+  folders:
+    - title: Bioinfo Tools
+      folderitems:
+        - title: Prosimat
+          external_url: https://prosimat.bioinfo-wuerz.de/
+        - title: Cat-E
+          external_url: https://cat-e.bioinfo-wuerz.de/
+
+- title: External Resources
+  folders:
+    - title: Repositories
+      folderitems:
+        - title: NCBI GEO
+          external_url: https://www.ncbi.nlm.nih.gov/geo/
+        - title: EGA Archive
+          external_url: https://ega-archive.org/

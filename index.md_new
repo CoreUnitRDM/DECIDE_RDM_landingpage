@@ -1,0 +1,78 @@
+---
+title: DECIDE Research Data Management
+tags: [rdm, decide]
+keywords: research data management, infectious diseases, FAIR
+sidebar: decide_sidebar
+permalink: /index.html
+layout: page
+---
+
+# Research Data Management in DECIDE
+
+We collaborate with the DECIDE consortium (CRC 1583) to investigate infectious diseases comprehensively. The DECIDE consortium focuses on understanding molecular mechanisms that govern infection outcomes and aims to revolutionize infectious disease therapy.
+
+---
+
+## About DECIDE
+
+The DECIDE consortium investigates critical decision points within the host that influence the course of infectious diseases. These include:
+- **Containment vs. Active Infection**: Understanding the host's response during the first contact with a pathogen.
+- **Acute vs. Chronic Infection**: Exploring factors that determine the transition from acute to chronic infection.
+- **Localized vs. Systemic Spread**: Investigating mechanisms that control whether infections remain localized or spread systemically.
+
+[Learn more about DECIDE](https://www.crc-decide.de/de)
+
+---
+
+## What is FAIR?
+
+The FAIR principles ensure that research data is:
+- **Findable**: Easily located using standardized metadata.
+- **Accessible**: Stored in formats that allow access.
+- **Interoperable**: Compatible across different systems and platforms.
+- **Reusable**: Well-documented and reusable for other researchers.
+
+DECIDE implements FAIR data management practices to enhance collaboration and ensure data quality.
+
+[Learn more about FAIR RDM](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/01-rd.html)
+
+---
+
+## DECIDE RDM Plan
+
+The Research Data Management (RDM) plan in DECIDE ensures:
+- **File Formats**: Use of recommended formats like HDF5 for single-cell sequencing and CSV for tabular data.
+- **Data Management**:
+  - Active data is stored in Nextcloud, with long-term archiving at the University of Würzburg.
+  - Transitioning to a Virtual Research Environment (VRE) is planned for seamless data sharing.
+- **Metadata Management**:
+  - Standardized metadata collection aligned with NFDI4Microbiota and DataCite schemas.
+  - Essential metadata fields are prioritized using a collaborative voting system.
+
+[Read the full RDM plan](https://www.crc-decide.de/de)
+
+---
+
+## Tools for RDM
+
+DECIDE utilizes specialized tools for efficient data analysis and management:
+- [Prosimat](pages/mydoc/tools-prosimat.html): A tool for multi-omics analysis.
+- [Cat-E](pages/mydoc/tools-cate.html): An integrated platform for data analysis.
+- [Metadata Generator](pages/mydoc/metadata-generator.html): For generating standardized metadata.
+
+---
+
+## External Resources
+
+Explore repositories and resources related to infectious disease data:
+- [NCBI GEO](https://www.ncbi.nlm.nih.gov/geo/): Gene Expression Omnibus.
+- [EGA Archive](https://ega-archive.org/): European Genome-Phenome Archive.
+- [Human Cell Atlas](https://www.humancellatlas.org/): Resources for single-cell biology.
+
+---
+
+## Collaborations
+
+DECIDE collaborates with several research and data management networks:
+- [NFDI Microbiota](https://nfdi4microbiota.de/): Research data management for microbiota.
+- [cRDM](https://www.med.uni-wuerzburg.de/fdm/): Center for Research Data Management at the University of Würzburg.
