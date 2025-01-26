@@ -42,6 +42,7 @@ This innovative framework addresses critical gaps in host-pathogen dynamics to i
 - **Data Storage and Sharing**:  
   Active data is stored and shard in [Nextcloud](https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/)
 - **Data Archiving**: Long-term archiving using the University of Würzburg’s [data archiving service](https://www.rz.uni-wuerzburg.de/dienste/    rzserver/archivierung-von-daten/).
+- **External archives**: GEO etc
 - **Security Measures**:  
   Regular backups, GDPR compliance, and controlled access are implemented.
 

@@ -8,19 +8,27 @@ entries:
 
   - title: About
     output: web, pdf
+
     folderitems:
     - title: DECIDE
       url: /about_decide.html
       output: web
+      type: homepage
+
     - title: RDM
       url: /about_rdm.html
       output: web
+      type: homepage
+
     - title: FAIR
       url: /about_fair.html
       output: web
+      type: homepage
+
     - title: MetaData
       url: /about_metadata.html
       output: web
+      type: homepage
 
   - title: RDM in DECIDE
     output: web, pdf
@@ -29,7 +37,7 @@ entries:
       url: /rdm_plan.html
       output: web
     - title: RDM planer
-      url: /RDM_planer.html
+      url: /rdm_planer.html
       output: web
 
   - title: Guide
@@ -57,17 +65,5 @@ entries:
       url: /pages/mydoc/github.html
       output: web
 
-  - title: Analyis
-    output: web, pdf
-    folderitems:
-    - title: Bioinfo Tools
-      url: /pages/mydoc/tools-prosimat.html
-      output: web
 
-  - title: External Resources
-    output: web, pdf
-    folderitems:
-    - title: External Resources
-      url: /pages/mydoc/exterbal_resources.html
-      output: web
 
