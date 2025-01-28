@@ -1245,6 +1245,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.commento-root .commento-error-box {
+    color: #6bb62d !important; /* CRC DECIDE green */
+}
 
 
 /* Sidebar Styles */
@@ -1273,15 +1276,29 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+/* Sidebar Title Styling */
+ul#mysidebar .sidebarTitle {
+    color: #6bb62d !important; /* Exact CRC DECIDE green */
+}
 
+/* H3 Styling */
+h3 {
+    /*color: #6bb62d !important; */ /* Exact CRC DECIDE green */
+    color: var(--heading-color) !important;
+}
 
+/* Summary Text Styling */
+div.post-content .summary {
+    border-left: 5px solid #6bb62d !important; /* CRC DECIDE green for the border */
+}
 
 
 
 
 /* Buttons */
 button, .btn {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color);*/
+    background-color: #f0f0f0;
     color: #ffffff;
     border: none;
     padding: 10px 15px;
@@ -1295,9 +1312,3 @@ button:hover, .btn:hover {
 }
 
 /* Footer */
-footer {
-    background-color: var(--secondary-color);
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-}
