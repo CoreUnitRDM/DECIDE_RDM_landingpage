@@ -10,7 +10,6 @@ folder: mydocs
 ---
 
 
-# RDM Planer Tool
 
 The [RDM Planer Tool](https://nfdi4plants.github.io/dataplan/) by NFDI4Plants provides an interactive platform for creating, managing, and maintaining data management plans tailored to research needs.
 

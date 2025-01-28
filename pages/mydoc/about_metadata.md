@@ -9,7 +9,6 @@ permalink: about_metadata.html
 folder: mydocs
 ---
 
-# About Metadata in Research Data Management
 
 Metadata is a cornerstone of effective Research Data Management (RDM), enabling researchers to describe, organize, and share data efficiently. It ensures that data is not only findable and accessible but also interpretable and reusable. By adhering to metadata standards, researchers can align their work with FAIR principles and advance the scientific community's ability to collaborate effectively.
 
@@ -46,23 +45,33 @@ Robust metadata enhances research transparency, supports reproducibility, and ma
 
 Adhering to metadata standards is essential for maintaining data quality and interoperability. Standards vary by discipline and data type, ensuring that metadata captures the specific requirements of a field.
 
-### Recommended Resource for Metadata Standards
+---
+
+
+### Metadata Standards in the DECIDE Consortium
+
+The DECIDE consortium provides a metadata solution integrated into its [Nextcloud platform](https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/). These apps simplify metadata management by:
+- Offering templates and guidance for metadata creation.
+- Ensuring metadata aligns with FAIR principles.
+- Facilitating seamless sharing and storage of data with standardized metadata.
+- Allow searching for metadata.
+
+---
+
+### Recommended Resource for Metadata Mangement
 Explore the [Metadata Standards Repository by NFDI4Microbiota](https://github.com/NFDI4Microbiota/MetadataStandards). This repository provides:
 - A comprehensive list of metadata standards tailored to different data types.
 - Practical guidance on implementing these standards in your research workflows.
 
+DECIDE Nextcloud [Metadata App](https://github.com/josef-streusalz/MetaDataGeneratorNC): Integrated solution for metadata management.
+- Nextcloud App to generate, download, and attach a metadata XML file to your project folder. 
+
+Metadata search tools [Metadata Search Widgets](https://github.com/CoreUnitRDM/file_exploration): Search metadata in the nextcloud via webdav protocol and metadata xml files: 
+- Provided as pyton or R code, or as shiny app (refined soon)
+
+By leveraging these resources and tools, researchers can ensure that their metadata supports high-quality, FAIR-aligned research data management.
 Researchers can search the repository for their data type and find relevant standards to enhance metadata quality.
 
----
-
-## Metadata in the DECIDE Consortium
-
-The DECIDE consortium provides a metadata app integrated into its [Nextcloud platform](https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/). This app simplifies metadata management by:
-- Offering templates and guidance for metadata creation.
-- Ensuring metadata aligns with FAIR principles.
-- Facilitating seamless sharing and storage of data with standardized metadata.
-
-A Git repository link for this app will be added soon for additional details.
 
 ---
 
@@ -74,23 +83,10 @@ A Git repository link for this app will be added soon for additional details.
 - **Awareness and Training**: Limited knowledge among researchers about metadata best practices.
 
 ### Best Practices
-- Use discipline-specific metadata standards (e.g., from [NFDI4Microbiota Metadata Standards](https://github.com/NFDI4Microbiota/MetadataStandards)).
-- Automate metadata generation where possible (e.g., through ELNs or metadata apps).
+- Use discipline-specific metadata standards 
+- Automate metadata generation where possible (e.g., through ELNs templates, device export, or metadata apps).
+- Attach metadata files to you project folder, or data files directly
 - Provide comprehensive descriptions, including provenance and licensing details.
-
----
-
-## Resources for Metadata Management
-
-### Key Resources
-- [Metadata Helpdesk - University of Würzburg](https://www.med.uni-wuerzburg.de/fdm/helpdesk/metadaten/)
-- [Metadata Standards - NFDI4Microbiota Knowledge Base](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/03-md.html)
-
-### Tools and Services
-- [Metadata Standards Repository](https://github.com/NFDI4Microbiota/MetadataStandards): Search for standards by data type.
-- DECIDE Nextcloud Metadata App (Coming Soon): Integrated solution for metadata management.
-
-By leveraging these resources and tools, researchers can ensure that their metadata supports high-quality, FAIR-aligned research data management.
 
 ---
 
@@ -99,4 +95,3 @@ By leveraging these resources and tools, researchers can ensure that their metad
 - [Metadata Helpdesk - University of Würzburg](https://www.med.uni-wuerzburg.de/fdm/helpdesk/metadaten/)
 - [Metadata Standards Repository](https://github.com/NFDI4Microbiota/MetadataStandards)
 
-For further details on metadata best practices and tools, visit the [Knowledge Base on Metadata Standards](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/03-md.html).

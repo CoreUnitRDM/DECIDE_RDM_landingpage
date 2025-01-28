@@ -9,8 +9,6 @@ permalink: rdm_plan.html
 folder: mydocs
 ---
 
-# Research Data Management (RDM) Plan for DECIDE
-
 The DECIDE consortium recognizes the critical role of effective Research Data Management (RDM) in achieving its scientific goals. By adhering to FAIR principles (Findable, Accessible, Interoperable, and Reusable) and ensuring GDPR compliance, DECIDE’s RDM plan fosters collaboration, enhances data quality, and promotes long-term data accessibility.
 
 For additional references, visit the [Knowledge Base on RDM](https://knowledgebase.nfdi4microbiota.de/Getting-Started/01-introduction.html).

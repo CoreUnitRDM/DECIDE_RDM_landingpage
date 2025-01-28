@@ -9,7 +9,6 @@ permalink: about_decide.html
 folder: mydocs
 ---
 
-# About DECIDE
 
 The **DECIDE consortium (CRC 1583)** is dedicated to the comprehensive investigation of infectious diseases. It addresses the challenges posed by these conditions, focusing on understanding molecular mechanisms that govern their progression.
 

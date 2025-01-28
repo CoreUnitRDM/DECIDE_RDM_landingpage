@@ -9,6 +9,12 @@ topnav:
       #- title: About
       # url: /about.html
 
+- title: Topnav
+  items:
+    - title: News
+      url: /news
+
+
 ## Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
@@ -19,6 +25,9 @@ topnav_dropdowns:
           external_url: https://www.crc-decide.de/
         - title: cRDM
           external_url: https://www.med.uni-wuerzburg.de/en/rdm/
+        - title: NFDI microbiota
+          external_url: https://nfdi4microbiota.de/
+
 
       - title: RDM Tools
         folderitems:

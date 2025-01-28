@@ -11,7 +11,7 @@ entries:
 
     folderitems:
     - title: DECIDE
-      url: /about_decide.html
+      url: /index.html
       output: web
       type: homepage
 
@@ -44,25 +44,25 @@ entries:
     output: web, pdf
     folderitems:
     - title: Nextcloud
-      url: /pages/mydoc/nextcloud.html
+      url: nextcloud.html
       output: web
     - title: Infection Atlas
-      url: /pages/mydoc/infection_atlas.html
+      url: infection_atlas.html
       output: web
     - title: JupyterHub
-      url: /pages/mydoc/jupyterhub.html
+      url: jupyterhub.html
       output: web
     - title: Labfolder
-      url: /pages/mydoc/labfolder.html
+      url: labfolder.html
       output: web
     - title: MetaDataGen
-      url: /pages/mydoc/metadata-gen.html
+      url: metadata-gen.html
       output: web
     - title: Archiving
-      url: /pages/mydoc/archiving.html
+      url: archiving.html
       output: web
     - title: GitHub
-      url: /pages/mydoc/github.html
+      url: github.html
       output: web
 
 

@@ -9,7 +9,6 @@ permalink: about_rdm.html
 folder: mydocs
 ---
 
-# About Research Data Management (RDM)
 
 Research Data Management (RDM) encompasses the care and maintenance of research data to ensure high-quality results, long-term usability, and reproducibility beyond the original research project. It supports every phase of the research data life cycle, from planning to sharing, and ensures adherence to good research practices.
 
