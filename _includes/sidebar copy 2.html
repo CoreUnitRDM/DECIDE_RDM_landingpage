@@ -1,10 +1,11 @@
-{% assign sidebar = site.data.sidebars[page.sidebar].entries %}
-
 <ul id="mysidebar" class="nav">
-      <!-- Add Logo -->
+  <!-- Add Logo -->
   <div class="sidebar-logo">
+    <a href="/index.html">
       <img src="images/DECIDE_logo.jpg" alt="DECIDE Logo" class="logo-img">
+    </a>
   </div>
+  
   <li class="sidebarTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
   {% for entry in sidebar %}
   {% for folder in entry.folders %}
@@ -20,7 +21,6 @@
           <li class="active"><a title="{{folderitem.title}}" href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
           {% elsif folderitem.type == "empty" %}
           <li><a title="{{folderitem.title}}" href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
-
           {% else %}
           <li><a title="{{folderitem.title}}" href="{{folderitem.url | remove: "/"}}">{{folderitem.title}}</a></li>
           {% endif %}
@@ -57,8 +57,3 @@
          </p>
          -->
 </ul>
-
-<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
-<script>$("li.active").parents('li').toggleClass("active");</script>
-
-{% comment %} Copyright 2021 Google LLC {% endcomment %}
