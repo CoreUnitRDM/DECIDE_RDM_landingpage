@@ -61,8 +61,8 @@ entries:
     - title: Archiving
       url: archiving.html
       output: web
-    - title: GitHub
-      url: github.html
+    - title: GitCollab
+      url: /mydoc_git_collaboration.html
       output: web
 
 
