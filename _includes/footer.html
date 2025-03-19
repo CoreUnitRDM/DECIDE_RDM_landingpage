@@ -1,11 +1,38 @@
 <footer>
-            <div class="row">
-                <div class="col-lg-12 footer">
-               &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved. <br />
-{% if page.last_updated %}<span>Page last updated:</span> {{page.last_updated}}<br/>{% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }} <br />
-<p><img src="{{ "images/crdm_logo.png" }}" alt="Company logo"/></p>
-                </div>
-            </div>
+  <!-- First row: existing content -->
+  <div class="row">
+    <div class="col-lg-12 footer">
+      &copy;{{ site.time | date: "%Y" }} {{ site.company_name }}. All rights reserved. <br />
+      {% if page.last_updated %}
+        <span>Page last updated:</span> {{page.last_updated}}<br/>
+      {% endif %}
+      Site last generated: {{ site.time | date: "%b %-d, %Y" }} <br />
+      <p>
+        <img src="{{ 'images/crdm_logo.png' }}" alt="Company logo" />
+      </p>
+    </div>
+  </div>
+
+  <!-- Second row: additional content -->
+  <div class="row">
+    <div class="col-lg-12 footer">
+      <p>
+        For any question/bug report/upgrade wish/etc. concerning our RDM Project,<br />
+        please write an email to 
+        <a href="mailto:thomas.dandekar@uni-wuerzburg.de">thomas.dandekar@uni-wuerzburg.de</a>.<br />
+        <a href="mailto:johannes.balkenhol@uni-wuerzburg.de">johannes.balkenhol@uni-wuerzburg.de</a>.<br />
+        <a href="mailto:coreunitrdm@uni-wuerzburg.de">coreunitrdm@uni-wuerzburg.de</a>.<br />
+      </p>
+      
+      <a href="https://www.uni-wuerzburg.de/en/sonstiges/imprint-privacy-policy/">Imprint + Privacy Policy</a>
+      &nbsp;|&nbsp;
+      <a href="https://www.uni-wuerzburg.de/en/sonstiges/privacy-disclaimer/">Privacy Disclaimer</a> <br />
+      Powered by <a href="https://jekyllrb.com/">Jekyll</a> and
+      <a href="https://idratherbewriting.com/documentation-theme-jekyll/">documentation-theme-jekyll</a>.
+    </div>
+  </div>
 </footer>
 
+<!--
 {% comment %} DECIDE {% endcomment %}
+-->
