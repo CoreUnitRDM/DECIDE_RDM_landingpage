@@ -5,21 +5,18 @@ entries:
   version: 1.0
 
   folders:
+
   - title: RDM in DECIDE
     output: web, pdf
     folderitems:
     - title: RDM plan
-     # url: /rdm_plan.html
-      url: /index.html
+      url: /rdm_plan.html
       output: web
-    - title: RDM planer
-      url: /rdm_planer.html
-      output: web
-    - title: Infection atlas
-      url: /infection_atlas.html
-      output: web
+#    - title: RDM planer
+#      url: /rdm_planer.html
+#      output: web
 
-  - title: About
+  - title: About RDM
     output: web, pdf
     folderitems:
  #   - title: DECIDE
@@ -45,24 +42,18 @@ entries:
     - title: Nextcloud
       url: nextcloud.html
       output: web
+    - title: JupyterHub
+      url: jupyterhub.html
+      output: web
     - title: Labfolder
       url: labfolder.html
       output: web
- #   - title: Infection Atlas
- #     url: infection_atlas.html
- #     output: web
- #   - title: JupyterHub
- #     url: jupyterhub.html
- #     output: web
- #   - title: MetaDataGen
- #     url: metadata-gen.html
- #     output: web
     - title: Archiving
       url: archiving.html
       output: web
- #   - title: GitCollab
- #     url: /mydoc_git_collaboration.html
- #     output: web
+    - title: GitCollab
+      url: /mydoc_git_collaboration.html
+      output: web
 
 
 
