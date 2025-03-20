@@ -9,9 +9,7 @@ permalink: rdm_planer.html
 folder: mydocs
 ---
 
-The [RDM Planer Tool](https://nfdi4plants.github.io/dataplan/) by NFDI4Plants provides an interactive platform for creating, managing, and maintaining Data Management Plans (DMPs) tailored to your research needs. 
-
-This tool utilizes various templates—such as the DFG DMP template—to help you establish the essential parameters for your data management plan at the beginning of your project. A robust DMP is crucial for project planning, ensuring that you have a detailed understanding of your experiment, including:
+The [RDM Planer Tool](https://nfdi4plants.github.io/dataplan/) by NFDI4Plants provides an interactive platform for creating, managing, and maintaining Data Management Plans (DMPs) tailored to your research needs. This tool utilizes various templates—such as the DFG DMP template—to help you establish the essential parameters for your data management plan at the beginning of your project. A robust DMP is crucial for project planning, ensuring that you have a detailed understanding of your experiment, including:
 
 - **Data Production:** What type of data you will generate and its expected format.
 - **Data Volume:** An estimation of the data size.
