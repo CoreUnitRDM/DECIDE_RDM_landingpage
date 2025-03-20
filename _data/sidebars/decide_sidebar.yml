@@ -13,10 +13,13 @@ entries:
       url: /index.html
       output: web
     - title: RDM planer
-      url: /rdm_planer.html
+      url: /rdm_planer2.html
       output: web
     - title: Infection atlas
       url: /infection_atlas.html
+      output: web
+    - title: Metadata Management
+      url: /metadata_management.html
       output: web
 
   - title: About
@@ -51,9 +54,9 @@ entries:
  #   - title: Infection Atlas
  #     url: infection_atlas.html
  #     output: web
- #   - title: JupyterHub
- #     url: jupyterhub.html
- #     output: web
+    - title: JupyterHub
+      url: jupyterhub.html
+      output: web
  #   - title: MetaDataGen
  #     url: metadata-gen.html
  #     output: web

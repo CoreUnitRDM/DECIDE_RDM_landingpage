@@ -9,26 +9,12 @@ topnav:
       #- title: About
       # url: /about.html
 
-- title: Topnav
-  items:
-    - title: News
-      url: /news
 
 
 ## Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-      - title: Info
-        folderitems:
-        - title: DECIDE Home
-          external_url: https://www.crc-decide.de/
-        - title: cRDM
-          external_url: https://www.med.uni-wuerzburg.de/en/rdm/
-        - title: NFDI microbiota
-          external_url: https://nfdi4microbiota.de/
-
-
       - title: RDM Tools
         folderitems:
           - title: Cloud
@@ -39,8 +25,8 @@ topnav_dropdowns:
             external_url: https://
           - title: JupyterHub
             external_url: http://132.187.22.206:8000/
-          - title: Scripts (GitHub)
-            external_url: https://github.com/CoreUnitRDM
+          #- title: Scripts (GitHub)
+          #  external_url: https://github.com/CoreUnitRDM
           - title: MetaDataGenerator
             external_url: https://dhvlab.gwi.uni-muenchen.de/datacite-generator/
           - title: Archiving
@@ -59,9 +45,29 @@ topnav_dropdowns:
           - title: Further tools
             external_url: https://andom.bioapps.biozentrum.uni-wuerzburg.de/index_new.html
 
+
       - title: External Resources
         folderitems:
           - title: NCBI GEO
             external_url: https://www.ncbi.nlm.nih.gov/geo/
-          - title: EGA Archive
-            external_url: https://ega-archive.org/
+          - title: Single Cell Expression Atlas
+            external_url: https://www.ebi.ac.uk/gxa/sc/home
+          - title: ArrayExpress
+            external_url: https://www.ebi.ac.uk/biostudies/arrayexpress
+
+- title: Topnav
+  items:
+    - title: News
+      url: /news
+
+
+## Topnav dropdowns
+topnav_dropdowns:
+      - title: Info
+        folderitems:
+        - title: DECIDE Home
+          external_url: https://www.crc-decide.de/
+        - title: cRDM
+          external_url: https://www.med.uni-wuerzburg.de/en/rdm/
+        - title: NFDI microbiota
+          external_url: https://nfdi4microbiota.de/

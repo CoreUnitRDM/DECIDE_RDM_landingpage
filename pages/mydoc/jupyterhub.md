@@ -1,9 +1,10 @@
 ---
 title: "Getting Started with JupyterHub"
-permalink: jupyterhub.html
 categories: [tutorials, jupyterhub]
 tags: [jupyterhub, data analysis, vpn, würzburg]
 sidebar: decide_sidebar
+permalink: jupyterhub.html
+folder: mydoc
 ---
 
 # Getting Started with JupyterHub at Würzburg University

@@ -6,12 +6,7 @@ tags: [RDM Plan, DECIDE, Data Management, FAIR]
 summary: Explore the RDM plan of the DECIDE project, including file formats, metadata management, and long-term goals for a FAIR and secure data lifecycle.
 sidebar: decide_sidebar
 permalink: rdm_plan.html
-folder: mydocs
----
-
-The DECIDE consortium recognizes the critical role of effective Research Data Management (RDM) in achieving its scientific goals. By adhering to FAIR principles (Findable, Accessible, Interoperable, and Reusable) and ensuring GDPR compliance, DECIDE’s RDM plan fosters collaboration, enhances data quality, and promotes long-term data accessibility.
-
-For additional references, visit the [Knowledge Base on RDM](https://knowledgebase.nfdi4microbiota.de/Getting-Started/01-introduction.html).
+folder: mydoc
 
 ---
 
@@ -27,22 +22,31 @@ This innovative framework addresses critical gaps in host-pathogen dynamics to i
 
 ---
 
-## DECIDE RDM Plan Highlights
+## DECIDE RDM Plan
+
+The DECIDE consortium recognizes the critical role of effective Research Data Management (RDM) in achieving its scientific goals. By adhering to FAIR principles (Findable, Accessible, Interoperable, and Reusable), DECIDE’s RDM plan fosters collaboration, enhances data quality, and promotes long-term data accessibility.
+
+For additional references, visit the [Knowledge Base on RDM](https://knowledgebase.nfdi4microbiota.de/Getting-Started/01-introduction.html).
+
 
 ### 1. File Formats
 - Recommended formats include **HDF5** for hierarchical data, **FASTQ** for sequencing data, **CSV** for tabular data, and other standard formats for multi-omics and infection research datasets.
 - Proprietary formats should be converted while preserving original metadata.
 
 
-### 2. Data collection
-- **Primary and raw data**:
-  Primary data is processed in the institut by the data generator
-- **Data Storage and Sharing**:  
-  Active data is stored and shard in [Nextcloud](https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/)
-- **Data Archiving**: Long-term archiving using the University of Würzburg’s [data archiving service](https://www.rz.uni-wuerzburg.de/dienste/    rzserver/archivierung-von-daten/).
-- **External archives**: GEO etc
-- **Security Measures**:  
-  Regular backups, GDPR compliance, and controlled access are implemented.
+### 2. Data Collection
+- **Primary and Raw Data:**  
+  Primary data is processed at the institute by the data generator.
+- **Data Storage and Sharing:**  
+  Active data is stored and shared in [Nextcloud](https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/).
+- **Data Archiving:**  
+  Long-term archiving is managed using the University of Würzburg’s [Data Archiving Service](https://www.rz.uni-wuerzburg.de/dienste/rzserver/archivierung-von-daten/).
+- **External Archives:**  
+  - [Single Cell Expression Atlas](https://www.ebi.ac.uk/gxa/sc/home)  
+  - [ArrayExpress](https://www.ebi.ac.uk/biostudies/arrayexpress)  
+  - [NCBI GEO](https://www.ncbi.nlm.nih.gov/geo/)
+- **Security Measures:**  
+  Regular backups, RZ security standars, and controlled access are implemented.
 
 
 ### 3. Documentation
@@ -50,7 +54,6 @@ This innovative framework addresses critical gaps in host-pathogen dynamics to i
    [ELN Uni Würzburg](https://www.rz.uni-wuerzburg.de/dienste/forschung-digital/eln/): For systematic data collection and laboratory documentation.
 - **Github**:
    [GitHub](https://github.com/CoreUnitRDM): Hosting pipelines, workflows, and SOPs for computational and experimental analyses.
-
 
 
 ### 4. Metadata Management
@@ -108,7 +111,7 @@ This innovative framework addresses critical gaps in host-pathogen dynamics to i
 ### 6. Data Generation and Analysis
 
 - **JupyterHub**:  
-  Multi-omics datasets are processed on secure HPC servers with 128 CPU cores, GPU A100, and 20TB storage. Interactive workflows are supported through [JupyterHub](https://132.187.22.206:8000/).
+  Multi-omics datasets are processed on secure HPC servers with 128 CPU cores, GPU A100, and 20TB storage. Interactive workflows are supported through [JupyterHub](/pages/mydoc/jupyterhub.md).
 
 - **Prosimat**:  
   Explore multi-omics data analysis using [Prosimat](https://prosimat.bioinfo-wuerz.de/).
@@ -124,13 +127,12 @@ This innovative framework addresses critical gaps in host-pathogen dynamics to i
 
 
 ### 7. Licensing
-- Ensure appropriate licensing for datasets and tools to enable reuse while protecting intellectual property. Follow standard guidelines for Creative Commons (e.g., CC BY or CC0) [Licensing](https://knowledgebase.nfdi4microbiota.de/RDM-Share/26-licenses.html)
+- Ensure appropriate licensing for datasets and tools to enable reuse while protecting intellectual property. Follow standard guidelines for Creative Commons (e.g., CC BY or CC0) [Licensing](https://knowledgebase.nfdi4microbiota.de/RDM-Share/licenses.html)
 
 
-### 8. Data continuation: 
-- Single cell infection atlas: Z-project
-- GNNs: Integrated network analysis (INF Project)
-
+### 8. Data Continuation
+- [Single Cell Infection Atlas: Z-project](infection_atlas.html)  
+- Robust protein interaction inference on single cell basis: Integrated & Dynamic Network Analysis (INF Project)
 
 ### 9. Long-Term Goals
 - Transition to a fully integrated Virtual Research Environment (VRE) for seamless data sharing and collaboration.
@@ -146,8 +148,8 @@ This innovative framework addresses critical gaps in host-pathogen dynamics to i
 - **Compliance**: Addressing GDPR requirements for data security and privacy.
 
 ### Solutions
-- Use of the metadata app for standardized metadata descriptions.
-- Centralized data storage in Nextcloud and systematic workflows hosted on GitHub.
+- Use of the metadata templates for standardized metadata collection.
+- Centralized data storage in a cloud and systematic workflows.
 - Training programs on ELNs and data management tools.
 
 ---
