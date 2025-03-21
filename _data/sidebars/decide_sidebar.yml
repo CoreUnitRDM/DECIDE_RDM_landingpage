@@ -22,7 +22,7 @@ entries:
       url: /metadata_management.html
       output: web
 
-  - title: About
+  - title: About RDM
     output: web, pdf
     folderitems:
  #   - title: DECIDE
