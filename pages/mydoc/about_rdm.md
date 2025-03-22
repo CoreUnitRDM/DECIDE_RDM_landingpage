@@ -51,10 +51,11 @@ The research data life cycle illustrates the flow of data through a research pro
 ![Research Data Life Cycle](/images/research_data_life_cycle_elixir.png)
 
 The life cycle emphasizes the importance of each step in preventing data loss and ensuring the reusability of results.
+Information provided by [NFDI microbiota knowledgebase](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/rdm.html#NTU_LibGuides_RD_life_cycle)
 
 ---
 
-## Tools and Resources Along the RDM Life Cycle
+## Tools and Resources Along the Data Life Cycle
 
 ### General Recommendations (NFDI4Microbiota)
 - **Plan**: [DMP template](https://www.nfdi4plants.de/dataplan/).
@@ -72,28 +73,35 @@ The life cycle emphasizes the importance of each step in preventing data loss an
   - [StrainInfo](https://www.straininfo.net).
   - [VirJenDB](https://virjendb.org).
 
+Information provided by [NFDI microbiota knowledgebase](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/rdm.html#NTU_LibGuides_RD_life_cycle)
+
+
 ---
 
-### DECIDE-Specific Tools and Recommendations
+### DECIDE-Specific Tools and Resources in Data Life Cycle
 
 **Plan**
-- [RDM Planer](https://www.nfdi4plants.de/dataplan/)
+- [DMP](/rdm_planer2)
 
 **Collect**
 - [ELNs provided by Uni Würzburg](https://www.rz.uni-wuerzburg.de/dienste/forschung-digital/eln/)
+- User Meetings, Trainings, Focus Groups on ELNs, Nextcloud, Jupyterhub, Metadatacollection, Data Generation, Analysis
 
 **Process**
-- Metadata app on [Nextcloud](https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/)
+- [Metadata templates](/metadata_management)
 
 **Analyze**
-- GitHub workflows for DECIDE projects: [CoreUnitRDM GitHub](https://github.com/CoreUnitRDM)
+- [Jupyterhub](/jupyterhub)
 - [Bioinformatics Tools](https://www.biozentrum.uni-wuerzburg.de/bioinfo/computing/)
+- Workflows
 
 **Preserve**
-- Long-term storage and archiving on [Nextcloud](https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/)
+- [Nextcloud](https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/)
+- Long-term storage and archiving on [Long Term Archive](/pages/mydoc/archiving.md)
 
 **Reuse**
-- Coming soon: Infection Atlas and GNNs.
+- Coming soon: [Infection Atlas](/infection_atlas) and Infection related network anaylsis
+
 
 ---
 
@@ -108,7 +116,7 @@ Despite these hurdles, initiatives like the National Research Data Infrastructur
 
 ---
 
-## Resources for RDM
+## Further Info
 
 ### General Resources
 - [Brief Guide - Research Data Management](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/01-introduction.html)

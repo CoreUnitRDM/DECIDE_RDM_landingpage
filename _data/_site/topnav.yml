@@ -1,0 +1,32 @@
+topnav:
+- title: Home
+  url: /index.html
+
+- title: DECIDE
+  url: https://www.crc-decide.de/
+  external_url: true
+
+- title: Tools
+  items:
+  - title: Prosimat
+    url: /tools/prosimat.html
+  - title: Cat-E
+    url: /tools/cate.html
+  - title: Bioinfo Tools
+    external_url: https://www.biozentrum.uni-wuerzburg.de/bioinfo/computing/
+
+- title: Cloud
+  external_url: https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php
+
+- title: GitHub
+  external_url: https://github.com/CoreUnitRDM
+
+- title: External Resources
+  items:
+  - title: NCBI GEO
+    external_url: https://www.ncbi.nlm.nih.gov/geo/
+  - title: EGA Archive
+    external_url: https://ega-archive.org/
+
+- title: About
+  url: /about.html

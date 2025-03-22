@@ -12,6 +12,9 @@ entries:
      # url: /rdm_plan.html
       url: /index.html
       output: web
+    - title: DECIDE Data Lifecycle
+      url: /decide_data_lifecycle.html
+      output: web
     - title: RDM planer
       url: /rdm_planer2.html
       output: web

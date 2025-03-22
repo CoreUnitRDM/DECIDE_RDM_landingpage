@@ -1,0 +1,46 @@
+entries:
+- title: DECIDE Documentation
+  product: Research Data Management
+  version: 1.0
+  folders:
+  - title: Overview
+    output: web, pdf
+    folderitems:
+    - title: Landing Page
+      url: /index.html
+      output: web
+      type: homepage
+    - title: About DECIDE
+      url: /pages/mydoc/about-decide.html
+      output: web
+  - title: RDM Overview
+    output: web, pdf
+    folderitems:
+    - title: What is FAIR?
+      url: /pages/mydoc/fair.html
+      output: web
+    - title: RDM in DECIDE
+      url: /pages/mydoc/rdm-plan.html
+      output: web
+  - title: Tools for RDM
+    output: web, pdf
+    folderitems:
+    - title: Prosimat
+      url: /pages/mydoc/tools-prosimat.html
+      output: web
+    - title: Cat-E
+      url: /pages/mydoc/tools-cate.html
+      output: web
+    - title: Metadata Generator
+      url: /pages/mydoc/metadata-generator.html
+      output: web
+  - title: External Resources
+    output: web
+    folderitems:
+    - title: NCBI GEO
+      external_url: https://www.ncbi.nlm.nih.gov/geo/
+    - title: EGA Archive
+      external_url: https://ega-archive.org/
+    - title: Human Cell Atlas
+      external_url: https://www.humancellatlas.org/
+

@@ -1,0 +1,16 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Home
+  url: /index.html
+- title: About DECIDE
+  url: /pages/mydoc/about-decide.html
+- title: RDM in DECIDE
+  url: /pages/mydoc/rdm-plan.html
+- title: Tools
+  url: /pages/mydoc/tools.html
+- title: Collaborations
+  url: /pages/mydoc/collaborations.html
+- title: External Resources
+  external_url: https://www.crc-decide.de/de
+
