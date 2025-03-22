@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="jupyterhubdata analysisvpnwürzburg,  ">
+<title>Getting Started with JupyterHub | Info and Services on DECIDE RDM</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="/feed.xml">
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> DECIDE RDM</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php" target="_blank" rel="noopener">Cloud</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">RDM Tools<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://labfolder.rz.uni-wuerzburg.de/eln/access/login?redirect=1" target="_blank" rel="noopener">Labfolder</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.rz.uni-wuerzburg.de/dienste/rzserver/svb/archivserver/" target="_blank" rel="noopener">Archiving</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Analysis<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="infection_atlas">Infection Atlas</a></li>
+                        
+                        
+                        
+                        <li class="dropdownActive"><a href="jupyterhub">JupyterHub</a></li>
+                        
+                        
+                        
+                        <li><a href="https://prosimat.bioinfo-wuerz.de/" target="_blank" rel="noopener">Prosimat</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cat-e.bioinfo-wuerz.de/" target="_blank" rel="noopener">Cat-E</a></li>
+                        
+                        
+                        
+                        <li><a href="https://andom.bioapps.biozentrum.uni-wuerzburg.de/index_new.html" target="_blank" rel="noopener">AnDom</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.biozentrum.uni-wuerzburg.de/bioinfo/computing/" target="_blank" rel="noopener">Further tools</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Info<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://www.crc-decide.de/" target="_blank" rel="noopener">DECIDE Home</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.med.uni-wuerzburg.de/en/rdm/" target="_blank" rel="noopener">cRDM</a></li>
+                        
+                        
+                        
+                        <li><a href="https://nfdi4microbiota.de/" target="_blank" rel="noopener">NFDI microbiota</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Getting Started with JupyterHub page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Getting Started with JupyterHub">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+      <!-- Add Logo -->
+  <div class="sidebar-logo">
+      <img src="images/DECIDE_logo.jpg" alt="DECIDE Logo" class="logo-img">
+  </div>
+  <li class="sidebarTitle">DECIDE RDM 1.0</li>
+  
+  
+  
+  <li>
+      <a title="RDM in DECIDE" href="#">RDM in DECIDE</a>
+      <ul>
+          
+          
+          
+          <li><a title="RDM plan" href="index.html">RDM plan</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="RDM planer" href="rdm_planer2.html">RDM planer</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Infection atlas" href="infection_atlas.html">Infection atlas</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Metadata Management" href="metadata_management.html">Metadata Management</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="About RDM" href="#">About RDM</a>
+      <ul>
+          
+          
+          
+          <li><a title="RDM" href="about_rdm.html">RDM</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="FAIR" href="about_fair.html">FAIR</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="MetaData" href="about_metadata.html">MetaData</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Guide" href="#">Guide</a>
+      <ul>
+          
+          
+          
+          <li><a title="Nextcloud" href="nextcloud.html">Nextcloud</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Labfolder" href="labfolder.html">Labfolder</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="JupyterHub" href="jupyterhub.html">JupyterHub</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Archiving" href="archiving.html">Archiving</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Getting Started with JupyterHub</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/josef-streusalz/DECIDE_RDM_landingpage/tree/main/pages/mydoc/jupyterhub.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <h1 id="getting-started-with-jupyterhub-at-würzburg-university">Getting Started with JupyterHub at Würzburg University</h1>
+
+<p>JupyterHub provides a collaborative and user-friendly environment for <strong>data analysis</strong> and <strong>computational research</strong>, specifically tailored for the Bioinformatics team at Würzburg University.</p>
+
+<hr />
+
+<h2 id="1-prerequisite-connecting-to-the-vpn"><strong>1. Prerequisite: Connecting to the VPN</strong></h2>
+
+<p>Before accessing JupyterHub, you must connect to the <strong>University of Würzburg VPN</strong> to ensure a secure and authorized connection.</p>
+
+<h3 id="steps-to-connect-to-the-vpn"><strong>Steps to Connect to the VPN</strong>:</h3>
+<ol>
+  <li>Visit the official <a href="https://www.rz.uni-wuerzburg.de/dienste/it-sicherheit/vpn/">VPN Guide for Würzburg University</a>.</li>
+  <li>Follow the instructions for your operating system:
+    <ul>
+      <li><strong>Windows</strong></li>
+      <li><strong>macOS</strong></li>
+      <li><strong>Linux</strong></li>
+      <li><strong>Mobile devices</strong></li>
+    </ul>
+  </li>
+  <li>Use your <strong>University of Würzburg account credentials</strong> to log in.</li>
+</ol>
+
+<hr />
+
+<h2 id="2-request-access-to-jupyterhub"><strong>2. Request Access to JupyterHub</strong></h2>
+
+<p>Access to JupyterHub is managed by the <strong>Bioinformatics Department at Würzburg University</strong>. To request access:</p>
+<ul>
+  <li><strong>Contact</strong> one of the following administrators:
+    <ul>
+      <li><strong>Thomas Dandekar</strong></li>
+      <li><strong>Johannes Balkenhol</strong></li>
+      <li><strong>Stefan Obermeier</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Visit the <a href="https://www.biozentrum.uni-wuerzburg.de/bioinfo/">Bioinformatics Department website</a> for more details.</p>
+
+<hr />
+
+<h2 id="3-logging-in-to-jupyterhub"><strong>3. Logging in to JupyterHub</strong></h2>
+
+<p>Once VPN access and JupyterHub permissions are granted:</p>
+<ol>
+  <li>Open your browser and go to the JupyterHub URL:
+https://jupyterhub.uni-wuerzburg.de/</li>
+  <li>Log in using your <strong>University of Würzburg credentials</strong>.</li>
+</ol>
+
+<hr />
+
+<h2 id="4-available-tools-and-resources"><strong>4. Available Tools and Resources</strong></h2>
+
+<h3 id="helpful-scripts-and-widgets"><strong>Helpful Scripts and Widgets</strong></h3>
+<p>A variety of scripts and widgets are available to simplify your workflows:</p>
+<ul>
+  <li><strong>Connect to Cloud Data</strong>: Streamline access to cloud-stored datasets.</li>
+  <li><strong>Search Metadata</strong>: Quickly find relevant metadata for your research.</li>
+</ul>
+
+<p>Find these tools and more on the official GitHub repository:
+<a href="https://github.com/CoreUnitRDM">CoreUnitRDM GitHub</a>.</p>
+
+<h3 id="data-analysis-notebooks"><strong>Data Analysis Notebooks</strong></h3>
+<p>Access pre-built Jupyter notebooks tailored for:</p>
+<ul>
+  <li><strong>Data analysis workflows</strong></li>
+  <li><strong>Custom computations</strong></li>
+</ul>
+
+<p><strong>Note</strong>: A link to the repository for analysis notebooks will be provided by the administrator.</p>
+
+<hr />
+
+<h2 id="5-best-practices-for-using-jupyterhub"><strong>5. Best Practices for Using JupyterHub</strong></h2>
+
+<ol>
+  <li><strong>Organize Your Work</strong>:
+    <ul>
+      <li>Create folders for different projects or analyses.</li>
+      <li>Keep your notebooks well-documented.</li>
+    </ul>
+  </li>
+  <li><strong>Backup Regularly</strong>:
+    <ul>
+      <li>Save your work locally or to the cloud to prevent data loss.</li>
+    </ul>
+  </li>
+  <li><strong>Use Shared Resources Wisely</strong>:
+    <ul>
+      <li>Be mindful of computational resource usage when running intensive tasks.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="6-getting-help"><strong>6. Getting Help</strong></h2>
+
+<p>If you encounter issues or need assistance:</p>
+<ul>
+  <li>Visit the <a href="https://www.biozentrum.uni-wuerzburg.de/bioinfo/">Bioinformatics Department Support Page</a>.</li>
+  <li>Reach out to the following administrators:</li>
+  <li><strong>Thomas Dandekar</strong></li>
+  <li><strong>Johannes Balkenhol</strong> (<a href="mailto:johannes.balkenhol@uni-wuerzburg.de">johannes.balkenhol@uni-wuerzburg.de</a>)</li>
+  <li><strong>Stefan Obermeier</strong></li>
+</ul>
+
+<hr />
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+  <!-- First row: existing content -->
+  <div class="row">
+    <div class="col-lg-12 footer">
+      &copy;2025 DECIDE-Konsortium (SFB 1583). All rights reserved. <br />
+      
+      Site last generated: Mar 22, 2025 <br />
+      <p>
+        <img src="images/crdm_logo.png" alt="Company logo" />
+      </p>
+    </div>
+  </div>
+
+  <!-- Second row: additional content -->
+  <div class="row">
+    <div class="col-lg-12 footer">
+      <p>
+        For any question/bug report/upgrade wish/etc. concerning our RDM Project,<br />
+        please write an email to 
+        <a href="mailto:thomas.dandekar@uni-wuerzburg.de">thomas.dandekar@uni-wuerzburg.de</a>.<br />
+        <a href="mailto:johannes.balkenhol@uni-wuerzburg.de">johannes.balkenhol@uni-wuerzburg.de</a>.<br />
+        <a href="mailto:coreunitrdm@uni-wuerzburg.de">coreunitrdm@uni-wuerzburg.de</a>.<br />
+      </p>
+      
+      <a href="https://www.uni-wuerzburg.de/en/sonstiges/imprint-privacy-policy/">Imprint + Privacy Policy</a>
+      &nbsp;|&nbsp;
+      <a href="https://www.uni-wuerzburg.de/en/sonstiges/privacy-disclaimer/">Privacy Disclaimer</a> <br />
+      Powered by <a href="https://jekyllrb.com/">Jekyll</a> and
+      <a href="https://idratherbewriting.com/documentation-theme-jekyll/">documentation-theme-jekyll</a>.
+    </div>
+  </div>
+</footer>
+
+<!--
+
+-->
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

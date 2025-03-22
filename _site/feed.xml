@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>documentation-theme-jekyll</title>
+        <description>Information on DECIDE RDM.</description>
+        <link>/</link>
+        <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sat, 22 Mar 2025 11:08:17 +0100</pubDate>
+        <lastBuildDate>Sat, 22 Mar 2025 11:08:17 +0100</lastBuildDate>
+        <generator>Jekyll v3.10.0</generator>
+        
+        <item>
+            <title>Upcoming NFDI4Microbiota Events in 2025</title>
+            <description>&lt;p&gt;The NFDI4Microbiota initiative offers a series of exciting events in 2025 to foster collaboration and innovation in microbiota research.&lt;/p&gt;
+
+&lt;h3 id=&quot;highlighted-events&quot;&gt;&lt;strong&gt;Highlighted Events&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Annual Conference on Microbiota Data Integration&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Date&lt;/strong&gt;: May 15–17, 2025&lt;br /&gt;
+&lt;strong&gt;Location&lt;/strong&gt;: Heidelberg, Germany&lt;br /&gt;
+Focus on data integration and interoperability for microbiota research.&lt;br /&gt;
+&lt;a href=&quot;https://nfdi4microbiota.de/newsroom/events.html&quot;&gt;Event Details&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Hackathon on Microbiota Standards&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Date&lt;/strong&gt;: September 10–12, 2025&lt;br /&gt;
+&lt;strong&gt;Location&lt;/strong&gt;: Online&lt;br /&gt;
+Collaborative sessions to develop community standards for microbiota data sharing.&lt;br /&gt;
+&lt;a href=&quot;https://nfdi4microbiota.de/newsroom/events.html&quot;&gt;Event Details&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Microbiota Data FAIRification Workshop&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Date&lt;/strong&gt;: November 22, 2025&lt;br /&gt;
+&lt;strong&gt;Location&lt;/strong&gt;: Bonn, Germany&lt;br /&gt;
+Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoperable, Reusable).&lt;br /&gt;
+&lt;a href=&quot;https://nfdi4microbiota.de/newsroom/events.html&quot;&gt;Event Details&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For the complete list of events, visit the &lt;a href=&quot;https://nfdi4microbiota.de/newsroom/events.html&quot;&gt;NFDI4Microbiota Events Page&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+            <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
+            <link>/upcoming-nfdi4microbiota-events.html</link>
+            <guid isPermaLink="true">/upcoming-nfdi4microbiota-events.html</guid>
+            
+            <category>events</category>
+            
+            <category>microbiota</category>
+            
+            <category>nfdi4microbiota</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>NFDI4Microbiota Trainings in 2025</title>
+            <description>&lt;p&gt;Explore the latest training opportunities from NFDI4Microbiota in 2025 to enhance your research skills.&lt;/p&gt;
+
+&lt;h3 id=&quot;upcoming-trainings&quot;&gt;&lt;strong&gt;Upcoming Trainings&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Introduction to Microbiota Metadata Standards&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Date&lt;/strong&gt;: March 5, 2025&lt;br /&gt;
+&lt;strong&gt;Location&lt;/strong&gt;: Online&lt;br /&gt;
+Beginner-friendly workshop on metadata standards for microbiota data.&lt;br /&gt;
+&lt;a href=&quot;https://nfdi4microbiota.de/services/trainings.html&quot;&gt;Training Details&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Advanced Data Analysis for Microbiota Studies&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Date&lt;/strong&gt;: June 20, 2025&lt;br /&gt;
+&lt;strong&gt;Location&lt;/strong&gt;: Leipzig, Germany&lt;br /&gt;
+Hands-on training on microbiota data analysis using state-of-the-art tools.&lt;br /&gt;
+&lt;a href=&quot;https://nfdi4microbiota.de/services/trainings.html&quot;&gt;Training Details&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;FAIR Data Management Practices&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Date&lt;/strong&gt;: October 12, 2025&lt;br /&gt;
+&lt;strong&gt;Location&lt;/strong&gt;: Online&lt;br /&gt;
+Session on implementing FAIR principles in microbiota research.&lt;br /&gt;
+&lt;a href=&quot;https://nfdi4microbiota.de/services/trainings.html&quot;&gt;Training Details&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Visit the &lt;a href=&quot;https://nfdi4microbiota.de/services/trainings.html&quot;&gt;NFDI4Microbiota Training Page&lt;/a&gt; for more information.&lt;/p&gt;
+
+</description>
+            <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
+            <link>/nfdi4microbiota-trainings.html</link>
+            <guid isPermaLink="true">/nfdi4microbiota-trainings.html</guid>
+            
+            <category>training</category>
+            
+            <category>microbiota</category>
+            
+            <category>nfdi4microbiota</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>Subscribe to the NFDI4Microbiota Newsletter</title>
+            <description>&lt;p&gt;Stay informed about the latest updates from NFDI4Microbiota by subscribing to their newsletter.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-subscribe&quot;&gt;&lt;strong&gt;Why Subscribe?&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Get updates on microbiota research events and training programs.&lt;/li&gt;
+  &lt;li&gt;Learn about new standards, publications, and developments.&lt;/li&gt;
+  &lt;li&gt;Stay connected with the global microbiota research community.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sign up today on the &lt;a href=&quot;https://nfdi4microbiota.de/newsroom/newsletter.html&quot;&gt;NFDI4Microbiota Newsletter Page&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+            <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
+            <link>/nfdi4microbiota-newsletter.html</link>
+            <guid isPermaLink="true">/nfdi4microbiota-newsletter.html</guid>
+            
+            <category>newsletter</category>
+            
+            <category>microbiota</category>
+            
+            <category>nfdi4microbiota</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>Latest NFDI4Microbiota News</title>
+            <description>&lt;p&gt;Stay updated with the latest developments from NFDI4Microbiota in 2025.&lt;/p&gt;
+
+&lt;h3 id=&quot;january-2025-news-highlights&quot;&gt;&lt;strong&gt;January 2025 News Highlights&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;New Data Standards Published&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Date&lt;/strong&gt;: January 10, 2025&lt;br /&gt;
+NFDI4Microbiota published new standards for microbiota data interoperability.&lt;br /&gt;
+&lt;a href=&quot;https://nfdi4microbiota.de/newsroom/news.html&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Partnership with European Microbiota Network&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Date&lt;/strong&gt;: January 20, 2025&lt;br /&gt;
+Collaboration to enhance microbiota research across Europe.&lt;br /&gt;
+&lt;a href=&quot;https://nfdi4microbiota.de/newsroom/news.html&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For more updates, visit the &lt;a href=&quot;https://nfdi4microbiota.de/newsroom/news.html&quot;&gt;NFDI4Microbiota Newsroom&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+            <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
+            <link>/latest-nfdi4microbiota-news.html</link>
+            <guid isPermaLink="true">/latest-nfdi4microbiota-news.html</guid>
+            
+            <category>news</category>
+            
+            <category>updates</category>
+            
+            <category>nfdi4microbiota</category>
+            
+            
+        </item>
+        
+    </channel>
+</rss>
