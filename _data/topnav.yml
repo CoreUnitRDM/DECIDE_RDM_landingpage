@@ -5,29 +5,26 @@ topnav:
   items:
     - title: Cloud
       external_url: https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php
+    #- title: News
+    #  url: /news
 
 ## Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-
       - title: RDM Tools
         folderitems:
           - title: Labfolder
             external_url: https://labfolder.rz.uni-wuerzburg.de/eln/access/login?redirect=1
-          - title: JupyterHub
-            url: /jupyterhub
-          #- title: Scripts (GitHub)
-          #  external_url: https://github.com/CoreUnitRDM
-          #- title: MetaDataGenerator
-          #  external_url: https://dhvlab.gwi.uni-muenchen.de/datacite-generator/
           - title: Archiving
             external_url: https://www.rz.uni-wuerzburg.de/dienste/rzserver/svb/archivserver/
           
       - title: Analysis
         folderitems:
-          - title: Infection Atalas
+          - title: Infection Atlas
             url: /infection_atlas
+          - title: JupyterHub
+            url: /jupyterhub
           - title: Prosimat
             external_url: https://prosimat.bioinfo-wuerz.de/
           - title: Cat-E
@@ -36,31 +33,12 @@ topnav_dropdowns:
             external_url: https://andom.bioapps.biozentrum.uni-wuerzburg.de/index_new.html
           - title: Further tools
             external_url: https://www.biozentrum.uni-wuerzburg.de/bioinfo/computing/
-
-
+      
       - title: Info
         folderitems:
-        - title: DECIDE Home
-          external_url: https://www.crc-decide.de/
-        - title: cRDM
-          external_url: https://www.med.uni-wuerzburg.de/en/rdm/
-        - title: NFDI microbiota
-          external_url: https://nfdi4microbiota.de/
-
-      #- title: External Resources
-      #  folderitems:
-      #    - title: NCBI GEO
-      #      external_url: https://www.ncbi.nlm.nih.gov/geo/
-      #    - title: Single Cell Expression Atlas
-      #      external_url: https://www.ebi.ac.uk/gxa/sc/home
-      #    - title: ArrayExpress
-      #      external_url: https://www.ebi.ac.uk/biostudies/arrayexpress
-
-
-topnav2:
-- title: Topnav2
-  items:
-    - title: News
-      url: /news
-    #- title: Home
-    #  url: /index.html
+          - title: DECIDE Home
+            external_url: https://www.crc-decide.de/
+          - title: cRDM
+            external_url: https://www.med.uni-wuerzburg.de/en/rdm/
+          - title: NFDI microbiota
+            external_url: https://nfdi4microbiota.de/
