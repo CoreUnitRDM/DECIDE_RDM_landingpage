@@ -24,6 +24,9 @@ entries:
     - title: Metadata Management
       url: /metadata_management.html
       output: web
+    #- title: Compliance
+    #  url: /compliance.html
+    #  output: web     
 
   - title: About RDM
     output: web, pdf

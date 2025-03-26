@@ -3,10 +3,10 @@
     <channel>
         <title>documentation-theme-jekyll</title>
         <description>Information on DECIDE RDM.</description>
-        <link>/</link>
-        <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 22 Mar 2025 12:51:09 +0100</pubDate>
-        <lastBuildDate>Sat, 22 Mar 2025 12:51:09 +0100</lastBuildDate>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sat, 22 Mar 2025 17:53:14 +0100</pubDate>
+        <lastBuildDate>Sat, 22 Mar 2025 17:53:14 +0100</lastBuildDate>
         <generator>Jekyll v3.10.0</generator>
         
         <item>
@@ -42,8 +42,8 @@ Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoper
 
 </description>
             <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
-            <link>/upcoming-nfdi4microbiota-events.html</link>
-            <guid isPermaLink="true">/upcoming-nfdi4microbiota-events.html</guid>
+            <link>http://localhost:4000/upcoming-nfdi4microbiota-events.html</link>
+            <guid isPermaLink="true">http://localhost:4000/upcoming-nfdi4microbiota-events.html</guid>
             
             <category>events</category>
             
@@ -87,8 +87,8 @@ Session on implementing FAIR principles in microbiota research.&lt;br /&gt;
 
 </description>
             <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
-            <link>/nfdi4microbiota-trainings.html</link>
-            <guid isPermaLink="true">/nfdi4microbiota-trainings.html</guid>
+            <link>http://localhost:4000/nfdi4microbiota-trainings.html</link>
+            <guid isPermaLink="true">http://localhost:4000/nfdi4microbiota-trainings.html</guid>
             
             <category>training</category>
             
@@ -114,8 +114,8 @@ Session on implementing FAIR principles in microbiota research.&lt;br /&gt;
 
 </description>
             <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
-            <link>/nfdi4microbiota-newsletter.html</link>
-            <guid isPermaLink="true">/nfdi4microbiota-newsletter.html</guid>
+            <link>http://localhost:4000/nfdi4microbiota-newsletter.html</link>
+            <guid isPermaLink="true">http://localhost:4000/nfdi4microbiota-newsletter.html</guid>
             
             <category>newsletter</category>
             
@@ -150,8 +150,8 @@ Collaboration to enhance microbiota research across Europe.&lt;br /&gt;
 
 </description>
             <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
-            <link>/latest-nfdi4microbiota-news.html</link>
-            <guid isPermaLink="true">/latest-nfdi4microbiota-news.html</guid>
+            <link>http://localhost:4000/latest-nfdi4microbiota-news.html</link>
+            <guid isPermaLink="true">http://localhost:4000/latest-nfdi4microbiota-news.html</guid>
             
             <category>news</category>
             

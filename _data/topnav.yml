@@ -12,7 +12,7 @@ topnav:
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-      - title: RDM Tools
+      - title: RDM
         folderitems:
           - title: Labfolder
             external_url: https://labfolder.rz.uni-wuerzburg.de/eln/access/login?redirect=1
