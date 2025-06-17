@@ -15,15 +15,16 @@ entries:
     - title: DECIDE Data Lifecycle
       url: /decide_data_lifecycle.html
       output: web
-    - title: RDM planer
+    - title: RDM planner
       url: /rdm_planer2.html
-      output: web
-    - title: Infection atlas
-      url: /infection_atlas.html
       output: web
     - title: Metadata Management
       url: /metadata_management.html
       output: web
+    - title: Infection atlas
+      url: /infection_atlas.html
+      output: web
+
     #- title: Compliance
     #  url: /compliance.html
     #  output: web     
@@ -52,26 +53,28 @@ entries:
     output: web, pdf
     folderitems:
     - title: Nextcloud
-      url: nextcloud.html
+      url: /nextcloud.html
       output: web
+      type: homepage
     - title: Labfolder
-      url: labfolder.html
+      url: /labfolder.html
       output: web
+      type: homepage
+    - title: JupyterHub
+      url: /jupyterhub.html
+      output: web
+      type: homepage
  #   - title: Infection Atlas
  #     url: infection_atlas.html
  #     output: web
-    - title: JupyterHub
-      url: jupyterhub.html
-      output: web
+
  #   - title: MetaDataGen
  #     url: metadata-gen.html
  #     output: web
-    - title: Archiving
-      url: archiving.html
-      output: web
- #   - title: GitCollab
- #     url: /mydoc_git_collaboration.html
+ #   - title: Archiving
+ #     url: archiving.html
  #     output: web
+
 
 
 

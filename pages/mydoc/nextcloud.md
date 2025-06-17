@@ -1,9 +1,13 @@
 ---
 title: "Using Nextcloud for Research Data Management"
-permalink: nextcloud.html
-categories: [tutorials, nextcloud]
+keywords: Research Data Management, RDM, Cloud, Version control, Backup, Activity Log, Storage, Exchange
+last_updated: June 26, 2025
 tags: [nextcloud, data management, cloud storage, Würzburg University]
+summary: Learn about nextcloud
 sidebar: decide_sidebar
+permalink: nextcloud.html
+folder: mydoc
+
 ---
 
 # Using Nextcloud for Research Data Management

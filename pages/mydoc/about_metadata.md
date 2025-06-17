@@ -10,15 +10,13 @@ folder: mydocs
 ---
 
 
+## What is Metadata?
+
 Metadata is a cornerstone of effective Research Data Management (RDM), enabling researchers to describe, organize, and share data efficiently. It ensures that data is not only findable and accessible but also interpretable and reusable. By adhering to metadata standards, researchers can align their work with FAIR principles and advance the scientific community's ability to collaborate effectively.
 
 For more information, visit the following resources:
 - [Metadata in Research Data Management - University of Würzburg](https://www.med.uni-wuerzburg.de/fdm/helpdesk/metadaten/)
-- [Metadata Standards - NFDI4Microbiota Knowledge Base](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/03-md.html)
-
----
-
-## What Is Metadata?
+- [Metadata Standards - NFDI4Microbiota Knowledge Base](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/md.html)
 
 Metadata is often described as "data about data." It provides context to research data, including:
 - **Descriptive Metadata**: Information such as title, creator, and keywords.
@@ -45,8 +43,6 @@ Robust metadata enhances research transparency, supports reproducibility, and ma
 
 Adhering to metadata standards is essential for maintaining data quality and interoperability. Standards vary by discipline and data type, ensuring that metadata captures the specific requirements of a field.
 
----
-
 
 ### Metadata Standards in the DECIDE Consortium
 
@@ -55,8 +51,6 @@ The DECIDE consortium provides a metadata solution integrated into its [Nextclou
 - Ensuring metadata aligns with FAIR principles.
 - Facilitating seamless sharing and storage of data with standardized metadata.
 - Allow searching for metadata.
-
----
 
 ### Recommended Resource for Metadata Mangement
 Explore the [Metadata Standards Repository by NFDI4Microbiota](https://github.com/NFDI4Microbiota/MetadataStandards). This repository provides:
@@ -71,7 +65,6 @@ Metadata search tools [Metadata Search Widgets](https://github.com/CoreUnitRDM/f
 
 By leveraging these resources and tools, researchers can ensure that their metadata supports high-quality, FAIR-aligned research data management.
 Researchers can search the repository for their data type and find relevant standards to enhance metadata quality.
-
 
 ---
 
@@ -91,7 +84,7 @@ Researchers can search the repository for their data type and find relevant stan
 ---
 
 ## References
-- [Metadata Standards - NFDI4Microbiota Knowledge Base](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/03-md.html)
-- [Metadata Helpdesk - University of Würzburg](https://www.med.uni-wuerzburg.de/fdm/helpdesk/metadaten/)
+- [Metadata Standards - NFDI4Microbiota Knowledge Base](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/md.html)
+- [Metadata cRMD - University of Würzburg](https://www.med.uni-wuerzburg.de/fdm/helpdesk/metadaten/)
 - [Metadata Standards Repository](https://github.com/NFDI4Microbiota/MetadataStandards)
 

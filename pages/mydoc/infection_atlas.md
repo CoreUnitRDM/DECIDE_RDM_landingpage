@@ -9,8 +9,6 @@ permalink: infection_atlas.html
 folder: mydocs
 ---
 
-# Infection Atlas (Coming Soon)
-
 We are excited to announce that our **Infection Atlas** is in development and will be launching soon. This upcoming resource will offer comprehensive data, interactive visualizations, and detailed insights on infection trends to support researchers and professionals alike.
 
 ## What to Expect
@@ -21,6 +19,6 @@ We are excited to announce that our **Infection Atlas** is in development and wi
 
 ## Questions or Suggestions?
 
-If you have any questions or ideas regarding the Infection Atlas, please feel free to reach out to [Alexander Leipold](mailto:alexander.leipold@helmholtz-hiri.de). Your feedback is invaluable as we continue to shape this resource.
+If you have any questions or ideas regarding the Infection Atlas, please feel free to reach out to **Alexander Leipold** (alexander.leipold@helmholtz-hiri.de). Your feedback is invaluable as we continue to shape this resource.
 
 Stay tuned for more updates, and thank you for your interest in the Infection Atlas!

@@ -47,6 +47,15 @@
 ,
 
 {
+"title": "Research Data Management (RDM) Plan for DECIDE",
+"tags": "RDM PlanDECIDEData ManagementFAIR",
+"keywords": "DECIDE RDM Plan, Research Data Management, FAIR principles, Data Lifecycle",
+"url": "index.html",
+"summary": "Explore the RDM plan of the DECIDE project, including file formats, metadata management, and long-term goals for a FAIR and secure data lifecycle."
+}
+,
+
+{
 "title": "DECIDE Research Data Lifecycle",
 "tags": "Research Data ManagementRDMFAIR",
 "keywords": "Research Data Management, RDM, Data Life Cycle, FAIR principles",
@@ -69,7 +78,7 @@
 "tags": "RDM PlanDECIDEData ManagementFAIR",
 "keywords": "DECIDE RDM Plan, Research Data Management, FAIR principles, Data Lifecycle",
 "url": "index.html",
-"summary": "Explore the RDM plan of the DECIDE project, including file formats, metadata management, and long-term goals for a FAIR and secure data lifecycle."
+"summary": "Explore the RDM plan of the DECIDE project, including data organizations, FAIR data management, and long-term goals for a FAIR and secure data lifecycle."
 }
 ,
 
@@ -101,7 +110,7 @@
 ,
 
 {
-"title": "Metadata Management &amp; FAIR Principles",
+"title": "Metadata Management",
 "tags": "Metadata ManagementFAIRDecideNFDI StandardsData Reuse",
 "keywords": "metadata management, FAIR, Decide consortium, NFDI standards, experimental metadata, Excel, XML, Nextcloud, DeppMeta search, data reuse, knowledge graph, Single Cell Atlas, ArrayExpress, Gene Expression Omnibus",
 "url": "metadata_management.html",
@@ -634,9 +643,9 @@
 {
 "title": "Using Nextcloud for Research Data Management",
 "tags": "nextclouddata managementcloud storageWürzburg University",
-"keywords": "",
+"keywords": "Research Data Management, RDM, Cloud, Version control, Backup, Activity Log, Storage, Exchange",
 "url": "nextcloud.html",
-"summary": ""
+"summary": "Learn about nextcloud"
 }
 ,
 
@@ -857,7 +866,7 @@
 ,
 
 {
-"title": "RDM Planer Tool",
+"title": "RDM Planner Tool",
 "tags": "RDM PlanData ManagementNFDI4Plants",
 "keywords": "RDM Plan, Data Management Plan, NFDI4Plants",
 "url": "rdm_planer2.html",

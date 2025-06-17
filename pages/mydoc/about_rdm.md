@@ -73,36 +73,6 @@ Information provided by [NFDI microbiota knowledgebase](https://knowledgebase.nf
   - [StrainInfo](https://www.straininfo.net).
   - [VirJenDB](https://virjendb.org).
 
-Information provided by [NFDI microbiota knowledgebase](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/rdm.html#NTU_LibGuides_RD_life_cycle)
-
-
----
-
-### DECIDE-Specific Tools and Resources in Data Life Cycle
-
-**Plan**
-- [DMP](/rdm_planer2)
-
-**Collect**
-- [ELNs provided by Uni Würzburg](https://www.rz.uni-wuerzburg.de/dienste/forschung-digital/eln/)
-- User Meetings, Trainings, Focus Groups on ELNs, Nextcloud, Jupyterhub, Metadatacollection, Data Generation, Analysis
-
-**Process**
-- [Metadata templates](/metadata_management)
-
-**Analyze**
-- [Jupyterhub](/jupyterhub)
-- [Bioinformatics Tools](https://www.biozentrum.uni-wuerzburg.de/bioinfo/computing/)
-- Workflows
-
-**Preserve**
-- [Nextcloud](https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/)
-- Long-term storage and archiving on [Long Term Archive](/pages/mydoc/archiving.md)
-
-**Reuse**
-- Coming soon: [Infection Atlas](/infection_atlas) and Infection related network anaylsis
-
-
 ---
 
 ## Challenges in RDM
@@ -112,27 +82,12 @@ Key challenges include:
 - Bridging gaps in tool interoperability.
 - Ensuring sufficient institutional support and training.
 
-Despite these hurdles, initiatives like the National Research Data Infrastructure (NFDI) in Germany aim to standardize and enhance RDM practices.
-
----
-
-## Further Info
-
-### General Resources
-- [Brief Guide - Research Data Management](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/01-introduction.html)
-- [RDMkit by ELIXIR](https://rdmkit.elixir-europe.org)
-
-### Bioinformatics and Life-Science Resources
-- [Bio.tools](https://bio.tools): Database of bioinformatics tools and resources.
-- [GIN Infrastructure](https://web.gin.g-node.org): Neuroscience-specific RDM platform.
-
-For further details, visit the [Knowledge Base on RDM](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/01-introduction.html).
-
 ---
 
 ## References
+- [Brief Guide - Research Data Management](https://knowledgebase.nfdi4microbiota.de/Getting-Started/01-introduction.html)
+- [RDMkit by ELIXIR](https://rdmkit.elixir-europe.org)
 - Biernacka et al., 2020: [Train-the-Trainer Concept on RDM](https://doi.org/10.5281/ZENODO.4071471)
 - RDMkit, 2021: [Data Life Cycle](https://rdmkit.elixir-europe.org/data_life_cycle)
 - Science Europe: [RDM Practices](https://scienceeurope.org/our-priorities/open-science/research-data-management/)
 
-For additional references, see the full [Knowledge Base on RDM](https://knowledgebase.nfdi4microbiota.de/Getting-Started/01-introduction.html).

@@ -5,7 +5,7 @@ last_updated: January 26, 2025
 tags: [RDM Plan, DECIDE, Data Management, FAIR]
 summary: Explore the RDM plan of the DECIDE project, including file formats, metadata management, and long-term goals for a FAIR and secure data lifecycle.
 sidebar: decide_sidebar
-permalink: rdm_plan.html
+permalink: index.html
 folder: mydoc
 
 ---
@@ -85,7 +85,7 @@ For additional references, visit the [Knowledge Base on RDM](https://knowledgeba
   - Document file naming conventions in the project README.md for clarity.
 
 - **Folder Structure**:  
-  Organize data project-wise with the following structure (adaptable to [ELIXIR Belgium recommendations](https://rdm.elixir-belgium.org/folder_structure))((https://github.com/paleobiotechnology/analysis-project-structure)):
+  Organize data project-wise with the following structure (adaptable to [ELIXIR Belgium recommendations](https://rdm.elixir-belgium.org/folder_structure)):
 
     <table>
         <tr><td><b>project_id/</b></td></tr>

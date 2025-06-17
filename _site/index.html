@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Explore the RDM plan of the DECIDE project, including file formats, metadata management, and long-term goals for a FAIR and secure data lifecycle.">
+<meta name="description" content="Explore the RDM plan of the DECIDE project, including data organizations, FAIR data management, and long-term goals for a FAIR and secure data lifecycle.">
 <meta name="keywords" content="RDM PlanDECIDEData ManagementFAIR,  DECIDE RDM Plan, Research Data Management, FAIR principles, Data Lifecycle">
 <title>Research Data Management (RDM) Plan for DECIDE | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -276,14 +276,7 @@
           
           
           
-          <li><a title="RDM planer" href="rdm_planer2.html">RDM planer</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Infection atlas" href="infection_atlas.html">Infection atlas</a></li>
+          <li><a title="RDM planner" href="rdm_planer2.html">RDM planner</a></li>
           
           
           
@@ -291,6 +284,13 @@
           
           
           <li><a title="Metadata Management" href="metadata_management.html">Metadata Management</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Infection atlas" href="infection_atlas.html">Infection atlas</a></li>
           
           
           
@@ -355,13 +355,6 @@
           
           
           
-          
-          
-          <li><a title="Archiving" href="archiving.html">Archiving</a></li>
-          
-          
-          
-          
       </ul>
    </li>
      
@@ -394,7 +387,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Explore the RDM plan of the DECIDE project, including file formats, metadata management, and long-term goals for a FAIR and secure data lifecycle.</div>
+    <div class="summary">Explore the RDM plan of the DECIDE project, including data organizations, FAIR data management, and long-term goals for a FAIR and secure data lifecycle.</div>
    
 
     
@@ -431,200 +424,224 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h2 id="summary-of-the-decide-project-and-focus-areas">Summary of the DECIDE Project and Focus Areas</h2>
-
-<p>Infectious diseases pose a global challenge, exacerbated by multidrug resistance and emerging pathogens. The DECIDE project aims to revolutionize infection therapy by shifting the therapeutic focus from pathogens to optimizing the host’s immune response. Researchers employ a multilayered systems approach to explore three key areas:</p>
-
-<ol>
-  <li><strong>Containment vs. Active Infection</strong>: Investigating the host’s response to first contact with a pathogen.</li>
-  <li><strong>Acute vs. Chronic Infection</strong>: Understanding factors influencing infection persistence or resolution.</li>
-  <li><strong>Localized vs. Systemic Spread</strong>: Exploring the mechanisms behind infection dissemination.</li>
-</ol>
-
-<p>This innovative framework addresses critical gaps in host-pathogen dynamics to inform novel prevention and treatment strategies.</p>
-
-<hr />
-
-<h2 id="decide-rdm-plan">DECIDE RDM Plan</h2>
-
-<p>The DECIDE consortium recognizes the critical role of effective Research Data Management (RDM) in achieving its scientific goals. By adhering to FAIR principles (Findable, Accessible, Interoperable, and Reusable), DECIDE’s RDM plan fosters collaboration, enhances data quality, and promotes long-term data accessibility.</p>
-
-<p>For additional references, visit the <a href="https://knowledgebase.nfdi4microbiota.de/Getting-Started/01-introduction.html">Knowledge Base on RDM</a>.</p>
-
-<h3 id="1-file-formats">1. File Formats</h3>
+   <h2 id="roles-and-responsibilities">Roles and Responsibilities</h2>
 <ul>
-  <li>Recommended formats include <strong>HDF5</strong> for hierarchical data, <strong>FASTQ</strong> for sequencing data, <strong>CSV</strong> for tabular data, and other standard formats for multi-omics and infection research datasets.</li>
-  <li>Proprietary formats should be converted while preserving original metadata.</li>
+  <li><strong>Thomas Dandekar</strong>, Principal Investigator (PI) (thomas.dandekar@uni-wuerzburg.de): Overall project oversight, data governance, final approvals.</li>
+  <li><strong>Johannes Balkenhol</strong>, RDM Lead &amp; Cloud Admin (johannes.balkenhol@uni-wuerzburg.de): Day-to-day RDM operations, integrated network analysis, cloud infrastructure management.</li>
+  <li><strong>Hamidreza Alimohammadi</strong>, cRDM Specialist &amp; Cloud Admin (Alimohamma_H@ukw.de, coreunitrdm@uni-wuerzburg.de): Metadata standards, data format conversion, metadata search, organizational guidelines, support via <a href="https://www.med.uni-wuerzburg.de/fdm/">cRDM</a>.</li>
+  <li><strong>Juan Prada</strong>, Cloud Administrator (juan.prada_salcedo@uni-wuerzburg.de): Nextcloud administration, LLM, and support.</li>
 </ul>
 
-<h3 id="2-data-collection">2. Data Collection</h3>
+<h2 id="decide-rdm">DECIDE RDM</h2>
+<p>The DECIDE consortium recognizes the critical role of effective Research Data Management (RDM) in achieving its scientific goals. By adhering to FAIR principles (Findable, Accessible, Interoperable, and Reusable), DECIDE’s RDM plan fosters collaboration, enhances data quality, and promotes long-term data accessibility.
+For additional references, visit the <a href="https://knowledgebase.nfdi4microbiota.de/Getting-Started/01-introduction.html">Knowledge Base on RDM</a>.</p>
+
+<h3 id="0-data-management-plan">0. Data Management Plan</h3>
+<p>Plan how you’ll handle your data before starting. Use our <a href="/rdm_planer2.html">RDM planner</a> to define data type, size, storage solution, sharing, and backup.</p>
+
+<h3 id="1-data-organization">1. Data Organization</h3>
+<p>Whether local or in the cloud, <strong>agreeing on a consistent data structure</strong> is crucial. While international standards provide recommendations, the DECIDE consortium must define and document its own standard structure to ensure interoperability and scalability, especially when handling big data and on-the-fly processing.</p>
 <ul>
-  <li><strong>Primary and Raw Data:</strong><br />
-Primary data is processed at the institute by the data generator.</li>
-  <li><strong>Data Storage and Sharing:</strong><br />
-Active data is stored and shared in <a href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/">Nextcloud</a>.</li>
-  <li><strong>Data Archiving:</strong><br />
-Long-term archiving is managed using the University of Würzburg’s <a href="https://www.rz.uni-wuerzburg.de/dienste/rzserver/archivierung-von-daten/">Data Archiving Service</a>.</li>
-  <li><strong>External Archives:</strong>
+  <li><strong>Lesson on Data Organization:</strong> <a href="https://doi.org/10.4126/FRL01-006484175">Zenodo DOI:10.4126/FRL01-006484175</a></li>
+</ul>
+
+<h4 id="11-folder-structure">1.1 Folder Structure</h4>
+<p>Adapted from NFDI microbiota:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>project_id/
+├── data/
+│   ├── raw_data/
+│   ├── processed_data/
+|   └── metadata_file.xml
+├── documentation/
+|   ├── labfolder_link.ln
+│   ├── literature/
+│   ├── manuscript/
+│   └── figures/
+├── analysis/
+├── results/
+├── scripts/
+├── DMP
+└── README.md
+</code></pre></div></div>
+
+<h4 id="12-file-naming">1.2 File Naming</h4>
+<p>Follow NFDI guidelines:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;YYYY-MM-DD&gt;_&lt;project_id&gt;_&lt;data_type&gt;_&lt;description&gt;_&lt;version&gt;.&lt;txt&gt;
+</code></pre></div></div>
+<p><strong>Examples:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">2025-01-26_DECIDE123_RNAseq_raw_reads_v1.fastq</code></li>
+  <li><code class="language-plaintext highlighter-rouge">2025-01-26_DECIDE123_image_cell_structure_v1.tiff</code></li>
+</ul>
+
+<p><strong>Tips:</strong></p>
+<ul>
+  <li>Use only letters, numbers, <code class="language-plaintext highlighter-rouge">_</code>, and <code class="language-plaintext highlighter-rouge">-</code></li>
+  <li>Document conventions in <code class="language-plaintext highlighter-rouge">README.md</code></li>
+</ul>
+
+<h3 id="2-data-generation">2. Data Generation</h3>
+<p>Data generation starts in the lab—through experiments, instruments, or from external databases. All <strong>raw data</strong> should be captured as early as possible and documented in the <strong><a href="https://www.rz.uni-wuerzburg.de/dienste/forschung-digital/eln/">Electronic Lab Notebook (ELN)</a></strong> or other structured formats.</p>
+
+<ul>
+  <li>Basic metadata (<strong>what, when, how</strong>) must be recorded at the point of generation.</li>
+  <li>Use ELN templates, structured Excel sheets, or XML/JSON files attached to the data.</li>
+  <li>For data from public databases, note the <strong>source</strong>, <strong>access date</strong>, and <strong>version</strong>.</li>
+  <li>Ensure consistent naming and folder conventions to support later analysis and reproducibility.</li>
+</ul>
+
+<h3 id="3-file-formats">3. File Formats</h3>
+<ul>
+  <li><strong>HDF5</strong> / <strong>AnnData (.h5ad)</strong> for single-cell and hierarchical data</li>
+  <li><strong>FASTQ</strong>, <strong>BAM</strong>, <strong>VCF</strong>, <strong>mzML</strong> for sequencing and multi-omics</li>
+  <li><strong>CSV</strong>, <strong>TSV</strong>, <strong>Loom</strong> for tabular and matrix data</li>
+  <li><strong>TIFF</strong>, <strong>OME-TIFF</strong>, <strong>OME-ZARR</strong> for imaging, incl. flow chamber videos</li>
+  <li>Convert proprietary formats to open standards <strong>with metadata preserved</strong></li>
+</ul>
+
+<h3 id="4-data-collection-storage--sharing">4. Data Collection, Storage &amp; Sharing</h3>
+<ul>
+  <li><strong>Primary/Raw Data:</strong> Generated in-lab, recorded in ELN, stored on institute drive.</li>
+  <li><strong>Active Data:</strong> Stored, shared, backed up via <a href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/">Nextcloud</a>.</li>
+  <li><strong>Archiving:</strong> 10 years long-term backup via University of Würzburg Data <a href="https://www.rz.uni-wuerzburg.de/dienste/rzserver/svb/archivserver/">Archiving Server</a>.</li>
+  <li><strong>External Repositories: e.g.</strong>
     <ul>
-      <li><a href="https://www.ebi.ac.uk/gxa/sc/home">Single Cell Expression Atlas</a></li>
       <li><a href="https://www.ebi.ac.uk/biostudies/arrayexpress">ArrayExpress</a></li>
       <li><a href="https://www.ncbi.nlm.nih.gov/geo/">NCBI GEO</a></li>
+      <li><a href="https://www.ebi.ac.uk/gxa/sc/home">Single Cell Expression Atlas</a></li>
     </ul>
   </li>
-  <li><strong>Security Measures:</strong><br />
-Regular backups, RZ security standars, and controlled access are implemented.</li>
+  <li><strong>Security Measures:</strong> Regular backups, RZ security standards, controlled access policies.</li>
 </ul>
 
-<h3 id="3-documentation">3. Documentation</h3>
+<h3 id="5-documentation--version-control">5. Documentation &amp; Version Control</h3>
 <ul>
-  <li><strong>ELN</strong>:
- <a href="https://www.rz.uni-wuerzburg.de/dienste/forschung-digital/eln/">ELN Uni Würzburg</a>: For systematic data collection and laboratory documentation.</li>
-  <li><strong>Github</strong>:
- <a href="https://github.com/CoreUnitRDM">GitHub</a>: Hosting pipelines, workflows, and SOPs for computational and experimental analyses.</li>
+  <li><strong><a href="https://www.rz.uni-wuerzburg.de/dienste/forschung-digital/eln/">Electronic Lab Notebook (ELN)</a>:</strong><br />
+Use eLabFTW (eLabFolder) to document SOPs, protocols, experimental parameters, and data links in a structured and timestamped format.</li>
+  <li><strong>Version Control with <a href="https://github.com/">GitHub</a> and <a href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/">Nextcloud</a>:</strong>
+Host and manage files, code, scripts, pipelines, and collaborative documents. Use branches, pull requests, commits, and issue tracking to ensure reproducibility and transparent development.</li>
+  <li><strong>Persistent Archiving with <a href="https://zenodo.org/">Zenodo</a>:</strong><br />
+Archive published datasets, software, and GitHub repositories with DOIs to enable citation and long-term accessibility.</li>
+  <li><strong>Workflow Sharing:</strong><br />
+Use <a href="https://www.nextflow.io/">nextflow</a> for reproducible pipeline execution and <a href="https://www.protocols.io/">protocols.io</a> to publish and share detailed experimental protocols and SOPs.</li>
 </ul>
 
-<h3 id="4-metadata-management">4. Metadata Management</h3>
+<h3 id="6-metadata-management">6. Metadata Management</h3>
 <ul>
-  <li>Standardized metadata collection using the <strong>Nextcloud metadata app</strong>, aligned with <a href="https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/03-md.html">NFDI4Microbiota</a>.</li>
-  <li>Researchers are encouraged to use <a href="https://github.com/NFDI4Microbiota/MetadataStandards">Metadata Standards Repository</a> to find guidelines specific to their data type.</li>
+  <li>**<a href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php/s/c8yD3ddfJ3xsAjb">Metadata Templates</a> developed by DECIDE consoriutm aligned along  NFDI4Microbiota recommendations</li>
+  <li><strong>Metadata Standards Repository:</strong> Use <a href="https://github.com/NFDI4Microbiota/MetadataStandards">NFDI4Microbiota/MetadataStandards</a>.</li>
 </ul>
 
-<h3 id="5-administrative-recommendations">5. Administrative Recommendations</h3>
+<h3 id="7-data-analysis-infrastructure">7. Data Analysis Infrastructure</h3>
 <ul>
-  <li>
-    <p><strong>File Naming Guidelines</strong>:<br />
-Follow best practices outlined by <a href="https://rdm.elixir-belgium.org/file_naming">ELIXIR Belgium</a> to enhance traceability and clarity.
-  <strong>Format:</strong><br />
-<code class="language-plaintext highlighter-rouge">&lt;project_id&gt;_&lt;data_type&gt;_&lt;description&gt;_&lt;date&gt;_&lt;version&gt;.&lt;extension&gt;</code></p>
-
-    <p><strong>Example File Names:</strong></p>
+  <li><strong><a href="/jupyterhub.html">HPC Bioinfo (JupyterHub)</a> and Uni Würzburg HPC <a href="https://www.rz.uni-wuerzburg.de/dienste/rzserver/high-performance-computing/">Julia I/II</a>:</strong>
     <ul>
-      <li><strong>Raw sequencing data</strong>:<br />
-<code class="language-plaintext highlighter-rouge">DECIDE123_RNAseq_raw_reads_20250126_v1.fastq</code></li>
-      <li><strong>Processed data</strong>:<br />
-<code class="language-plaintext highlighter-rouge">DECIDE123_RNAseq_aligned_data_20250126_v2.hdf5</code></li>
-      <li><strong>Metadata file</strong>:<br />
-<code class="language-plaintext highlighter-rouge">DECIDE123_metadata_sample_info_20250126_v1.csv</code></li>
-      <li><strong>Microscopy image</strong>:<br />
-<code class="language-plaintext highlighter-rouge">DECIDE123_image_cell_structure_20250126_v1.tiff</code></li>
-      <li><strong>Analysis script</strong>:<br />
-<code class="language-plaintext highlighter-rouge">DECIDE123_analysis_normalization_20250126_v3.py</code></li>
-    </ul>
-
-    <p><strong>Key Tips:</strong></p>
-    <ul>
-      <li>Avoid special characters; use only letters, numbers, underscores (<code class="language-plaintext highlighter-rouge">_</code>), and hyphens (<code class="language-plaintext highlighter-rouge">-</code>).</li>
-      <li>Be consistent across all project files.</li>
-      <li>Document file naming conventions in the project README.md for clarity.</li>
+      <li>Usage: Julia I/II HPC and Bioinformatics HPC (requires Uni ID, VPN, and registration).</li>
+      <li>Connection to Nextcloud via <a href="https://rclone.org/"><code class="language-plaintext highlighter-rouge">rclone</code></a> or WebDAV packages in <a href="https://cran.r-project.org/web/packages/webdav/index.html">R</a>/<a href="https://pypi.org/project/webdavclient3/">Python</a>.</li>
     </ul>
   </li>
-  <li>
-    <p><strong>Folder Structure</strong>:<br />
-Organize data project-wise with the following structure (adaptable to <a href="https://rdm.elixir-belgium.org/folder_structure">ELIXIR Belgium recommendations</a>):</p>
-
-    <table>
-      <tr><td><b>project_id/</b></td></tr>
-      <tr><td>&emsp;├── <b>data/</b></td></tr>
-      <tr><td>&emsp;&emsp;└── <b>raw_data/</b></td></tr>
-      <tr><td>&emsp;&emsp;└── <b>processed_data/</b></td></tr>
-      <tr><td>&emsp;├── <b>documents/</b></td></tr>
-      <tr><td>&emsp;&emsp;└── <b>literature/</b></td></tr>
-      <tr><td>&emsp;&emsp;└── <b>manuscript/</b></td></tr>
-      <tr><td>&emsp;&emsp;└── <b>figures/</b></td></tr>
-      <tr><td>&emsp;├── <b>analysis/</b></td></tr>
-      <tr><td>&emsp;├── <b>results/</b></td></tr>
-      <tr><td>&emsp;├── <b>scripts/</b></td></tr>
-      <tr><td>&emsp;├── <b>labfolder_link.ln</b></td></tr>
-      <tr><td>&emsp;├── <b>DMP (data management plan)</b></td></tr>
-      <tr><td>&emsp;├── <b>metadata_file.xml</b></td></tr>
-      <tr><td>&emsp;├── <b>README.md (project description and licensing)</b></td></tr>
-  </table>
-  </li>
-  <li>
-    <p><strong>DMP</strong>: 
-  Optionally, generate a data management file using the <a href="https://www.nfdi4plants.de/dataplan/">NFDI4Plants Data Plan Tool</a>.</p>
-  </li>
+  <li><strong><a href="https://prosimat.bioinfo-wuerz.eu/">Prosimat</a> &amp; <a href="https://cat-e.bioinfo-wuerz.eu/">Cat-E</a>:</strong> Tools für dynamische Netzwerk- und Enzymanalyse.</li>
+  <li><strong>DECIDE Analysis Pipelines:</strong> Automatisierte Workflows auf GitHub.</li>
 </ul>
 
-<h3 id="6-data-generation-and-analysis">6. Data Generation and Analysis</h3>
+<h3 id="8-licensing">8. Licensing</h3>
+<p>Follow standard Creative Commons licenses (e.g., CC BY, CC 0) to balance reuse and IP protection. See <a href="https://knowledgebase.nfdi4microbiota.de/RDM-Share/licenses.html">Licensing Guidelines</a>.</p>
 
+<h3 id="9-data-continuation--integration">9. Data Continuation &amp; Integration</h3>
 <ul>
-  <li>
-    <p><strong>JupyterHub</strong>:<br />
-Multi-omics datasets are processed on secure HPC servers with 128 CPU cores, GPU A100, and 20TB storage. Interactive workflows are supported through <a href="/jupyterhub.html">JupyterHub</a>.</p>
-  </li>
-  <li>
-    <p><strong>Prosimat</strong>:<br />
-Explore multi-omics data analysis using <a href="https://prosimat.bioinfo-wuerz.de/">Prosimat</a>.</p>
-  </li>
-  <li>
-    <p><strong>Cat-E</strong>:<br />
-Comprehensive catabolic enzyme analysis tools are available at <a href="https://cat-e.bioinfo-wuerz.de/">Cat-E</a>.</p>
-  </li>
-  <li>
-    <p><strong>Analysis Pipelines</strong>:<br />
-Streamline your workflows with <a href="https://github.com/CoreUnitRDM">DECIDE Analysis Pipelines</a>.</p>
-  </li>
-  <li>
-    <p><strong>Further Bioinformatics Tools</strong>:<br />
-Access additional bioinformatics resources at <a href="https://www.biozentrum.uni-wuerzburg.de/bioinfo/computing/">Bioinformatics Computing</a>.</p>
-  </li>
-</ul>
-
-<h3 id="7-licensing">7. Licensing</h3>
-<ul>
-  <li>Ensure appropriate licensing for datasets and tools to enable reuse while protecting intellectual property. Follow standard guidelines for Creative Commons (e.g., CC BY or CC0) <a href="https://knowledgebase.nfdi4microbiota.de/RDM-Share/licenses.html">Licensing</a></li>
-</ul>
-
-<h3 id="8-data-continuation">8. Data Continuation</h3>
-<ul>
-  <li><a href="infection_atlas.html">Single Cell Infection Atlas: Z-project</a></li>
-  <li>Robust protein interaction inference on single cell basis: Integrated &amp; Dynamic Network Analysis (INF Project)</li>
-</ul>
-
-<h3 id="9-long-term-goals">9. Long-Term Goals</h3>
-<ul>
-  <li>Transition to a fully integrated Virtual Research Environment (VRE) for seamless data sharing and collaboration.</li>
-  <li>Promote cross-project data integration to identify molecular decision points in infections.</li>
+  <li><a href="/infection_atlas.html">Single Cell Infection Atlas: Z-project</a></li>
+  <li>Integrated &amp; Dynamic Network Analysis (INF Project)</li>
 </ul>
 
 <hr />
+
+<h2 id="summary-current-virtual-research-campus-vrc-architecture">Summary: Current Virtual Research Campus (VRC) Architecture</h2>
+<p><em>Architecture of the Virtual Research Campus (VRC): From the Perspective of Researchers</em><br />
+© Core Unit RDM</p>
+
+<p><img src="/images/2025-06-02_JB_VRC-Wuerzburg_CurrentUserPerspective.png" alt="Architecture of the Virtual Research Campus (VRC)" /></p>
+
+<ul>
+  <li><strong>Data Generation &amp; Documentation</strong>
+    <ul>
+      <li>Raw data is generated in the lab (animal experiments, cell culture, measurement instruments).</li>
+      <li>Documentation via eLabFolder: SOPs, protocols, parameters, and links to each data file.</li>
+      <li>Metadata and scripts are generated in parallel (Python, R, MATLAB…).</li>
+    </ul>
+  </li>
+  <li><strong>RDM Knowledge Base &amp; Standards</strong>
+    <ul>
+      <li>Central templates for folder structure, file naming, and metadata (NFDI/EU-compliant).</li>
+      <li>FAIR checklists for formats, versioning tools (Git, Zenodo, Nextcloud).</li>
+    </ul>
+  </li>
+  <li><strong>Organized Locally or in the Cloud</strong>
+    <ul>
+      <li>Project folders are created using standard templates.</li>
+      <li>Consistency is prioritized over storage location.</li>
+    </ul>
+  </li>
+  <li><strong>Cloud Sync &amp; Data Backup</strong>
+    <ul>
+      <li>WebDAV connection mirrors folders to the private cloud.</li>
+      <li>Automatic backups and snapshot mechanisms.</li>
+    </ul>
+  </li>
+  <li><strong>Computing (HPC)</strong>
+    <ul>
+      <li>Julia II and Bioinformatics HPC systems are available to users at JMU.</li>
+      <li>Cloud data can be mounted into the compute system using APIs such as WebDAV.</li>
+    </ul>
+  </li>
+  <li><strong>GitHub for Scripts &amp; Collaboration</strong>
+    <ul>
+      <li>Development directly in GitHub repositories with version control and issue tracking.</li>
+    </ul>
+  </li>
+  <li><strong>FAIR Publication</strong>
+    <ul>
+      <li>Export of selected datasets with DOI, open licenses, and complete metadata.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Added Value:</strong> Time savings, security, reproducibility, flexibility, transparency.</p>
+
+<h2 id="long-term-goals">Long-Term Goals</h2>
+<ul>
+  <li>Vollständige Integration in eine Virtual Research Campus (VRC).</li>
+  <li>Förderung cross-projektiver Datenintegration zur Identifikation molekularer Entscheidungs-punkte.</li>
+</ul>
 
 <h2 id="challenges-and-solutions-in-rdm-for-decide">Challenges and Solutions in RDM for DECIDE</h2>
 
 <h3 id="challenges">Challenges</h3>
 <ul>
-  <li><strong>Data Complexity</strong>: Managing large-scale multi-omics datasets and infection research data.</li>
-  <li><strong>Standardization</strong>: Ensuring consistent metadata across diverse research areas.</li>
-  <li><strong>Compliance</strong>: Addressing GDPR requirements for data security and privacy.</li>
+  <li><strong>Data Complexity:</strong> Large multi-omics datasets and infection research data.</li>
+  <li><strong>Standardization:</strong> Consistent metadata across different work areas.</li>
+  <li><strong>Compliance:</strong> GDPR compliance for data security and privacy.</li>
 </ul>
 
 <h3 id="solutions">Solutions</h3>
 <ul>
-  <li>Use of the metadata templates for standardized metadata collection.</li>
-  <li>Centralized data storage in a cloud and systematic workflows.</li>
-  <li>Training programs on ELNs and data management tools.</li>
+  <li>Standardized metadata templates and FAIR checklists.</li>
+  <li>Centralized storage and systematic workflows.</li>
+  <li>Training programs on ELN and RDM tools.</li>
 </ul>
 
 <hr />
 
-<h2 id="references-and-resources">References and Resources</h2>
-
-<h3 id="key-references">Key References</h3>
+<h2 id="resources--good-practices">Resources &amp; Good Practices</h2>
 <ul>
+  <li><a href="https://zenodo.org/records/4000989">Brief Guide RDM</a></li>
+  <li><a href="https://carpentries-lab.github.io/good-enough-practices/02-data_management.html#create-the-data-you-wish-to-see-in-the-world">The Carpentries: Good-enough practices for data management</a>)</li>
   <li><a href="https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/01-introduction.html">Knowledge Base on RDM</a></li>
   <li><a href="https://github.com/NFDI4Microbiota/MetadataStandards">Metadata Standards Repository</a></li>
-</ul>
-
-<h3 id="resources-for-best-practices">Resources for Best Practices</h3>
-<ul>
+  <li><a href="https://doi.org/10.4126/FRL01-006484175">Data Organization</a></li>
   <li><a href="https://rdm.elixir-belgium.org/file_naming">File Naming Guidelines by ELIXIR Belgium</a></li>
   <li><a href="https://rdm.elixir-belgium.org/folder_structure">Folder Structure Recommendations by ELIXIR Belgium</a></li>
   <li><a href="https://www.nfdi4plants.de/dataplan/">NFDI4Plants Data Plan Tool</a></li>
 </ul>
-
-<p>For more details, consult the full <a href="https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/01-introduction.html">Knowledge Base on RDM</a>.</p>
 
 
     <div class="tags">
@@ -659,9 +676,9 @@ Access additional bioinformatics resources at <a href="https://www.biozentrum.un
     <div class="col-lg-12 footer">
       &copy;2025 DECIDE-Konsortium (SFB 1583). All rights reserved. <br />
       
-        <span>Page last updated:</span> January 26, 2025<br/>
+        <span>Page last updated:</span> June 13, 2025<br/>
       
-      Site last generated: Mar 22, 2025 <br />
+      Site last generated: Jun 17, 2025 <br />
       <p>
         <img src="images/crdm_logo.png" alt="Company logo" />
       </p>

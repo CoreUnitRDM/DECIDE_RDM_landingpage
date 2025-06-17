@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Placeholder page for the upcoming Metadata Management system for experimental metadata within the Decide consortium.">
 <meta name="keywords" content="Metadata ManagementFAIRDecideNFDI StandardsData Reuse,  metadata management, FAIR, Decide consortium, NFDI standards, experimental metadata, Excel, XML, Nextcloud, DeppMeta search, data reuse, knowledge graph, Single Cell Atlas, ArrayExpress, Gene Expression Omnibus">
-<title>Metadata Management & FAIR Principles | Info and Services on DECIDE RDM</title>
+<title>Metadata Management | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -200,7 +200,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Metadata Management & FAIR Principles page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Metadata Management page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -220,7 +220,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Metadata Management &amp; FAIR Principles">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Metadata Management">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -276,14 +276,7 @@
           
           
           
-          <li><a title="RDM planer" href="rdm_planer2.html">RDM planer</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Infection atlas" href="infection_atlas.html">Infection atlas</a></li>
+          <li><a title="RDM planner" href="rdm_planer2.html">RDM planner</a></li>
           
           
           
@@ -291,6 +284,13 @@
           
           
           <li class="active"><a title="Metadata Management" href="metadata_management.html">Metadata Management</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Infection atlas" href="infection_atlas.html">Infection atlas</a></li>
           
           
           
@@ -355,13 +355,6 @@
           
           
           
-          
-          
-          <li><a title="Archiving" href="archiving.html">Archiving</a></li>
-          
-          
-          
-          
       </ul>
    </li>
      
@@ -386,7 +379,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Metadata Management & FAIR Principles</h1>
+   <h1 class="post-title-main">Metadata Management</h1>
 </div>
 
 
@@ -431,23 +424,10 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <h1 id="metadata-management-system-coming-soon">Metadata Management System (Coming Soon)</h1>
+   <h2 id="structured-metadata-collection">Structured Metadata Collection´</h2>
+<p>We promote the collection, conversion, and analysis of experimental metadata, ensuring that your research data is well-organized, FAIR-compliant, and primed for broad reuse.</p>
 
-<p>We are excited to announce that a comprehensive Metadata Management System is under development for the Decide consortium. This system will streamline the collection, conversion, and analysis of experimental metadata, ensuring that your research data is well-organized, FAIR-compliant, and primed for broad reuse.</p>
-
-<h2 id="whats-in-the-pipeline">What’s in the Pipeline?</h2>
-
-<h3 id="structured-metadata-collection">Structured Metadata Collection</h3>
-<p>We are designing Excel templates to collect experimental metadata in a structured way. Each Excel table will be attached to the project folder, ensuring that the metadata is consistently documented from the outset of your project.</p>
-
-<h3 id="conversion-to-machine-readable-formats">Conversion to Machine-Readable Formats</h3>
-<p>To maximize interoperability, tools will automatically convert the collected metadata into machine-readable formats, such as XML. This conversion enables seamless data integration and further processing.</p>
-
-<h3 id="metadata-generator-app">Metadata Generator App</h3>
-<p>Alongside the Excel templates, a third-party metadata generator app is being developed within Nextcloud. This app will offer an intuitive interface for generating structured metadata that meets our project standards.</p>
-
-<h3 id="deppmeta-search-tool">DeppMeta Search Tool</h3>
-<p>To enhance metadata accessibility, we are also developing a DeppMeta search tool within Nextcloud. This tool will allow users to search, customize, and generate statistics from metadata files, providing valuable insights for your research.</p>
+<p>We are designing <strong>meta data templates</strong> available as Excel sheets in the <a href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php/s/c8yD3ddfJ3xsAjb">Cloud</a> and on <a href="https://github.com/CoreUnitRDM/MetaDataTemplates">github</a> to collect experimental metadata in a structured way. Each Excel table will be attached to the project folder, ensuring that the metadata is consistently documented from the outset of your project. We follow the guidelines of <a href="https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/md.html">NFDI microbioata</a>.</p>
 
 <h3 id="data-reuse--integration">Data Reuse &amp; Integration</h3>
 <p>Our metadata files are designed not only for effective data management but also to facilitate extensive data reuse. The comprehensive metadata will include essential information such as:</p>
@@ -458,8 +438,16 @@ $('#toc').on('click', 'a', function() {
   <li><strong>Integration with External Databases:</strong> Enable seamless injection of metadata into prominent databases and platforms like the Single Cell Atlas, ArrayExpress, and Gene Expression Omnibus, broadening the scope of data sharing and reuse.</li>
 </ul>
 
-<h2 id="stay-tuned">Stay Tuned</h2>
-<p>This page serves as a placeholder while we continue refining these tools. We look forward to delivering a robust Metadata Management solution tailored for the Decide consortium. Updates will be provided as development progresses.</p>
+<h2 id="whats-in-the-pipeline">What’s in the Pipeline?</h2>
+
+<h3 id="conversion-to-machine-readable-formats">Conversion to Machine-Readable Formats</h3>
+<p>To maximize interoperability, tools will automatically convert the collected metadata into machine-readable formats, such as XML. This conversion enables seamless data integration and further processing.</p>
+
+<h3 id="deepmeta-search-tool">DeepMeta Search Tool</h3>
+<p>To enhance metadata accessibility, we are also developing a DeppMeta search tool within Nextcloud. This tool will allow users to search, customize, and generate statistics from metadata files, providing valuable insights for your research.</p>
+
+<h3 id="metadata-generator-app">Metadata Generator App</h3>
+<p>Alongside the Excel templates, a third-party metadata generator app is being developed within Nextcloud. This app will offer an intuitive interface for generating structured metadata that meets our project standards.</p>
 
 <p>For any inquiries or suggestions, please contact the project team.</p>
 
@@ -500,7 +488,7 @@ $('#toc').on('click', 'a', function() {
       
         <span>Page last updated:</span> January 26, 2025<br/>
       
-      Site last generated: Mar 22, 2025 <br />
+      Site last generated: Jun 17, 2025 <br />
       <p>
         <img src="images/crdm_logo.png" alt="Company logo" />
       </p>

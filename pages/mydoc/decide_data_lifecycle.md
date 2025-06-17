@@ -1,17 +1,15 @@
 ---
-title: DECIDE Research Data Lifecycle
+title: "DECIDE Research Data Lifecycle"
 keywords: Research Data Management, RDM, Data Life Cycle, FAIR principles
-last_updated: January 26, 2025
+last_updated: June 26, 2025
 tags: [Research Data Management, RDM, FAIR]
 summary: Learn about Research Data Life Cycle Implementation in DECIDE
 sidebar: decide_sidebar
 permalink: decide_data_lifecycle.html
 folder: mydoc
----
-
-
 
 ---
+
 
 ## The Research Data Life Cycle
 
@@ -24,12 +22,11 @@ The research data life cycle illustrates the flow of data through a research pro
 5. **Share**: Publishing data securely while addressing copyright and access controls.
 6. **Reuse**: Leveraging data for follow-up research, education, and further analysis.
 
-![Research Data Life Cycle](/images/research_data_life_cycle_elixir.png)
+![Research Data Life Cycle](/images/2025-06-02_JB_RDM_lifecycle.png)
 
 The life cycle emphasizes the importance of each step in preventing data loss and ensuring the reusability of results.
 Information provided by [NFDI microbiota knowledgebase](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/rdm.html#NTU_LibGuides_RD_life_cycle)
 
----
 
 ### DECIDE-Specific Tools and Resources in Data Life Cycle
 
@@ -44,13 +41,13 @@ Information provided by [NFDI microbiota knowledgebase](https://knowledgebase.nf
 - [Metadata templates](/metadata_management)
 
 **Analyze**
-- [Jupyterhub](/jupyterhub)
+- HPC [Julia I/II](https://www.rz.uni-wuerzburg.de/dienste/rzserver/high-performance-computing/) and HPC Bioinformatics including [Jupyterhub](/jupyterhub)
 - [Bioinformatics Tools](https://www.biozentrum.uni-wuerzburg.de/bioinfo/computing/)
 - Workflows
 
 **Preserve**
 - [Nextcloud](https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/)
-- Long-term storage and archiving on [Long Term Archive](/pages/mydoc/archiving.md)
+- Long-term storage and archiving on [Archive Server](/archiving.md)
 
 **Reuse**
 - Coming soon: [Infection Atlas](/infection_atlas) and Infection related network anaylsis

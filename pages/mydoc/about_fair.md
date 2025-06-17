@@ -15,7 +15,7 @@ The FAIR principles—**Findable**, **Accessible**, **Interoperable**, and **Reu
 
 For more information, visit the following resources:
 - [FAIR Principles Overview - University of Würzburg](https://www.med.uni-wuerzburg.de/fdm/helpdesk/fair/)
-- [FAIR in Research Data Management - NFDI4Microbiota](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/04-fair.html)
+- [FAIR in Research Data Management - NFDI4Microbiota](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/fair.html)
 
 ---
 
@@ -62,7 +62,7 @@ Microbiology data, including multi-omics datasets, is highly complex and require
 - Depositing data in FAIR-aligned repositories like [NCBI GEO](https://www.ncbi.nlm.nih.gov/geo/) or [EMBL-EBI ENA](https://www.ebi.ac.uk/ena/).
 - Leveraging tools like [FAIR Data Point](https://fairdatapoint.org) to evaluate and improve FAIR compliance.
 
-For more detailed guidance on implementing FAIR principles in microbiology, see the [FAIR section of the NFDI4Microbiota Knowledge Base](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/04-fair.html).
+For more detailed guidance on implementing FAIR principles in microbiology, see the [FAIR section of the NFDI4Microbiota Knowledge Base](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/fair.html).
 
 ---
 
@@ -78,25 +78,17 @@ Ongoing initiatives, like the National Research Data Infrastructure (NFDI) in Ge
 
 ---
 
-## Resources for FAIR Data Management
-
-### Key References
-- [FAIR Principles Overview - University of Würzburg](https://www.med.uni-wuerzburg.de/fdm/helpdesk/fair/)
-- [FAIR in Research Data Management - NFDI4Microbiota](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/04-fair.html)
-
-### Tools for FAIRification
-- [FAIR Data Point](https://fairdatapoint.org): Assess and improve FAIR compliance.
-- [FAIR Cookbook](https://fairplus.github.io/the-fair-cookbook/): Recipes for making data FAIR.
-- [FAIR Data Maturity Model](https://doi.org/10.5281/zenodo.3588148): Indicators to evaluate dataset FAIRness.
-
-For a comprehensive guide to making data FAIR, explore the [Knowledge Base on FAIR Principles](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/04-fair.html).
-
----
-
 ## References
+- [FAIR Principles Overview - University of Würzburg](https://www.med.uni-wuerzburg.de/fdm/helpdesk/fair/)
+- [FAIR in Research Data Management - NFDI4Microbiota](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/fair.html)
 - Wilkinson et al., 2016: [The FAIR Guiding Principles for Scientific Data Management and Stewardship](https://doi.org/10.1038/sdata.2016.18)
 - GO FAIR: [FAIR Principles](https://www.go-fair.org/fair-principles/)
 - Huttenhower et al., 2023: [Challenges in Microbiology FAIRification](https://doi.org/10.1038/s41564-023-01484-x)
 - ELIXIR: [RDMkit - FAIR Data Management](https://rdmkit.elixir-europe.org)
 
-For further details, visit the [Knowledge Base on FAIR Principles](https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/04-fair.html).
+## Tools for FAIRification
+- [FAIR Data Point](https://fairdatapoint.org): Assess and improve FAIR compliance.
+- [FAIR Cookbook](https://fairplus.github.io/the-fair-cookbook/): Recipes for making data FAIR.
+- [FAIR Data Maturity Model](https://doi.org/10.5281/zenodo.3588148): Indicators to evaluate dataset FAIRness.
+
+

@@ -6,11 +6,7 @@ tags: [archiving, data, storage, Würzburg University]
 sidebar: decide_sidebar
 ---
 
-# Archiving Data with Würzburg University Services
-
 Würzburg University provides a reliable **archiving server** to securely store and manage research data. This service is essential for researchers looking to ensure their data remains accessible and preserved for long-term use.
-
----
 
 ## **Key Features**
 1. **Long-Term Data Preservation**:
