@@ -95,9 +95,7 @@ Get started quickly with:
 ## 6. Learn More: Official JupyterHub Resources
 
 - 🌐 [What is JupyterHub?](https://jupyterhub.readthedocs.io/en/stable/)
-- 🚀 [JupyterHub User Guide](https://jupyterhub.readthedocs.io/en/stable/user-guide.html)
 - 📘 [Intro to Jupyter Notebooks](https://jupyter-notebook.readthedocs.io/en/stable/)
-- 📺 [Jupyter YouTube Channel](https://www.youtube.com/c/ProjectJupyter)
 
 ---
 
