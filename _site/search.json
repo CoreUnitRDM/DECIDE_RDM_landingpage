@@ -651,10 +651,19 @@
 
 {
 "title": "Using Nextcloud for Research Data Management",
-"tags": "nextclouddata managementcloud storageWürzburg University",
-"keywords": "Research Data Management, RDM, Cloud, Version control, Backup, Activity Log, Storage, Exchange",
+"tags": "nextclouddata managementcloud storagewürzburg universityrclone",
+"keywords": "Research Data Management, RDM, Cloud, Version control, Backup, Activity Log, Storage, Exchange, Rclone",
 "url": "nextcloud.html",
-"summary": "Learn about nextcloud"
+"summary": "Practical guide for using Nextcloud at Würzburg University for secure data storage, sharing, and integration with research workflows."
+}
+,
+
+{
+"title": "Using Nextcloud for Research Data Management",
+"tags": "nextclouddata managementcloud storagewürzburg universityrclone",
+"keywords": "Research Data Management, RDM, Cloud, Version control, Backup, Activity Log, Storage, Exchange, Rclone",
+"url": "nextcloud.html",
+"summary": "Practical guide for using Nextcloud for secure data storage, sharing, collaboration, and integration with research workflows."
 }
 ,
 

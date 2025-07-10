@@ -1,109 +1,168 @@
 ---
 title: "Using Nextcloud for Research Data Management"
-keywords: Research Data Management, RDM, Cloud, Version control, Backup, Activity Log, Storage, Exchange
-last_updated: June 26, 2025
-tags: [nextcloud, data management, cloud storage, Würzburg University]
-summary: Learn about nextcloud
+keywords: Research Data Management, RDM, Cloud, Version control, Backup, Activity Log, Storage, Exchange, Rclone
+last_updated: July 10, 2025
+tags: [nextcloud, data management, cloud storage, würzburg university, rclone]
+summary: Practical guide for using Nextcloud for secure data storage, sharing, collaboration, and integration with research workflows.
 sidebar: decide_sidebar
 permalink: nextcloud.html
 folder: mydoc
+---
+
+Nextcloud is a secure cloud platform for managing and sharing research data at Würzburg University. This guide provides **step-by-step instructions** to register, sync and share data, collaborate using Office tools, and connect your data to analysis servers using `rclone`.
 
 ---
 
-Nextcloud provides a robust platform for **secure cloud storage and collaboration**, tailored for researchers and students at Würzburg University. It is the go-to solution for managing and sharing research data effectively.
+## 1. Registration and Login
+
+### A. Register and Log In
+
+- Visit: [coreunitrdm.biozentrum.uni-wuerzburg.de](https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/)
+- Register for an account and wait for approval.
+- Log in using your assigned username and password.
 
 ---
 
-## **Accessing Nextcloud**
+## 2. Upload and Download Files
 
-### **1. Login to the Platform**
-- Open your browser and navigate to:
-  [https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/](https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/)
-- Use your **university credentials** to log in.
+### A. Upload via Browser
 
----
-
-## **Key Features**
-1. **Data Storage and Backup**:
-   - Store and organize your research data in one centralized location.
-   - Automatic backups ensure data security and recovery.
-
-2. **File Sharing**:
-   - Share files with colleagues securely using **public links** or **restricted access**.
-   - Set expiration dates or passwords for shared links.
-
-3. **Collaboration Tools**:
-   - Use built-in tools like **Nextcloud Office** for real-time collaboration on documents.
-   - Leave comments on shared files for effective teamwork.
-
-4. **Synchronization**:
-   - Sync your data across devices with the **Nextcloud client**.
-   - Available for Windows, macOS, Linux, iOS, and Android.
-
----
-
-## **Installing the Nextcloud Client**
-
-### **1. Download the Client**
-- Visit the official Nextcloud website: [Download Nextcloud](https://nextcloud.com/install/#install-clients).
-- Choose the client version for your operating system.
-
-### **2. Configure the Client**
-1. Install the downloaded client.
-2. Open the client and enter the server address:
-https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/
-3. Log in using your Würzburg University credentials.
-4. Select the folders you want to sync and set synchronization preferences.
-
----
-
-## **Uploading and Sharing Files**
-
-### **1. Uploading Files**
 1. Log in to the web interface.
-2. Click on the **“+”** icon in the top bar and select **Upload File** or **Upload Folder**.
-3. Drag and drop files directly into the interface for quick uploads.
+2. Click the **“+”** icon → **Upload File** or **Upload Folder**.
+3. Or drag-and-drop files directly into your folder structure.
 
-### **2. Sharing Files**
-- **Via Public Links**:
-1. Hover over the file or folder you want to share.
-2. Click the **Share** icon (chain link).
-3. Generate a public link and optionally add:
-  - **Expiration date**
-  - **Password protection**
-- **With Specific Users**:
-1. Start typing a user’s name or email in the **Share** box.
-2. Set permissions (e.g., read-only, edit, etc.).
+### B. Download Files
+
+1. Right-click on any file or folder.
+2. Select **Download** to retrieve a ZIP archive or the individual file.
 
 ---
 
-## **Collaboration Features**
-- **Nextcloud Office**: Collaborate on documents in real-time with colleagues.
-- **Activity Log**: Keep track of changes to files and folders.
-- **Versioning**: Restore previous versions of a file in case of accidental edits.
+## 3. Synchronize with the Desktop or Mobile Client
+
+### A. Install the Nextcloud Client
+
+- Download from the [Nextcloud Client Page](https://nextcloud.com/install/#install-clients)  
+  *(Windows, macOS, Linux, iOS, and Android supported)*
+
+### B. Set Up Synchronization
+
+1. Launch the client after installation.
+2. Server address: `https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/`
+3. Enter your username and password.
+4. Choose folders to sync locally.
+
+> 💡 **Tip**: Use **selective sync** to save space when handling large datasets.
 
 ---
 
-## **Best Practices**
-1. **Organize Files**: Use folders and consistent naming conventions.
-2. **Set Permissions Carefully**: Only grant necessary access to collaborators.
-3. **Backup Regularly**: Use both cloud storage and local backups for critical data.
+## 4. Share Data Securely
+
+### A. Public Link Sharing
+
+1. Click the **Share** icon beside a file or folder.
+2. Create a public link.
+3. Configure access:
+   - Password protection
+   - Expiration date
+   - Download or upload permissions
+
+### B. Share with Specific Users
+
+1. Enter the user’s name or email.
+2. Set specific access levels: view, edit, upload, or delete.
+
+🔗 [Official File Sharing Guide](https://docs.nextcloud.com/server/latest/user_manual/en/files/sharing.html)
 
 ---
 
-## **Getting Help**
-For further assistance, contact:
+## 5. Customize File Access Rights
+
+- Click the **Share** icon → then the **three-dot menu (⋮)** next to a user or link.
+- Adjust:
+  - Edit or view-only access
+  - Download visibility
+  - Resharing rights
+  - Expiration date
+
+🔗 [Advanced Access Rights (ACLs)](https://nextcloud.com/blog/access-control-lists/)
+
+---
+
+## 6. Use OnlyOffice in Nextcloud
+
+You can edit Microsoft Office files directly in the browser:
+
+1. Click on any `.docx`, `.xlsx`, or `.pptx` file.
+2. It opens in **OnlyOffice**.
+3. Collaborate live with colleagues.
+4. Add comments and track changes.
+
+---
+
+## 7. Restore Deleted Files or Previous Versions
+
+### A. Restore Deleted Files
+
+- Open the **Deleted Files** tab in the left sidebar.
+- Click **Restore** to recover a file or folder.
+
+### B. Restore Previous Versions
+
+- Hover over a file → click the **three-dot menu (⋮)** → choose **Versions**.
+- Select and restore the desired version.
+
+---
+
+## 8. Connect to Analysis Servers Using `rclone`
+
+You can mount or transfer data from Nextcloud directly to an HPC or remote server using `rclone` + WebDAV.
+
+🔗 [rclone WebDAV Documentation](https://rclone.org/webdav/)
+
+### A. Install `rclone`
+
+```bash
+sudo apt install rclone
+```
+
+### B. Configure a New Remote
+
+```bash
+rclone config
+```
+
+- Choose `n` for new remote
+- Name it: `nextcloud`
+- Type: `webdav`
+- URL: `https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/remote.php/dav/files/YOURUSERNAME/`
+- WebDAV type: `Nextcloud`
+- Enter your username and an **App Password** (generate it in *Settings → Security → App Passwords*)
+
+### C. Use `rclone` to Mount or Copy Files
+
+**Mount your Nextcloud folder:**
+
+```bash
+rclone mount nextcloud:/ ~/mnt/nextcloud --vfs-cache-mode writes
+```
+
+**Copy files to/from Nextcloud:**
+
+```bash
+rclone copy /local/folder nextcloud:/your-folder --progress
+```
+
+> 🔐 App passwords are safer than your login credentials and can be revoked at any time.
+
+---
+
+## 9. Need Help?
 
 **Johannes Balkenhol**  
-Lehrstuhl für Bioinformatik  
-Am Hubland  
-97074 Würzburg  
-
-- **Phone**: +49 931 31-84550  
-- **Fax**: +49 931 31-84552  
-- **Email**: [johannes.balkenhol@uni-wuerzburg.de](mailto:johannes.balkenhol@uni-wuerzburg.de)  
-- **Website**: [Bioinformatics Department Würzburg](https://www.biozentrum.uni-wuerzburg.de/bioinfo/)  
-
+Chair of Bioinformatics, University of Würzburg  
+✉️ [johannes.balkenhol@uni-wuerzburg.de](mailto:johannes.balkenhol@uni-wuerzburg.de)  
+🌐 [https://www.biozentrum.uni-wuerzburg.de/bioinfo/](https://www.biozentrum.uni-wuerzburg.de/bioinfo/)
 
 ---
 

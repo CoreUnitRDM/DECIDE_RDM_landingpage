@@ -4,8 +4,8 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Learn about nextcloud">
-<meta name="keywords" content="nextclouddata managementcloud storageWürzburg University,  Research Data Management, RDM, Cloud, Version control, Backup, Activity Log, Storage, Exchange">
+<meta name="description" content="Practical guide for using Nextcloud for secure data storage, sharing, collaboration, and integration with research workflows.">
+<meta name="keywords" content="nextclouddata managementcloud storagewürzburg universityrclone,  Research Data Management, RDM, Cloud, Version control, Backup, Activity Log, Storage, Exchange, Rclone">
 <title>Using Nextcloud for Research Data Management | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -387,7 +387,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Learn about nextcloud</div>
+    <div class="summary">Practical guide for using Nextcloud for secure data storage, sharing, collaboration, and integration with research workflows.</div>
    
 
     
@@ -424,134 +424,190 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <p>Nextcloud provides a robust platform for <strong>secure cloud storage and collaboration</strong>, tailored for researchers and students at Würzburg University. It is the go-to solution for managing and sharing research data effectively.</p>
+   <p>Nextcloud is a secure cloud platform for managing and sharing research data at Würzburg University. This guide provides <strong>step-by-step instructions</strong> to register, sync and share data, collaborate using Office tools, and connect your data to analysis servers using <code class="language-plaintext highlighter-rouge">rclone</code>.</p>
 
 <hr />
 
-<h2 id="accessing-nextcloud"><strong>Accessing Nextcloud</strong></h2>
+<h2 id="1-registration-and-login">1. Registration and Login</h2>
 
-<h3 id="1-login-to-the-platform"><strong>1. Login to the Platform</strong></h3>
+<h3 id="a-register-and-log-in">A. Register and Log In</h3>
+
 <ul>
-  <li>Open your browser and navigate to:
-<a href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/">https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/</a></li>
-  <li>Use your <strong>university credentials</strong> to log in.</li>
+  <li>Visit: <a href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/">coreunitrdm.biozentrum.uni-wuerzburg.de</a></li>
+  <li>Register for an account and wait for approval.</li>
+  <li>Log in using your assigned username and password.</li>
 </ul>
 
 <hr />
 
-<h2 id="key-features"><strong>Key Features</strong></h2>
-<ol>
-  <li><strong>Data Storage and Backup</strong>:
-    <ul>
-      <li>Store and organize your research data in one centralized location.</li>
-      <li>Automatic backups ensure data security and recovery.</li>
-    </ul>
-  </li>
-  <li><strong>File Sharing</strong>:
-    <ul>
-      <li>Share files with colleagues securely using <strong>public links</strong> or <strong>restricted access</strong>.</li>
-      <li>Set expiration dates or passwords for shared links.</li>
-    </ul>
-  </li>
-  <li><strong>Collaboration Tools</strong>:
-    <ul>
-      <li>Use built-in tools like <strong>Nextcloud Office</strong> for real-time collaboration on documents.</li>
-      <li>Leave comments on shared files for effective teamwork.</li>
-    </ul>
-  </li>
-  <li><strong>Synchronization</strong>:
-    <ul>
-      <li>Sync your data across devices with the <strong>Nextcloud client</strong>.</li>
-      <li>Available for Windows, macOS, Linux, iOS, and Android.</li>
-    </ul>
-  </li>
-</ol>
+<h2 id="2-upload-and-download-files">2. Upload and Download Files</h2>
 
-<hr />
+<h3 id="a-upload-via-browser">A. Upload via Browser</h3>
 
-<h2 id="installing-the-nextcloud-client"><strong>Installing the Nextcloud Client</strong></h2>
-
-<h3 id="1-download-the-client"><strong>1. Download the Client</strong></h3>
-<ul>
-  <li>Visit the official Nextcloud website: <a href="https://nextcloud.com/install/#install-clients">Download Nextcloud</a>.</li>
-  <li>Choose the client version for your operating system.</li>
-</ul>
-
-<h3 id="2-configure-the-client"><strong>2. Configure the Client</strong></h3>
-<ol>
-  <li>Install the downloaded client.</li>
-  <li>Open the client and enter the server address:
-https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/</li>
-  <li>Log in using your Würzburg University credentials.</li>
-  <li>Select the folders you want to sync and set synchronization preferences.</li>
-</ol>
-
-<hr />
-
-<h2 id="uploading-and-sharing-files"><strong>Uploading and Sharing Files</strong></h2>
-
-<h3 id="1-uploading-files"><strong>1. Uploading Files</strong></h3>
 <ol>
   <li>Log in to the web interface.</li>
-  <li>Click on the <strong>“+”</strong> icon in the top bar and select <strong>Upload File</strong> or <strong>Upload Folder</strong>.</li>
-  <li>Drag and drop files directly into the interface for quick uploads.</li>
+  <li>Click the <strong>“+”</strong> icon → <strong>Upload File</strong> or <strong>Upload Folder</strong>.</li>
+  <li>Or drag-and-drop files directly into your folder structure.</li>
 </ol>
 
-<h3 id="2-sharing-files"><strong>2. Sharing Files</strong></h3>
+<h3 id="b-download-files">B. Download Files</h3>
+
+<ol>
+  <li>Right-click on any file or folder.</li>
+  <li>Select <strong>Download</strong> to retrieve a ZIP archive or the individual file.</li>
+</ol>
+
+<hr />
+
+<h2 id="3-synchronize-with-the-desktop-or-mobile-client">3. Synchronize with the Desktop or Mobile Client</h2>
+
+<h3 id="a-install-the-nextcloud-client">A. Install the Nextcloud Client</h3>
+
 <ul>
-  <li><strong>Via Public Links</strong>:
-    <ol>
-      <li>Hover over the file or folder you want to share.</li>
-      <li>Click the <strong>Share</strong> icon (chain link).</li>
-      <li>Generate a public link and optionally add:</li>
-    </ol>
+  <li>Download from the <a href="https://nextcloud.com/install/#install-clients">Nextcloud Client Page</a><br />
+<em>(Windows, macOS, Linux, iOS, and Android supported)</em></li>
+</ul>
+
+<h3 id="b-set-up-synchronization">B. Set Up Synchronization</h3>
+
+<ol>
+  <li>Launch the client after installation.</li>
+  <li>Server address: <code class="language-plaintext highlighter-rouge">https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/</code></li>
+  <li>Enter your username and password.</li>
+  <li>Choose folders to sync locally.</li>
+</ol>
+
+<blockquote>
+  <p>💡 <strong>Tip</strong>: Use <strong>selective sync</strong> to save space when handling large datasets.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="4-share-data-securely">4. Share Data Securely</h2>
+
+<h3 id="a-public-link-sharing">A. Public Link Sharing</h3>
+
+<ol>
+  <li>Click the <strong>Share</strong> icon beside a file or folder.</li>
+  <li>Create a public link.</li>
+  <li>Configure access:
     <ul>
-      <li><strong>Expiration date</strong></li>
-      <li><strong>Password protection</strong></li>
+      <li>Password protection</li>
+      <li>Expiration date</li>
+      <li>Download or upload permissions</li>
     </ul>
   </li>
-  <li><strong>With Specific Users</strong>:
-    <ol>
-      <li>Start typing a user’s name or email in the <strong>Share</strong> box.</li>
-      <li>Set permissions (e.g., read-only, edit, etc.).</li>
-    </ol>
+</ol>
+
+<h3 id="b-share-with-specific-users">B. Share with Specific Users</h3>
+
+<ol>
+  <li>Enter the user’s name or email.</li>
+  <li>Set specific access levels: view, edit, upload, or delete.</li>
+</ol>
+
+<p>🔗 <a href="https://docs.nextcloud.com/server/latest/user_manual/en/files/sharing.html">Official File Sharing Guide</a></p>
+
+<hr />
+
+<h2 id="5-customize-file-access-rights">5. Customize File Access Rights</h2>
+
+<ul>
+  <li>Click the <strong>Share</strong> icon → then the <strong>three-dot menu (⋮)</strong> next to a user or link.</li>
+  <li>Adjust:
+    <ul>
+      <li>Edit or view-only access</li>
+      <li>Download visibility</li>
+      <li>Resharing rights</li>
+      <li>Expiration date</li>
+    </ul>
   </li>
 </ul>
 
-<hr />
-
-<h2 id="collaboration-features"><strong>Collaboration Features</strong></h2>
-<ul>
-  <li><strong>Nextcloud Office</strong>: Collaborate on documents in real-time with colleagues.</li>
-  <li><strong>Activity Log</strong>: Keep track of changes to files and folders.</li>
-  <li><strong>Versioning</strong>: Restore previous versions of a file in case of accidental edits.</li>
-</ul>
+<p>🔗 <a href="https://nextcloud.com/blog/access-control-lists/">Advanced Access Rights (ACLs)</a></p>
 
 <hr />
 
-<h2 id="best-practices"><strong>Best Practices</strong></h2>
+<h2 id="6-use-onlyoffice-in-nextcloud">6. Use OnlyOffice in Nextcloud</h2>
+
+<p>You can edit Microsoft Office files directly in the browser:</p>
+
 <ol>
-  <li><strong>Organize Files</strong>: Use folders and consistent naming conventions.</li>
-  <li><strong>Set Permissions Carefully</strong>: Only grant necessary access to collaborators.</li>
-  <li><strong>Backup Regularly</strong>: Use both cloud storage and local backups for critical data.</li>
+  <li>Click on any <code class="language-plaintext highlighter-rouge">.docx</code>, <code class="language-plaintext highlighter-rouge">.xlsx</code>, or <code class="language-plaintext highlighter-rouge">.pptx</code> file.</li>
+  <li>It opens in <strong>OnlyOffice</strong>.</li>
+  <li>Collaborate live with colleagues.</li>
+  <li>Add comments and track changes.</li>
 </ol>
 
 <hr />
 
-<h2 id="getting-help"><strong>Getting Help</strong></h2>
-<p>For further assistance, contact:</p>
+<h2 id="7-restore-deleted-files-or-previous-versions">7. Restore Deleted Files or Previous Versions</h2>
 
-<p><strong>Johannes Balkenhol</strong><br />
-Lehrstuhl für Bioinformatik<br />
-Am Hubland<br />
-97074 Würzburg</p>
+<h3 id="a-restore-deleted-files">A. Restore Deleted Files</h3>
 
 <ul>
-  <li><strong>Phone</strong>: +49 931 31-84550</li>
-  <li><strong>Fax</strong>: +49 931 31-84552</li>
-  <li><strong>Email</strong>: <a href="mailto:johannes.balkenhol@uni-wuerzburg.de">johannes.balkenhol@uni-wuerzburg.de</a></li>
-  <li><strong>Website</strong>: <a href="https://www.biozentrum.uni-wuerzburg.de/bioinfo/">Bioinformatics Department Würzburg</a></li>
+  <li>Open the <strong>Deleted Files</strong> tab in the left sidebar.</li>
+  <li>Click <strong>Restore</strong> to recover a file or folder.</li>
 </ul>
+
+<h3 id="b-restore-previous-versions">B. Restore Previous Versions</h3>
+
+<ul>
+  <li>Hover over a file → click the <strong>three-dot menu (⋮)</strong> → choose <strong>Versions</strong>.</li>
+  <li>Select and restore the desired version.</li>
+</ul>
+
+<hr />
+
+<h2 id="8-connect-to-analysis-servers-using-rclone">8. Connect to Analysis Servers Using <code class="language-plaintext highlighter-rouge">rclone</code></h2>
+
+<p>You can mount or transfer data from Nextcloud directly to an HPC or remote server using <code class="language-plaintext highlighter-rouge">rclone</code> + WebDAV.</p>
+
+<p>🔗 <a href="https://rclone.org/webdav/">rclone WebDAV Documentation</a></p>
+
+<h3 id="a-install-rclone">A. Install <code class="language-plaintext highlighter-rouge">rclone</code></h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>rclone
+</code></pre></div></div>
+
+<h3 id="b-configure-a-new-remote">B. Configure a New Remote</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rclone config
+</code></pre></div></div>
+
+<ul>
+  <li>Choose <code class="language-plaintext highlighter-rouge">n</code> for new remote</li>
+  <li>Name it: <code class="language-plaintext highlighter-rouge">nextcloud</code></li>
+  <li>Type: <code class="language-plaintext highlighter-rouge">webdav</code></li>
+  <li>URL: <code class="language-plaintext highlighter-rouge">https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/remote.php/dav/files/YOURUSERNAME/</code></li>
+  <li>WebDAV type: <code class="language-plaintext highlighter-rouge">Nextcloud</code></li>
+  <li>Enter your username and an <strong>App Password</strong> (generate it in <em>Settings → Security → App Passwords</em>)</li>
+</ul>
+
+<h3 id="c-use-rclone-to-mount-or-copy-files">C. Use <code class="language-plaintext highlighter-rouge">rclone</code> to Mount or Copy Files</h3>
+
+<p><strong>Mount your Nextcloud folder:</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rclone mount nextcloud:/ ~/mnt/nextcloud <span class="nt">--vfs-cache-mode</span> writes
+</code></pre></div></div>
+
+<p><strong>Copy files to/from Nextcloud:</strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rclone copy /local/folder nextcloud:/your-folder <span class="nt">--progress</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>🔐 App passwords are safer than your login credentials and can be revoked at any time.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="9-need-help">9. Need Help?</h2>
+
+<p><strong>Johannes Balkenhol</strong><br />
+Chair of Bioinformatics, University of Würzburg<br />
+✉️ <a href="mailto:johannes.balkenhol@uni-wuerzburg.de">johannes.balkenhol@uni-wuerzburg.de</a><br />
+🌐 <a href="https://www.biozentrum.uni-wuerzburg.de/bioinfo/">https://www.biozentrum.uni-wuerzburg.de/bioinfo/</a></p>
 
 <hr />
 
@@ -560,6 +616,8 @@ Am Hubland<br />
     <div class="tags">
         
         <b>Tags: </b>
+        
+        
         
         
         
@@ -589,7 +647,7 @@ Am Hubland<br />
     <div class="col-lg-12 footer">
       &copy;2025 DECIDE-Konsortium (SFB 1583). All rights reserved. <br />
       
-        <span>Page last updated:</span> June 26, 2025<br/>
+        <span>Page last updated:</span> July 10, 2025<br/>
       
       Site last generated: Jul 10, 2025 <br />
       <p>
