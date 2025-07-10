@@ -104,6 +104,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/labfolder.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/metadata_management.html</loc>
   </url>
   

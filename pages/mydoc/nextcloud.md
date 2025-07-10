@@ -10,8 +10,6 @@ folder: mydoc
 
 ---
 
-# Using Nextcloud for Research Data Management
-
 Nextcloud provides a robust platform for **secure cloud storage and collaboration**, tailored for researchers and students at Würzburg University. It is the go-to solution for managing and sharing research data effectively.
 
 ---
