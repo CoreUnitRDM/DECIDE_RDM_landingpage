@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content="jupyterhubdata analysisvpnwürzburg,  ">
+<meta name="keywords" content="jupyterhubdata analysisvpnwürzburghpc,  ">
 <title>Getting Started with JupyterHub | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -424,113 +424,119 @@ $('#toc').on('click', 'a', function() {
 
    <h1 id="getting-started-with-jupyterhub-at-würzburg-university">Getting Started with JupyterHub at Würzburg University</h1>
 
-<p>JupyterHub provides a collaborative and user-friendly environment for <strong>data analysis</strong> and <strong>computational research</strong>, specifically tailored for the Bioinformatics team at Würzburg University.</p>
+<p>JupyterHub provides a collaborative and user-friendly environment for <strong>data analysis</strong>, <strong>computational workflows</strong>, and <strong>notebook-based research</strong>, specifically tailored for the Bioinformatics team at Würzburg University. It runs directly on the department’s HPC environment and can also serve as a gateway to other high-performance resources.</p>
 
 <hr />
 
-<h2 id="1-prerequisite-connecting-to-the-vpn"><strong>1. Prerequisite: Connecting to the VPN</strong></h2>
+<h2 id="1-prerequisite-connect-to-the-vpn">1. Prerequisite: Connect to the VPN</h2>
 
-<p>Before accessing JupyterHub, you must connect to the <strong>University of Würzburg VPN</strong> to ensure a secure and authorized connection.</p>
+<p>Before accessing JupyterHub, you must first connect to the <strong>University of Würzburg VPN</strong>.</p>
 
-<h3 id="steps-to-connect-to-the-vpn"><strong>Steps to Connect to the VPN</strong>:</h3>
+<h3 id="how-to-connect">How to Connect:</h3>
+
 <ol>
-  <li>Visit the official <a href="https://www.rz.uni-wuerzburg.de/dienste/it-sicherheit/vpn/">VPN Guide for Würzburg University</a>.</li>
-  <li>Follow the instructions for your operating system:
+  <li>Visit the <a href="https://www.rz.uni-wuerzburg.de/dienste/it-sicherheit/vpn/">VPN Guide – Würzburg University</a></li>
+  <li>Follow instructions for your system:
     <ul>
-      <li><strong>Windows</strong></li>
-      <li><strong>macOS</strong></li>
-      <li><strong>Linux</strong></li>
-      <li><strong>Mobile devices</strong></li>
+      <li>Windows / macOS / Linux / iOS / Android</li>
     </ul>
   </li>
-  <li>Use your <strong>University of Würzburg account credentials</strong> to log in.</li>
+  <li>Log in using your university credentials.</li>
 </ol>
 
 <hr />
 
-<h2 id="2-request-access-to-jupyterhub"><strong>2. Request Access to JupyterHub</strong></h2>
+<h2 id="2-request-access-to-jupyterhub-and-hpc">2. Request Access to JupyterHub and HPC</h2>
 
-<p>Access to JupyterHub is managed by the <strong>Bioinformatics Department at Würzburg University</strong>. To request access:</p>
+<p>JupyterHub runs on the Bioinformatics HPC system. Before using it or accessing the University’s central HPC (“Julia 2”), please contact:</p>
+
 <ul>
-  <li><strong>Contact</strong> one of the following administrators:
-    <ul>
-      <li><strong>Thomas Dandekar</strong></li>
-      <li><strong>Johannes Balkenhol</strong></li>
-      <li><strong>Stefan Obermeier</strong></li>
-    </ul>
-  </li>
+  <li><strong>Prof. Thomas Dandekar</strong> – <a href="mailto:dandekar@biozentrum.uni-wuerzburg.de">dandekar@biozentrum.uni-wuerzburg.de</a></li>
+  <li><strong>Johannes Balkenhol</strong> - <a href="mailto:johannes.balkenhol@uni-wuerzburg.de">johannes.balkenhol@uni-wuerzburg.de</a></li>
+  <li><strong>Stefan Obermeier</strong> – <a href="mailto:stefan.obermeier@biozentrum.uni-wuerzburg.de">stefan.obermeier@biozentrum.uni-wuerzburg.de</a></li>
 </ul>
 
-<p>Visit the <a href="https://www.biozentrum.uni-wuerzburg.de/bioinfo/">Bioinformatics Department website</a> for more details.</p>
+<p>For using the university-wide HPC “Julia 2”, visit:<br />
+🔗 <a href="https://www.rz.uni-wuerzburg.de/dienste/rzserver/high-performance-computing/">HPC at Würzburg University</a></p>
 
 <hr />
 
-<h2 id="3-logging-in-to-jupyterhub"><strong>3. Logging in to JupyterHub</strong></h2>
+<h2 id="3-log-in-to-jupyterhub">3. Log In to JupyterHub</h2>
 
-<p>Once VPN access and JupyterHub permissions are granted:</p>
+<p>Once VPN is connected and access is granted:</p>
+
 <ol>
-  <li>Open your browser and go to the JupyterHub URL:
-https://jupyterhub.uni-wuerzburg.de/</li>
+  <li>Open your browser and go to:<br />
+🔗 <a href="https://jupyterhub.uni-wuerzburg.de/">https://jupyterhub.uni-wuerzburg.de/</a></li>
+  <li>Alternatively, access via <strong>Nextcloud</strong>:
+    <ul>
+      <li>Look for the <strong>JupyterHub icon</strong> listed as an external service.</li>
+    </ul>
+  </li>
+  <li>Or ask the Bioinformatics administrators for the internal IP if needed.</li>
   <li>Log in using your <strong>University of Würzburg credentials</strong>.</li>
 </ol>
 
 <hr />
 
-<h2 id="4-available-tools-and-resources"><strong>4. Available Tools and Resources</strong></h2>
+<h2 id="4-tools-notebooks-and-resources">4. Tools, Notebooks, and Resources</h2>
 
-<h3 id="helpful-scripts-and-widgets"><strong>Helpful Scripts and Widgets</strong></h3>
-<p>A variety of scripts and widgets are available to simplify your workflows:</p>
+<h3 id="a-widgets--helper-scripts">A. Widgets &amp; Helper Scripts</h3>
+
+<p>Helpful scripts for:</p>
+
 <ul>
-  <li><strong>Connect to Cloud Data</strong>: Streamline access to cloud-stored datasets.</li>
-  <li><strong>Search Metadata</strong>: Quickly find relevant metadata for your research.</li>
+  <li>Mounting cloud data</li>
+  <li>Extracting metadata</li>
+  <li>Visualizing datasets</li>
 </ul>
 
-<p>Find these tools and more on the official GitHub repository:
-<a href="https://github.com/CoreUnitRDM">CoreUnitRDM GitHub</a>.</p>
+<p>🔗 <a href="https://github.com/CoreUnitRDM">GitHub – CoreUnitRDM Tools</a></p>
 
-<h3 id="data-analysis-notebooks"><strong>Data Analysis Notebooks</strong></h3>
-<p>Access pre-built Jupyter notebooks tailored for:</p>
+<h3 id="b-pre-built-notebooks">B. Pre-built Notebooks</h3>
+
+<p>Get started quickly with:</p>
+
 <ul>
-  <li><strong>Data analysis workflows</strong></li>
-  <li><strong>Custom computations</strong></li>
+  <li>Data exploration workflows</li>
+  <li>Statistical analysis pipelines</li>
+  <li>Visualization templates</li>
 </ul>
 
-<p><strong>Note</strong>: A link to the repository for analysis notebooks will be provided by the administrator.</p>
+<p>🗂️ Ask an administrator for the current shared notebook collection.</p>
 
 <hr />
 
-<h2 id="5-best-practices-for-using-jupyterhub"><strong>5. Best Practices for Using JupyterHub</strong></h2>
+<h2 id="5-best-practices-for-jupyterhub-users">5. Best Practices for JupyterHub Users</h2>
 
-<ol>
-  <li><strong>Organize Your Work</strong>:
-    <ul>
-      <li>Create folders for different projects or analyses.</li>
-      <li>Keep your notebooks well-documented.</li>
-    </ul>
+<ul>
+  <li>
+    <p><strong>Organize Your Workspace</strong><br />
+Use folders to keep each project clean and separated.</p>
   </li>
-  <li><strong>Backup Regularly</strong>:
-    <ul>
-      <li>Save your work locally or to the cloud to prevent data loss.</li>
-    </ul>
+  <li>
+    <p><strong>Document Code and Results</strong><br />
+Add Markdown cells and comments throughout your notebook.</p>
   </li>
-  <li><strong>Use Shared Resources Wisely</strong>:
-    <ul>
-      <li>Be mindful of computational resource usage when running intensive tasks.</li>
-    </ul>
+  <li>
+    <p><strong>Backup Frequently</strong><br />
+Download notebooks or sync to your Nextcloud folder.</p>
   </li>
-</ol>
+  <li>
+    <p><strong>Use Resources Considerately</strong><br />
+Avoid blocking shared memory or long-running processes unnecessarily.</p>
+  </li>
+</ul>
 
 <hr />
 
-<h2 id="6-getting-help"><strong>6. Getting Help</strong></h2>
+<h2 id="6-learn-more-official-jupyterhub-resources">6. Learn More: Official JupyterHub Resources</h2>
 
-<p>If you encounter issues or need assistance:</p>
 <ul>
-  <li>Visit the <a href="https://www.biozentrum.uni-wuerzburg.de/bioinfo/">Bioinformatics Department Support Page</a>.</li>
-  <li>Reach out to the following administrators:</li>
-  <li><strong>Thomas Dandekar</strong></li>
-  <li><strong>Johannes Balkenhol</strong> (<a href="mailto:johannes.balkenhol@uni-wuerzburg.de">johannes.balkenhol@uni-wuerzburg.de</a>)</li>
-  <li><strong>Stefan Obermeier</strong></li>
+  <li>🌐 <a href="https://jupyterhub.readthedocs.io/en/stable/">What is JupyterHub?</a></li>
+  <li>🚀 <a href="https://jupyterhub.readthedocs.io/en/stable/user-guide.html">JupyterHub User Guide</a></li>
+  <li>📘 <a href="https://jupyter-notebook.readthedocs.io/en/stable/">Intro to Jupyter Notebooks</a></li>
+  <li>📺 <a href="https://www.youtube.com/c/ProjectJupyter">Jupyter YouTube Channel</a></li>
 </ul>
 
 <hr />
@@ -540,6 +546,8 @@ https://jupyterhub.uni-wuerzburg.de/</li>
     <div class="tags">
         
         <b>Tags: </b>
+        
+        
         
         
         

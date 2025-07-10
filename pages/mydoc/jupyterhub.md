@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with JupyterHub"
 categories: [tutorials, jupyterhub]
-tags: [jupyterhub, data analysis, vpn, würzburg]
+tags: [jupyterhub, data analysis, vpn, würzburg, hpc]
 sidebar: decide_sidebar
 permalink: jupyterhub.html
 folder: mydoc
@@ -9,87 +9,95 @@ folder: mydoc
 
 # Getting Started with JupyterHub at Würzburg University
 
-JupyterHub provides a collaborative and user-friendly environment for **data analysis** and **computational research**, specifically tailored for the Bioinformatics team at Würzburg University.
+JupyterHub provides a collaborative and user-friendly environment for **data analysis**, **computational workflows**, and **notebook-based research**, specifically tailored for the Bioinformatics team at Würzburg University. It runs directly on the department's HPC environment and can also serve as a gateway to other high-performance resources.
 
 ---
 
-## **1. Prerequisite: Connecting to the VPN**
+## 1. Prerequisite: Connect to the VPN
 
-Before accessing JupyterHub, you must connect to the **University of Würzburg VPN** to ensure a secure and authorized connection.
+Before accessing JupyterHub, you must first connect to the **University of Würzburg VPN**.
 
-### **Steps to Connect to the VPN**:
-1. Visit the official [VPN Guide for Würzburg University](https://www.rz.uni-wuerzburg.de/dienste/it-sicherheit/vpn/).
-2. Follow the instructions for your operating system:
-   - **Windows**
-   - **macOS**
-   - **Linux**
-   - **Mobile devices**
-3. Use your **University of Würzburg account credentials** to log in.
+### How to Connect:
+
+1. Visit the [VPN Guide – Würzburg University](https://www.rz.uni-wuerzburg.de/dienste/it-sicherheit/vpn/)
+2. Follow instructions for your system:
+   - Windows / macOS / Linux / iOS / Android
+3. Log in using your university credentials.
 
 ---
 
-## **2. Request Access to JupyterHub**
+## 2. Request Access to JupyterHub and HPC
 
-Access to JupyterHub is managed by the **Bioinformatics Department at Würzburg University**. To request access:
-- **Contact** one of the following administrators:
-  - **Thomas Dandekar**
-  - **Johannes Balkenhol**
-  - **Stefan Obermeier**
+JupyterHub runs on the Bioinformatics HPC system. Before using it or accessing the University’s central HPC ("Julia 2"), please contact:
 
-Visit the [Bioinformatics Department website](https://www.biozentrum.uni-wuerzburg.de/bioinfo/) for more details.
+- **Prof. Thomas Dandekar** – [dandekar@biozentrum.uni-wuerzburg.de](mailto:dandekar@biozentrum.uni-wuerzburg.de)
+- **Johannes Balkenhol** - [johannes.balkenhol@uni-wuerzburg.de](mailto:johannes.balkenhol@uni-wuerzburg.de)
+- **Stefan Obermeier** – [stefan.obermeier@biozentrum.uni-wuerzburg.de](mailto:stefan.obermeier@biozentrum.uni-wuerzburg.de)
 
----
-
-## **3. Logging in to JupyterHub**
-
-Once VPN access and JupyterHub permissions are granted:
-1. Open your browser and go to the JupyterHub URL:
-https://jupyterhub.uni-wuerzburg.de/
-2. Log in using your **University of Würzburg credentials**.
+For using the university-wide HPC "Julia 2", visit:  
+🔗 [HPC at Würzburg University](https://www.rz.uni-wuerzburg.de/dienste/rzserver/high-performance-computing/)
 
 ---
 
-## **4. Available Tools and Resources**
+## 3. Log In to JupyterHub
 
-### **Helpful Scripts and Widgets**
-A variety of scripts and widgets are available to simplify your workflows:
-- **Connect to Cloud Data**: Streamline access to cloud-stored datasets.
-- **Search Metadata**: Quickly find relevant metadata for your research.
+Once VPN is connected and access is granted:
 
-Find these tools and more on the official GitHub repository:
-[CoreUnitRDM GitHub](https://github.com/CoreUnitRDM).
-
-### **Data Analysis Notebooks**
-Access pre-built Jupyter notebooks tailored for:
-- **Data analysis workflows**
-- **Custom computations**
-
-**Note**: A link to the repository for analysis notebooks will be provided by the administrator.
+1. Open your browser and go to:  
+   🔗 [https://jupyterhub.uni-wuerzburg.de/](https://jupyterhub.uni-wuerzburg.de/)
+2. Alternatively, access via **Nextcloud**:  
+   - Look for the **JupyterHub icon** listed as an external service.
+3. Or ask the Bioinformatics administrators for the internal IP if needed.
+4. Log in using your **University of Würzburg credentials**.
 
 ---
 
-## **5. Best Practices for Using JupyterHub**
+## 4. Tools, Notebooks, and Resources
 
-1. **Organize Your Work**:
-- Create folders for different projects or analyses.
-- Keep your notebooks well-documented.
+### A. Widgets & Helper Scripts
 
-2. **Backup Regularly**:
-- Save your work locally or to the cloud to prevent data loss.
+Helpful scripts for:
 
-3. **Use Shared Resources Wisely**:
-- Be mindful of computational resource usage when running intensive tasks.
+- Mounting cloud data
+- Extracting metadata
+- Visualizing datasets
+
+🔗 [GitHub – CoreUnitRDM Tools](https://github.com/CoreUnitRDM)
+
+### B. Pre-built Notebooks
+
+Get started quickly with:
+
+- Data exploration workflows
+- Statistical analysis pipelines
+- Visualization templates
+
+🗂️ Ask an administrator for the current shared notebook collection.
 
 ---
 
-## **6. Getting Help**
+## 5. Best Practices for JupyterHub Users
 
-If you encounter issues or need assistance:
-- Visit the [Bioinformatics Department Support Page](https://www.biozentrum.uni-wuerzburg.de/bioinfo/).
-- Reach out to the following administrators:
-- **Thomas Dandekar**
-- **Johannes Balkenhol** ([johannes.balkenhol@uni-wuerzburg.de](mailto:johannes.balkenhol@uni-wuerzburg.de))
-- **Stefan Obermeier**
+- **Organize Your Workspace**  
+  Use folders to keep each project clean and separated.
+
+- **Document Code and Results**  
+  Add Markdown cells and comments throughout your notebook.
+
+- **Backup Frequently**  
+  Download notebooks or sync to your Nextcloud folder.
+
+- **Use Resources Considerately**  
+  Avoid blocking shared memory or long-running processes unnecessarily.
+
+---
+
+## 6. Learn More: Official JupyterHub Resources
+
+- 🌐 [What is JupyterHub?](https://jupyterhub.readthedocs.io/en/stable/)
+- 🚀 [JupyterHub User Guide](https://jupyterhub.readthedocs.io/en/stable/user-guide.html)
+- 📘 [Intro to Jupyter Notebooks](https://jupyter-notebook.readthedocs.io/en/stable/)
+- 📺 [Jupyter YouTube Channel](https://www.youtube.com/c/ProjectJupyter)
 
 ---
 
