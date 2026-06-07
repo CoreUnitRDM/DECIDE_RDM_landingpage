@@ -5,11 +5,11 @@ entries:
   version: 1.0
 
   folders:
+
   - title: RDM in DECIDE
     output: web, pdf
     folderitems:
     - title: RDM plan
-     # url: /rdm_plan.html
       url: /index.html
       output: web
     - title: DECIDE Data Lifecycle
@@ -25,17 +25,9 @@ entries:
       url: /infection_atlas.html
       output: web
 
-    #- title: Compliance
-    #  url: /compliance.html
-    #  output: web     
-
   - title: About RDM
     output: web, pdf
     folderitems:
- #   - title: DECIDE
- #     url: /index.html
- #     output: web
- #     type: homepage
     - title: RDM
       url: /about_rdm.html
       output: web
@@ -48,6 +40,38 @@ entries:
       url: /about_metadata.html
       output: web
       type: homepage
+
+  - title: SOPs & Workflows
+    output: web, pdf
+    folderitems:
+    - title: PhD Onboarding Blueprint
+      url: /phd_onboarding_blueprint.html
+      output: web
+    - title: RDM Lifecycle (SOP)
+      url: /sop_rdm_lifecycle.html
+      output: web
+    - title: Making your project FAIR (SOP)
+      url: /sop_fair_rdm.html
+      output: web
+    - title: FAIR Self-Check
+      url: /fair_self_check.html
+      output: web
+    - title: GDPR & Sensitive Data (SOP)
+      url: /sop_gdpr_sensitive_data.html
+      output: web
+    - title: Sharing & Publishing Checklist
+      url: /checklist_sharing_publishing.html
+      output: web
+
+  - title: Templates
+    output: web, pdf
+    folderitems:
+    - title: DMP Template
+      url: /dmp_template.html
+      output: web
+    - title: Metadata Templates
+      url: /metadata_templates.html
+      output: web
 
   - title: Guide
     output: web, pdf
@@ -64,17 +88,10 @@ entries:
       url: /jupyterhub.html
       output: web
       type: homepage
- #   - title: Infection Atlas
- #     url: infection_atlas.html
- #     output: web
 
- #   - title: MetaDataGen
- #     url: metadata-gen.html
- #     output: web
- #   - title: Archiving
- #     url: archiving.html
- #     output: web
-
-
-
-
+  - title: Resources
+    output: web, pdf
+    folderitems:
+    - title: External RDM Resources
+      url: /external_resources.html
+      output: web
