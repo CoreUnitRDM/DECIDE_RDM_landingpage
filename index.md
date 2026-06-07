@@ -7,7 +7,7 @@ last_updated: June 13, 2025
 tags: [RDM Plan, DECIDE, Data Management, FAIR]
 summary: Explore the RDM plan of the DECIDE project, including data organizations, FAIR data management, and long-term goals for a FAIR and secure data lifecycle.
 sidebar: decide_sidebar
-permalink: index.html
+permalink: rdm_plan_full.html
 folder: mydoc
 
 

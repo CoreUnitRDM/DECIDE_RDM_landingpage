@@ -6,64 +6,36 @@ entries:
 
   folders:
 
-  - title: RDM in DECIDE
+  - title: Get started
     output: web, pdf
     folderitems:
-    - title: RDM plan
+    - title: Overview
       url: /index.html
       output: web
-    - title: DECIDE Data Lifecycle
-      url: /decide_data_lifecycle.html
-      output: web
-    - title: RDM planner
-      url: /rdm_planer2.html
-      output: web
-    - title: Metadata Management
-      url: /metadata_management.html
-      output: web
-    - title: Infection atlas
-      url: /infection_atlas.html
-      output: web
-
-  - title: About RDM
-    output: web, pdf
-    folderitems:
-    - title: RDM
-      url: /about_rdm.html
-      output: web
-      type: homepage
-    - title: FAIR
-      url: /about_fair.html
-      output: web
-      type: homepage
-    - title: MetaData
-      url: /about_metadata.html
-      output: web
-      type: homepage
-
-  - title: SOPs & Workflows
-    output: web, pdf
-    folderitems:
     - title: PhD Onboarding Blueprint
       url: /phd_onboarding_blueprint.html
       output: web
-    - title: RDM Lifecycle (SOP)
+
+  - title: How-to (SOPs)
+    output: web, pdf
+    folderitems:
+    - title: RDM Lifecycle
       url: /sop_rdm_lifecycle.html
       output: web
-    - title: Making your project FAIR (SOP)
+    - title: Make your project FAIR
       url: /sop_fair_rdm.html
       output: web
     - title: FAIR Self-Check
       url: /fair_self_check.html
       output: web
-    - title: GDPR & Sensitive Data (SOP)
-      url: /sop_gdpr_sensitive_data.html
-      output: web
     - title: Sharing & Publishing Checklist
       url: /checklist_sharing_publishing.html
       output: web
+    - title: GDPR & Sensitive Data
+      url: /sop_gdpr_sensitive_data.html
+      output: web
 
-  - title: Templates
+  - title: Templates & tools
     output: web, pdf
     folderitems:
     - title: DMP Template
@@ -72,26 +44,43 @@ entries:
     - title: Metadata Templates
       url: /metadata_templates.html
       output: web
-
-  - title: Guide
-    output: web, pdf
-    folderitems:
     - title: Nextcloud
       url: /nextcloud.html
       output: web
-      type: homepage
-    - title: Labfolder
-      url: /labfolder.html
-      output: web
-      type: homepage
     - title: JupyterHub
       url: /jupyterhub.html
       output: web
-      type: homepage
+    - title: LabFolder
+      url: /labfolder.html
+      output: web
 
-  - title: Resources
+  - title: Background & resources
     output: web, pdf
     folderitems:
+    - title: About RDM
+      url: /about_rdm.html
+      output: web
+    - title: About FAIR
+      url: /about_fair.html
+      output: web
+    - title: About Metadata
+      url: /about_metadata.html
+      output: web
+    - title: DECIDE Data Lifecycle
+      url: /decide_data_lifecycle.html
+      output: web
+    - title: RDM Plan (full)
+      url: /rdm_plan_full.html
+      output: web
+    - title: RDM Planner
+      url: /rdm_planer2.html
+      output: web
+    - title: Metadata Management
+      url: /metadata_management.html
+      output: web
+    - title: Infection Atlas
+      url: /infection_atlas.html
+      output: web
     - title: External RDM Resources
       url: /external_resources.html
       output: web

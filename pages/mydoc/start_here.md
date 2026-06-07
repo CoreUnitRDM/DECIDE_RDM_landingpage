@@ -3,7 +3,7 @@ title: "Start here"
 keywords: RDM, FAIR, quick start, PhD, onboarding, overview
 summary: "The 5-minute version: why research data management pays off for you, the rules of thumb, and where to go next."
 last_updated: 2026-06-07
-permalink: start_here.html
+permalink: index.html
 sidebar: decide_sidebar
 ---
 
