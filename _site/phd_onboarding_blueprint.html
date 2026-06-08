@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="A day-one, FAIR-by-default workflow for every new PhD project in the VRC, anchored to the data zones, gates, and component catalog.">
-<meta name="keywords" content="SOPonboardingPhDRDMFAIRVRC,  ">
-<title>RDM Onboarding Blueprint for PhD Projects | Info and Services on DECIDE RDM</title>
+<meta name="description" content="One workflow, ordered along the research data lifecycle. Start with a data management plan and follow the steps — each links to the tool and the detailed how...">
+<meta name="keywords" content=" RDM, FAIR, workflow, project start, onboarding, data lifecycle, DMP">
+<title>How to start a project | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -200,7 +200,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the RDM Onboarding Blueprint for PhD Projects page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the How to start a project page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -220,7 +220,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="RDM Onboarding Blueprint for PhD Projects">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="How to start a project">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -269,7 +269,14 @@
           
           
           
-          <li class="active"><a title="PhD Onboarding Blueprint" href="phd_onboarding_blueprint.html">PhD Onboarding Blueprint</a></li>
+          <li class="active"><a title="How to start a project" href="phd_onboarding_blueprint.html">How to start a project</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Use cases & subprojects" href="use_cases.html">Use cases & subprojects</a></li>
           
           
           
@@ -306,14 +313,14 @@
           
           
           
-          <li><a title="Sharing & Publishing Checklist" href="checklist_sharing_publishing.html">Sharing & Publishing Checklist</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="GDPR & Sensitive Data" href="sop_gdpr_sensitive_data.html">GDPR & Sensitive Data</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Sharing & Publishing Checklist" href="checklist_sharing_publishing.html">Sharing & Publishing Checklist</a></li>
           
           
           
@@ -458,7 +465,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">RDM Onboarding Blueprint for PhD Projects</h1>
+   <h1 class="post-title-main">How to start a project</h1>
 </div>
 
 
@@ -466,7 +473,7 @@
 <div class="post-content">
 
    
-    <div class="summary">A day-one, FAIR-by-default workflow for every new PhD project in the VRC, anchored to the data zones, gates, and component catalog.</div>
+    <div class="summary">One workflow, ordered along the research data lifecycle. Start with a data management plan and follow the steps — each links to the tool and the detailed how-to you need.</div>
    
 
     
@@ -503,604 +510,111 @@ $('#toc').on('click', 'a', function() {
 
     
 
-   <p><strong>A day-one, FAIR-by-default workflow for every new PhD project in the VRC</strong>
-Version 1.0 · domain-agnostic blueprint · adapt the <code class="language-plaintext highlighter-rouge">&lt;FILL IN&gt;</code> and <em>domain</em> placeholders per project before sharing.</p>
+   <p>Every research project — a PhD, a postdoc study, a lab experiment — follows the same path through the research data lifecycle. This page is that path as <strong>one workflow</strong>, not a stack of separate rules. Start at <em>Plan</em> and move along; each step tells you what to do and links to the detailed how-to and the tool you need.</p>
 
-<blockquote>
-  <p><strong>What this is.</strong> A generalized version of the cRDM onboarding SOP, written to serve <em>any</em> PhD project across the VRC consortia (basic, clinical, and mixed). It keeps the same practical procedures but (a) makes domain-specific choices pluggable instead of hard-coded, and (b) anchors every step to the VRC architecture — the data zones, the gates, the five principles, and the component catalog. It operationalizes the Architecture Vision for a single researcher’s first weeks.</p>
-</blockquote>
-
-<hr />
-
-<h2 id="0-how-to-use-this-blueprint">0. How to use this blueprint</h2>
-
-<p>These are <strong>Standard Operating Procedures (SOPs)</strong> — the minimum practices every VRC member follows from day one, <em>before</em> any data is collected. The goal: <strong>make every project reproducible and FAIR by default, not as an afterthought.</strong></p>
-
-<p>The single most expensive mistake in research data is fixing structure <em>after</em> the data exists. Almost every recurring problem — IDs that don’t match between files and tables, missing annotations, processed files no one can trace back to raw — comes from skipping the setup steps below. Twenty minutes of setup on day one saves weeks later.</p>
-
-<p>Read SOPs 1–3 before you touch any data. Apply the rest as the project reaches each stage.</p>
-
-<h3 id="the-vrc-frame-read-once-then-it-stays-in-the-background">The VRC frame (read once, then it stays in the background)</h3>
-
-<p>Everything below sits inside the VRC’s structure. Three ideas are enough to orient you:</p>
+<h2 id="three-pillars-travel-through-every-step">Three pillars travel through every step</h2>
 
 <ul>
-  <li><strong>Three data zones.</strong> Your work moves through a <strong>Green Room</strong> (your personal, unstructured workspace — no FAIR rules apply, throw data in freely), a <strong>shared / curated zone</strong> (team and project data, with metadata, access control, and a DMP), and a <strong>published zone</strong> (public, with a DOI and a license). You decide <em>deliberately</em> when to move data forward — it never drifts across by accident.</li>
-  <li><strong>Two gates.</strong> Moving between zones passes a gate. <strong>Gate G1</strong> (leaving the Green Room): metadata applied, anonymisation done if the data is person-derived, access policy chosen. <strong>Gate G2</strong> (publishing): full FAIR metadata, DOI, license, repository, and ethics/DPO clearance where applicable. The SOPs below are mostly about being ready to pass these gates without pain.</li>
-  <li><strong>FAIR is the exit standard.</strong> Anything that leaves your Green Room must be Findable, Accessible, Interoperable, Reusable. Inside the Green Room you owe nothing; the moment you share, you do.</li>
+  <li><strong>Data</strong> — your files, stored and backed up (Nextcloud, HPC)</li>
+  <li><strong>Documentation</strong> — what the data mean and how they were made (ELN + metadata + README)</li>
+  <li><strong>Analysis</strong> — the code that turns data into results (Git + JupyterHub/HPC)</li>
 </ul>
 
-<blockquote>
-  <p><strong>The three pillars.</strong> Every project rests on three things that must stay linked: <strong>Data</strong> (the files → Nextcloud), <strong>Documentation</strong> (what they mean and how they were made → LabFolder ELN + metadata + README), and <strong>Analysis</strong> (the code that turns data into results → GitLab/Git + JupyterHub/HPC). A result you cannot trace back through analysis → documentation → data is not reproducible. SOP 8 keeps these three connected — and it is the same linking the VRC enforces between components.</p>
-</blockquote>
+<p>Keep the three <strong>linked</strong> — the same IDs everywhere, outputs made by code, a README that maps them — and your results stay reproducible. That linkage, resting on good scientific practice, is the whole point.</p>
 
-<hr />
+<h2 id="the-workflow">The workflow</h2>
 
-<h2 id="sop-1--project-folder-structure">SOP 1 — Project folder structure</h2>
+<div style="max-width:760px;margin:18px auto;">
+<svg width="100%" viewBox="0 0 760 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="wf-title wf-desc">
+<title id="wf-title">The project workflow along the research data lifecycle</title>
+<desc id="wf-desc">Six phases in order — Plan, Collect, Process and Analyse, Preserve, Publish, Reuse — with two gates (G1 when sharing, G2 when publishing) and a loop back to Plan.</desc>
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L8 5L1 9" fill="none" stroke="#9aa7b2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="ahg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L8 5L1 9" fill="none" stroke="#c0c8d0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></marker>
+</defs>
+<line x1="123" y1="82" x2="146" y2="82" stroke="#9aa7b2" stroke-width="1.6" marker-end="url(#ah)" />
+<line x1="246" y1="82" x2="269" y2="82" stroke="#9aa7b2" stroke-width="1.6" marker-end="url(#ah)" />
+<line x1="369" y1="82" x2="392" y2="82" stroke="#9aa7b2" stroke-width="1.6" marker-end="url(#ah)" />
+<line x1="492" y1="82" x2="515" y2="82" stroke="#9aa7b2" stroke-width="1.6" marker-end="url(#ah)" />
+<line x1="615" y1="82" x2="638" y2="82" stroke="#9aa7b2" stroke-width="1.6" marker-end="url(#ah)" />
+<g><rect x="367" y="26" width="27" height="16" rx="8" fill="#5aa02c" /><text x="380" y="38" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">G1</text><line x1="380" y1="42" x2="380" y2="53" stroke="#5aa02c" stroke-width="1.2" stroke-dasharray="2 2" /></g>
+<g><rect x="490" y="26" width="27" height="16" rx="8" fill="#5aa02c" /><text x="503" y="38" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">G2</text><line x1="503" y1="42" x2="503" y2="53" stroke="#5aa02c" stroke-width="1.2" stroke-dasharray="2 2" /></g>
+<g font-family="inherit">
+<rect x="23" y="55" width="100" height="54" rx="9" fill="#2f6fa8" /><text x="73" y="86" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Plan</text><text x="73" y="127" text-anchor="middle" fill="#667" font-size="10">DMP</text>
+<rect x="146" y="55" width="100" height="54" rx="9" fill="#2f6fa8" /><text x="196" y="86" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Collect</text><text x="196" y="127" text-anchor="middle" fill="#667" font-size="10">ELN &#183; raw</text>
+<rect x="269" y="55" width="100" height="54" rx="9" fill="#2f6fa8" /><text x="319" y="79" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">Process &amp;</text><text x="319" y="95" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">Analyse</text><text x="319" y="127" text-anchor="middle" fill="#667" font-size="10">Git &#183; HPC</text>
+<rect x="392" y="55" width="100" height="54" rx="9" fill="#2f6fa8" /><text x="442" y="86" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Preserve</text><text x="442" y="127" text-anchor="middle" fill="#667" font-size="10">Nextcloud</text>
+<rect x="515" y="55" width="100" height="54" rx="9" fill="#2f6fa8" /><text x="565" y="86" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Publish</text><text x="565" y="127" text-anchor="middle" fill="#667" font-size="10">DOI &#183; licence</text>
+<rect x="638" y="55" width="100" height="54" rx="9" fill="#2f6fa8" /><text x="688" y="86" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Reuse</text><text x="688" y="127" text-anchor="middle" fill="#667" font-size="10">next project</text>
+</g>
+<path d="M688 109 L688 150 L73 150 L73 111" fill="none" stroke="#c0c8d0" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#ahg)" />
+<text x="380" y="166" text-anchor="middle" fill="#9aa7b2" font-size="10">the cycle repeats — your output is the next project's input</text>
+</svg>
+</div>
 
-<p>Create the same skeleton for every project, whatever the discipline. A consistent structure means anyone — including future-you and the next PhD student — can open any project and immediately know where things are.</p>
+<h2 id="the-steps">The steps</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>project-name/
-├── README.md              &lt;- project overview, the map to everything (see SOP 8)
-├── LICENSE                &lt;- how others may use code/data
-├── .gitignore             &lt;- tells git what NOT to track (data, secrets, large files)
-├── environment.yml        &lt;- computational environment, exact package versions
-├── data/
-│   ├── raw/               &lt;- ORIGINAL, IMMUTABLE data. Never edit. Read-only. (this is your Green Room intake)
-│   ├── primary/           &lt;- raw converted to clean, open, analysis-ready format
-│   ├── processed/         &lt;- derived data (features, tables) produced by code
-│   └── metadata/          &lt;- metadata tables, templates, data dictionary
-├── notebooks/             &lt;- analysis notebooks, numbered: 01_, 02_, ...
-├── src/                   &lt;- reusable code (the pipeline that makes data/ from data/raw)
-├── results/
-│   ├── figures/
-│   └── tables/
-├── docs/                  &lt;- protocols, SOPs, DMP, reports, manuscript
-└── project_management/    &lt;- meeting notes, planning
+<p>Ordered along the lifecycle. Start at the top; each step links to the detail and the tool.</p>
+
+<h3 id="1--plan--before-you-collect-anything">1 · Plan — <em>before you collect anything</em></h3>
+<p>Write your <strong>Data Management Plan</strong> first — 20 minutes that shapes the whole project. Then create the standard folder structure and agree a naming convention.
+→ <strong><a href="dmp_template.html">DMP Template</a></strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>project/
+├── README.md          &lt;- the map to everything
+├── data/raw/          &lt;- originals, READ-ONLY, never edited
+├── data/primary/      &lt;- raw converted to open formats (by code)
+├── data/processed/    &lt;- derived data (by code)
+├── data/metadata/     &lt;- metadata tables + data dictionary
+├── src/  notebooks/   &lt;- the code that makes everything downstream
+├── results/  docs/    &lt;- figures, tables, protocols, DMP
 </code></pre></div></div>
+<p>Naming: <code class="language-plaintext highlighter-rouge">YYYYMMDD_project_sample_condition_type_v01.ext</code> — no spaces, dates first, one consistent pattern.</p>
 
-<p><strong>Rules</strong></p>
+<h3 id="2--collect--capture-and-document">2 · Collect — <em>capture and document</em></h3>
+<p>Put raw data in <code class="language-plaintext highlighter-rouge">data/raw/</code> and <strong>make it read-only</strong> (<code class="language-plaintext highlighter-rouge">chmod -R a-w data/raw/</code>). Record every run in your <strong>electronic lab notebook</strong> within 48 h, using the <em>same ID</em> you’ll use everywhere.
+→ <strong><a href="labfolder.html">LabFolder</a></strong></p>
 
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">data/raw/</code> is <strong>read-only</strong>. Set it that way: <code class="language-plaintext highlighter-rouge">chmod -R a-w data/raw/</code>. Raw data is the ground truth; if it changes, nothing downstream is trustworthy.</li>
-  <li>Code lives in <code class="language-plaintext highlighter-rouge">src/</code> and <code class="language-plaintext highlighter-rouge">notebooks/</code>; <strong>data does not live in git</strong> (see SOP 4) — it lives in Nextcloud (SOP 5).</li>
-  <li>The structure is the same whether the project is 3 files or 30,000, and whether the data is images, sequences, spreadsheets, or instrument logs. Don’t invent a new layout per project.</li>
-</ul>
+<h3 id="3--describe--metadata">3 · Describe — <em>metadata</em></h3>
+<p>Apply the metadata template at capture time; use your field’s controlled vocabulary, not free text. Never leave a blank to mean “not done”.
+→ <strong><a href="metadata_templates.html">Metadata Templates</a></strong></p>
 
-<p>This skeleton follows The Turing Way’s reproducible-project template — clone it instead of building by hand:</p>
-<ul>
-  <li>Template repo: https://github.com/the-turing-way/reproducible-project-template</li>
-  <li>Cookiecutter Data Science (alternative, Python-oriented): https://cookiecutter-data-science.drivendata.org/</li>
-</ul>
+<h3 id="4--process--analyse--by-code-only">4 · Process &amp; analyse — <em>by code only</em></h3>
+<p>Convert raw → primary → processed with scripts (no manual edits); version code in Git; run on JupyterHub/HPC. The rule: if you deleted everything downstream of <code class="language-plaintext highlighter-rouge">data/raw/</code>, your code in <code class="language-plaintext highlighter-rouge">src/</code> should regenerate it.
+→ <strong><a href="jupyterhub.html">JupyterHub</a></strong> · <strong><a href="sop_fair_rdm.html">Make your project FAIR</a></strong></p>
 
-<hr />
+<h3 id="5--preserve--store-and-back-up">5 · Preserve — <em>store and back up</em></h3>
+<p>Keep shared data in a <strong>Nextcloud group folder</strong>; back up raw 3-2-1 (3 copies, 2 media, 1 off-site); archive for the long term.
+→ <strong><a href="nextcloud.html">Nextcloud</a></strong></p>
 
-<h2 id="sop-2--file-and-folder-naming">SOP 2 — File and folder naming</h2>
+<h3 id="6--share--gate-g1-leaving-your-private-space">6 · Share — <em>Gate G1: leaving your private space</em></h3>
+<p>Before data goes to anyone else: run the <strong>FAIR self-check</strong>, clear the <strong>sharing checklist</strong>, and if the data is person-derived, follow the <strong>GDPR</strong> rules (pseudonymise; patient-identifying data stays at UKW).
+→ <strong><a href="fair_self_check.html">FAIR Self-Check</a></strong> · <strong><a href="checklist_sharing_publishing.html">Sharing &amp; Publishing Checklist</a></strong> · <strong><a href="sop_gdpr_sensitive_data.html">GDPR &amp; Sensitive Data</a></strong></p>
 
-<p>A filename should tell you what’s inside <strong>without opening it</strong>, and should sort correctly on its own.</p>
+<h3 id="7--publish--gate-g2-the-real-publication">7 · Publish — <em>Gate G2: the real publication</em></h3>
+<p>Deposit to a repository with a <strong>DOI</strong> and a <strong>licence</strong> — not a Nextcloud link. Use the two-track approach for sensitive data (open outputs open; individual-level data controlled-access).
+→ <strong><a href="checklist_sharing_publishing.html">Sharing &amp; Publishing Checklist</a></strong></p>
 
-<p><strong>The rules (non-negotiable, every discipline):</strong></p>
+<h3 id="8--reuse--the-cycle-restarts">8 · Reuse — <em>the cycle restarts</em></h3>
+<p>Your published, FAIR dataset becomes the Plan-phase input for the next project — yours or a colleague’s.
+→ <strong><a href="sop_rdm_lifecycle.html">RDM Lifecycle</a></strong></p>
+
+<h2 id="the-rules-of-thumb-carry-these-through-every-step">The rules of thumb (carry these through every step)</h2>
 
 <ol>
-  <li><strong>No spaces.</strong> Use underscores <code class="language-plaintext highlighter-rouge">_</code> to separate fields and hyphens <code class="language-plaintext highlighter-rouge">-</code> within a field. Spaces break command-line tools and scripts.</li>
-  <li><strong>No special characters</strong> (<code class="language-plaintext highlighter-rouge">/ \ : * ? " &lt; &gt; | &amp; $ # % ! @</code>). They are interpreted differently across operating systems.</li>
-  <li><strong>Dates as <code class="language-plaintext highlighter-rouge">YYYYMMDD</code></strong> (or <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code>). The only format that sorts chronologically by default.</li>
-  <li><strong>Leading zeros</strong> for sequences: <code class="language-plaintext highlighter-rouge">01, 02, ... 10</code> and <code class="language-plaintext highlighter-rouge">001 ... 100</code>, so files stay in order.</li>
-  <li><strong>Most general field first, most specific last</strong> — so related files group together.</li>
-  <li><strong>Be consistent.</strong> Pick the convention once, write it down in the README, everyone uses it.</li>
+  <li><strong>Raw data is sacred</strong> — never edit it; work on copies.</li>
+  <li><strong>Name things so a stranger understands</strong> — no spaces, dates as <code class="language-plaintext highlighter-rouge">YYYYMMDD</code>.</li>
+  <li><strong>One ID everywhere</strong> — filenames, metadata, lab notebook.</li>
+  <li><strong>Code, don’t click</strong> — every result is re-runnable from <code class="language-plaintext highlighter-rouge">src/</code>.</li>
+  <li><strong>Write it down as you go</strong> — ELN and README now, not later.</li>
+  <li><strong>Back up 3-2-1.</strong></li>
+  <li><strong>FAIR when you share</strong> — metadata, licence, access level before anything leaves your hands.</li>
 </ol>
 
-<p><strong>Pattern:</strong></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>YYYYMMDD_project_subject_condition_type_vNN.ext
-</code></pre></div></div>
-
-<p><strong>Examples — same pattern, different fields per domain:</strong></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># imaging          20260607_&lt;project&gt;_&lt;sampleID&gt;_&lt;condition&gt;_&lt;modality&gt;_v01.tif
-# sequencing       20260607_&lt;project&gt;_&lt;sampleID&gt;_&lt;assay&gt;_&lt;readtype&gt;_v01.fastq.gz
-# tabular/clinical 20260607_&lt;project&gt;_&lt;cohort&gt;_&lt;timepoint&gt;_measurements_v01.csv
-# notebooks        01_data-cleaning.ipynb   02_feature-extraction.ipynb
-</code></pre></div></div>
-
-<p>The <em>fields</em> are domain-specific; the <em>pattern and rules</em> are universal. Notebook naming (Turing Way convention): <code class="language-plaintext highlighter-rouge">NN_short-description</code> — the number orders execution, the description says what it does.</p>
-
-<p>References:</p>
-<ul>
-  <li>Harvard Biomedical Data Management — file naming: https://datamanagement.hms.harvard.edu/collect/file-naming-conventions</li>
-  <li>Stanford Libraries — naming case studies: https://guides.library.stanford.edu/data-best-practices</li>
-  <li>Caltech file-naming worksheet (fill-in template): https://authors.library.caltech.edu/103626/</li>
-</ul>
-
-<hr />
-
-<h2 id="sop-3--raw--primary--processed-the-data-lifecycle-in-your-green-room">SOP 3 — Raw → primary → processed (the data lifecycle, in your Green Room)</h2>
-
-<p>Data moves through stages. Each stage has a fixed rule about what you may do to it. This is the per-file version of the VRC zone model: raw is your Green Room intake; the pipeline that follows is what makes the data ready to pass <strong>Gate G1</strong>.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Stage</th>
-      <th>What it is</th>
-      <th>Editable?</th>
-      <th>Made by</th>
-      <th>Example (replace per domain)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>raw</strong></td>
-      <td>Exactly what came off the instrument / from the source</td>
-      <td><strong>NEVER edit. Read-only.</strong></td>
-      <td>Instrument / source</td>
-      <td>proprietary instrument files, original source export</td>
-    </tr>
-    <tr>
-      <td><strong>primary</strong></td>
-      <td>Raw converted to an open, standard, clean format — same information, no analysis yet</td>
-      <td>Generated by code only</td>
-      <td>Conversion script in <code class="language-plaintext highlighter-rouge">src/</code></td>
-      <td>open standard format, normalised metadata tables</td>
-    </tr>
-    <tr>
-      <td><strong>processed</strong></td>
-      <td>Derived data: features, embeddings, model outputs</td>
-      <td>Generated by code only</td>
-      <td>Analysis code</td>
-      <td>feature tables, coordinates, model files</td>
-    </tr>
-    <tr>
-      <td><strong>results</strong></td>
-      <td>Figures, tables, final numbers</td>
-      <td>Generated by code only</td>
-      <td>Analysis code</td>
-      <td>figures, summary tables</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Which files are “stable”?</strong></p>
-
-<ul>
-  <li><strong>Raw is immutable</strong> — back it up in ≥2 places (SOP 5) and never touch it again.</li>
-  <li><strong>Open standard formats are stable for the long term.</strong> Prefer open over proprietary: <code class="language-plaintext highlighter-rouge">.csv</code>/<code class="language-plaintext highlighter-rouge">.tsv</code>/<code class="language-plaintext highlighter-rouge">.parquet</code> over <code class="language-plaintext highlighter-rouge">.xlsx</code>; open archival formats over instrument-native ones (e.g. OME-TIFF/OME-Zarr for imaging, standard sequence formats for genomics); <code class="language-plaintext highlighter-rouge">.txt</code>/<code class="language-plaintext highlighter-rouge">.md</code>/<code class="language-plaintext highlighter-rouge">.json</code> over Word. Proprietary formats can become unreadable in 10 years. Find the right open format for your field via FAIRsharing (SOP 7).</li>
-  <li><strong>Everything downstream of raw must be reproducible by re-running code.</strong> If you deleted <code class="language-plaintext highlighter-rouge">data/primary/</code> and <code class="language-plaintext highlighter-rouge">data/processed/</code>, you should be able to regenerate them from <code class="language-plaintext highlighter-rouge">src/</code>. If you can’t, the pipeline is broken.</li>
-</ul>
-
-<p><strong>The golden rule:</strong> raw → primary → processed is a <strong>one-way pipeline written in code</strong>. No manual edits in the middle. A manual edit you can’t reproduce is a silent error waiting to happen.</p>
-
-<p>Reference — The Turing Way RDM chapter: https://book.the-turing-way.org/reproducible-research/rdm/</p>
-
-<hr />
-
-<h2 id="sop-4--version-control-with-git-vrc-gitlab--github">SOP 4 — Version control with Git (VRC GitLab / GitHub)</h2>
-
-<p>Git tracks <strong>code and documentation</strong>, not data. Use it from commit one. The VRC provides GitLab as a component; open consortia (like DECIDE) also use GitHub. The commands are identical — point <code class="language-plaintext highlighter-rouge">origin</code> at whichever your project uses.</p>
-
-<p><strong>Setup (once):</strong></p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> user.name <span class="s2">"Your Name"</span>
-git config <span class="nt">--global</span> user.email <span class="s2">"you@institution.de"</span>
-</code></pre></div></div>
-
-<p><strong>Per project:</strong></p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>project-name
-git init
-<span class="c"># create .gitignore FIRST (see below), then:</span>
-git add <span class="nb">.</span>
-git commit <span class="nt">-m</span> <span class="s2">"Initial project structure"</span>
-git remote add origin git@&lt;FILL IN: gitlab.your-vrc.de or github.com&gt;/&lt;org&gt;/project-name.git
-git push <span class="nt">-u</span> origin main
-</code></pre></div></div>
-
-<p><strong><code class="language-plaintext highlighter-rouge">.gitignore</code> — keep data and secrets OUT of git</strong> (extend the data patterns for your domain’s file types):</p>
-<pre><code class="language-gitignore"># Data — never commit (lives in Nextcloud, SOP 5)
-data/raw/
-data/primary/
-data/processed/
-*.&lt;your raw extension&gt;     # e.g. *.lif *.czi *.fastq.gz *.bam *.h5
-
-# Large / generated
-results/
-*.ckpt
-*.pth
-
-# Environments &amp; secrets
-__pycache__/
-.ipynb_checkpoints/
-.env
-*.key
-</code></pre>
-
-<p><strong>Daily habits:</strong></p>
-<ul>
-  <li>Commit small and often, with messages that say <em>why</em>: <code class="language-plaintext highlighter-rouge">git commit -m "Fix ID-matching bug in converter"</code>.</li>
-  <li>Push at the end of every working day.</li>
-  <li>One repo per project. <strong>Never commit data, passwords, or person-identifying information.</strong></li>
-</ul>
-
-<p><strong>Why not data in git?</strong> Git is built for text/code; large binary data bloats the repo permanently and can’t be diffed. Data goes to Nextcloud (SOP 5); for <em>versioned</em> data, see <strong>DataLad</strong> (git for data): https://www.datalad.org/</p>
-
-<p>Learn git: https://swcarpentry.github.io/git-novice/ · GitHub docs: https://docs.github.com/get-started</p>
-
-<hr />
-
-<h2 id="sop-5--storage--backup-with-nextcloud">SOP 5 — Storage &amp; backup with Nextcloud</h2>
-
-<p>Nextcloud is the VRC component where <strong>data</strong> lives and gets backed up (git is for code). This is your shared / curated zone storage.</p>
-
-<p><strong>The 3-2-1 backup rule:</strong> 3 copies of important data, on 2 different media, 1 off-site. Raw data especially.</p>
-
-<p><strong>Layout on Nextcloud</strong> mirrors the project structure:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;FILL IN: VRC Nextcloud server&gt;/Projects/project-name/
-├── data/raw/
-├── data/primary/
-├── figures/
-└── documents/
-</code></pre></div></div>
-
-<p><strong>Sync from HPC / workstation with <code class="language-plaintext highlighter-rouge">rclone</code></strong> (scriptable, reliable for large datasets):</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># one-time: rclone config  -&gt; set up a "nextcloud" remote (WebDAV)</span>
-<span class="c"># then sync raw data up (copy, never sync-delete raw):</span>
-rclone copy ~/Projects/project-name/data/raw/ <span class="se">\</span>
-  <span class="s2">"nextcloud:Projects/project-name/data/raw/"</span> <span class="nt">-v</span> <span class="nt">--no-update-modtime</span>
-
-<span class="c"># pull figures back down:</span>
-rclone copy <span class="s2">"nextcloud:Projects/project-name/figures/"</span> <span class="se">\</span>
-  ~/Projects/project-name/results/figures/ <span class="nt">-v</span>
-</code></pre></div></div>
-
-<ul>
-  <li>Use <code class="language-plaintext highlighter-rouge">rclone copy</code> (adds files) for raw data — <strong>never</strong> <code class="language-plaintext highlighter-rouge">rclone sync</code> on raw (sync can delete).</li>
-  <li>For very large transfers, ask the VRC helpdesk about FEX large-file transfer.</li>
-  <li>Rclone docs: https://rclone.org/webdav/ · Nextcloud docs: https://docs.nextcloud.com/</li>
-</ul>
-
-<blockquote>
-  <p><strong>Sensitive / person-derived data branch.</strong> If your raw data is patient- or person-derived, it does <strong>not</strong> go to the open cRDM Nextcloud. It stays in the UKW-managed zone, and only an anonymised/pseudonymised subset is handed off for analysis under the federation SOPs. Confirm the route with your supervisor and the VRC helpdesk <em>before</em> first upload — this is a Gate G1 decision, not an afterthought.</p>
-</blockquote>
-
-<hr />
-
-<h2 id="sop-6--electronic-lab-notebook-labfolder">SOP 6 — Electronic lab notebook (LabFolder)</h2>
-
-<p>LabFolder is the VRC component where <strong>documentation</strong> lives: what you did, when, why, and what happened. It connects a physical or computational experiment to its data files.</p>
-
-<p><strong>Record in real time, not from memory:</strong></p>
-<ul>
-  <li>Date, operator, sample/subject ID (the <strong>same ID</strong> used in filenames and metadata — SOP 7).</li>
-  <li>Protocol used and <strong>any deviation</strong> from it (the equivalent of “used setting B instead of A”, “replicate 3 not collected”).</li>
-  <li>The exact <strong>filename(s)</strong> produced, so the notebook entry points to the data.</li>
-  <li>Anomalies (instrument drift, interruptions, contamination, failed runs) — these explain outliers later.</li>
-  <li>Submit the entry within 48 h while details are fresh.</li>
-</ul>
-
-<p><strong>The link rule:</strong> every ELN entry names the data file it produced; every data file’s metadata names the ELN entry / subject ID. This is half of SOP 8 and a precedent for the VRC’s cross-component click-through (Nextcloud dataset → LabFolder protocol → GitLab script).</p>
-
-<p>LabFolder: https://www.labfolder.com/ · Comparing ELNs: https://elnfinder.org/ · Harvard ELN guidance: https://datamanagement.hms.harvard.edu/</p>
-
-<hr />
-
-<h2 id="sop-7--metadata-models-pick-your-domains-standard">SOP 7 — Metadata models (pick your domain’s standard)</h2>
-
-<p>Metadata is data about your data: it makes files findable and interpretable. Decide the model <strong>before</strong> collecting, and use controlled vocabularies so values are consistent and machine-readable. This mirrors the VRC’s four metadata layers (core → domain → project → provenance).</p>
-
-<p><strong>Use a normalised, multi-table model</strong> (don’t cram everything into one messy sheet). A proven pattern:</p>
-
-<ol>
-  <li><strong>Subject / sample table</strong> — one row per individual or sample; descriptive metadata.</li>
-  <li><strong>Experiment / acquisition table</strong> — one row per recording/run; technical metadata (instrument, parameters, file path).</li>
-  <li><strong>Link table</strong> — connects subjects to experiments (a many-to-many bridge with foreign keys).</li>
-</ol>
-
-<p><strong>Rules:</strong></p>
-<ul>
-  <li><strong>One row = one entity.</strong> No merged cells, no multi-value cells.</li>
-  <li><strong>Column headers are machine-readable</strong>: <code class="language-plaintext highlighter-rouge">subject_id</code>, <code class="language-plaintext highlighter-rouge">value_unit</code>, <code class="language-plaintext highlighter-rouge">n_replicates</code> — no spaces, units in the name.</li>
-  <li><strong>Use controlled vocabularies / ontologies</strong>, not free text, for categorical fields. <strong>Pick the standard for your domain</strong> rather than inventing one (this is the VRC §6.2 principle — use existing standards, contribute back if inadequate):
-    <ul>
-      <li>Clinical conditions → <strong>SNOMED CT</strong> (https://www.snomed.org/) · Lab values → <strong>LOINC</strong> (https://loinc.org/)</li>
-      <li>Chemicals/interventions → <strong>ChEBI</strong> (https://www.ebi.ac.uk/chebi/)</li>
-      <li>Bioimaging → <strong>OME</strong> / <strong>FBbi</strong> (NFDI4BioImage alignment)</li>
-      <li>Genomics / human-derived → <strong>GA4GH</strong>, <strong>EGA</strong> conventions, <strong>NFDI4Health</strong></li>
-      <li>Microbiology → <strong>NFDI4Microbiota</strong> schemas</li>
-      <li>Generic experimental → <strong>EDAM</strong> ontology, <strong>RDA</strong> working-group conventions</li>
-      <li><strong>Don’t know your field’s standard? → FAIRsharing: https://fairsharing.org/</strong></li>
-    </ul>
-  </li>
-  <li><strong>Enforce values with dropdowns</strong> in the template (spreadsheet data validation) so typos can’t enter.</li>
-  <li><strong>Never leave a field blank to mean “not done.”</strong> Write it explicitly (<code class="language-plaintext highlighter-rouge">not_acquired</code>) — blank is ambiguous.</li>
-  <li><strong>Include a data dictionary</strong>: a sheet/file defining every column, its unit, and allowed values.</li>
-</ul>
-
-<p>Every dataset that passes Gate G1 also needs the VRC <strong>core metadata</strong> (identifier, title, creator, date, project, license), captured via the metadata template in the knowledgebase. For querying across many experiments, generate a <strong>SQLite database</strong> from the tables.</p>
-
-<p>Metadata standards background — The Turing Way: https://book.the-turing-way.org/reproducible-research/rdm/rdm-metadata</p>
-
-<hr />
-
-<h2 id="sop-8--linking-the-three-pillars">SOP 8 — Linking the three pillars</h2>
-
-<p>A result is only reproducible if you can walk backwards: <strong>figure → code that made it → data it used → documentation of how that data was created.</strong> Build these links deliberately — this is the single-project version of the VRC’s cross-component integration.</p>
-
-<p><strong>The README is the map</strong> (<code class="language-plaintext highlighter-rouge">README.md</code> at the project root). It should answer, for a newcomer:</p>
-<ul>
-  <li>What is this project and who owns it?</li>
-  <li>Where is the data (raw on Nextcloud at <code class="language-plaintext highlighter-rouge">&lt;path&gt;</code>, primary generated by <code class="language-plaintext highlighter-rouge">src/convert.py</code>)?</li>
-  <li>How do I set up the environment (<code class="language-plaintext highlighter-rouge">conda env create -f environment.yml</code>)?</li>
-  <li>How do I reproduce the results (run notebooks <code class="language-plaintext highlighter-rouge">01</code> → <code class="language-plaintext highlighter-rouge">0N</code> in order)?</li>
-  <li>Where is the metadata and the data dictionary?</li>
-</ul>
-
-<p><strong>The linking chain in practice:</strong></p>
-<ul>
-  <li>Filenames, metadata <code class="language-plaintext highlighter-rouge">subject_id</code>, and ELN entries all use the <strong>same identifiers</strong>.</li>
-  <li>Each notebook/script states its <strong>input path and output path</strong> explicitly.</li>
-  <li>Each figure’s filename or caption references the script and data version that produced it.</li>
-  <li>A <code class="language-plaintext highlighter-rouge">data/metadata/</code> table maps every raw file → its subject → its processed outputs.</li>
-</ul>
-
-<p>README templates / generators:</p>
-<ul>
-  <li>The Turing Way README guidance: https://book.the-turing-way.org/communication/aesthetics/aesthetics-readme</li>
-  <li>README generator for replication packages: https://www.templatereadme.org/</li>
-</ul>
-
-<hr />
-
-<h2 id="sop-9--compute-jupyterhub-hpc-and-cloud">SOP 9 — Compute: JupyterHub, HPC, and cloud</h2>
-
-<p><strong>Reproducible environments first.</strong> Never <code class="language-plaintext highlighter-rouge">pip install</code> randomly. Pin everything:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">env </span>create <span class="nt">-f</span> environment.yml      <span class="c"># create from spec</span>
-conda <span class="nb">env export</span> <span class="o">&gt;</span> environment.yml       <span class="c"># save exact versions before sharing/publishing</span>
-</code></pre></div></div>
-
-<p><strong>JupyterHub on HPC</strong> (the VRC analysis component) — log in through <code class="language-plaintext highlighter-rouge">&lt;FILL IN: VRC JupyterHub URL&gt;</code>, work in <code class="language-plaintext highlighter-rouge">notebooks/</code>, select your project’s conda kernel. It reads data from Nextcloud without copying it out of the managed zone. Use it for exploration and small-to-medium jobs.</p>
-
-<p><strong>HPC batch</strong> (heavy compute) — for large jobs, training, big conversions. Submit through the scheduler (SLURM):</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sbatch run_pipeline.sh        <span class="c"># submit a batch job</span>
-squeue <span class="nt">-u</span> <span class="nv">$USER</span>               <span class="c"># check your jobs</span>
-</code></pre></div></div>
-<p>Keep working data on the HPC’s fast scratch storage; <strong>sync results and back up raw to Nextcloud</strong> (SOP 5) — scratch is not backed up and is periodically wiped.</p>
-
-<p><strong>HPC ↔ cloud pattern:</strong> raw data and backups live in Nextcloud; active compute happens on HPC scratch; finished outputs sync back. Document the exact paths in the README so the flow is reproducible. For sensitive data, compute stays inside the UKW perimeter — see the SOP 5 branch.</p>
-
-<p>Carpentries HPC intro: https://carpentries-incubator.github.io/hpc-intro/ · Reproducible environments (Turing Way): https://book.the-turing-way.org/reproducible-research/renv</p>
-
-<hr />
-
-<h2 id="sop-10--data-management-plan-dmp">SOP 10 — Data Management Plan (DMP)</h2>
-
-<p>Write the DMP at the <strong>start</strong> of the project (funders — DFG, BMBF, EU Horizon — increasingly require it). It records how data will be created, stored, documented, shared, and preserved — most answers come straight from these SOPs.</p>
-
-<p><strong>Tool:</strong> <strong>RDMO</strong> (Research Data Management Organiser), the German standard, operated as the <strong>DMP4NFDI</strong> base service:</p>
-<ul>
-  <li>RDMO project: https://rdmorganiser.github.io/en/</li>
-  <li>VRC / institutional RDMO instance: <code class="language-plaintext highlighter-rouge">&lt;FILL IN&gt;</code></li>
-  <li>Alternative: DMPonline (DCC): https://dmponline.dcc.ac.uk/</li>
-</ul>
-
-<p>A DMP covers: project info, data collection &amp; formats, documentation &amp; metadata, storage &amp; backup, legal/ethics (especially for person-derived data — note DPO/DPIA/VVT requirements where relevant), and sharing/preservation. Update it when things change — it’s a living document, referenced at Gate G1.</p>
-
-<p>DMP guidance — Turing Way: https://book.the-turing-way.org/project-design/dmp</p>
-
-<hr />
-
-<h2 id="sop-11--publishing-data-gate-g2">SOP 11 — Publishing data (Gate G2)</h2>
-
-<p>When results are published, the underlying data should be findable and citable (a DOI), with the right access level. This is Gate G2: full FAIR metadata, DOI, license, repository, and ethics/DPO clearance where applicable.</p>
-
-<p><strong>Choose a repository</strong> (don’t just default to one):</p>
-<ul>
-  <li>VRC route: <strong>WueData</strong> (institutional) + the <strong>RZ archive</strong> for 10-year retention.</li>
-  <li>Find a domain repository: <strong>re3data</strong> (https://www.re3data.org/), <strong>FAIRsharing</strong> (https://fairsharing.org/), or DataCite’s <strong>Repository Finder</strong> (https://repositoryfinder.datacite.org/).</li>
-  <li><strong>Domain-specific beats generalist</strong> — richer metadata, your community finds it (e.g. <strong>BioImage Archive / IDR</strong> for imaging; sequence archives for genomics).</li>
-  <li><strong>Generalist fallback:</strong> <strong>Zenodo</strong> (https://zenodo.org/) — gives a DOI, integrates with Git, takes code + data.</li>
-</ul>
-
-<p><strong>Sensitive / person-derived data ≠ open data.</strong> Use a <strong>two-track</strong> approach (the cRDM ↔ UKW federation in practice):</p>
-<ul>
-  <li>Open outputs (processed data, features, models, code) → open repository (Zenodo / domain archive) + DOI.</li>
-  <li>Pseudonymised clinical/personal data → <strong>controlled-access</strong> repository (e.g. <strong>EGA</strong>: https://ega-archive.org/), released only under data-access agreements; in the German health context, register via <strong>NFDI4Health Study Hub</strong> (https://www.nfdi4health.de/).</li>
-  <li>Register and link both tracks so the published paper points to everything.</li>
-</ul>
-
-<p><strong>Before publishing:</strong> run the <strong>cRDM FAIR checklist</strong>, confirm against the FAIR principles (https://www.go-fair.org/fair-principles/), and confirm a license is attached (data: CC-BY 4.0 or CC0; code: MIT/Apache/GPL). License chooser: https://choosealicense.com/</p>
-
-<hr />
-
-<h2 id="domain-adaptation--instantiating-this-blueprint">Domain adaptation — instantiating this blueprint</h2>
-
-<p>This blueprint is deliberately domain-neutral. To turn it into <em>your</em> project’s working SOP, fill in four things and the rest follows:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Slot</th>
-      <th>Where it’s used</th>
-      <th>How to choose</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Raw file format(s)</strong></td>
-      <td>SOP 2 naming, SOP 3 stages, SOP 4 <code class="language-plaintext highlighter-rouge">.gitignore</code></td>
-      <td>What your instrument/source produces</td>
-    </tr>
-    <tr>
-      <td><strong>Open archival format</strong></td>
-      <td>SOP 3 primary stage</td>
-      <td>The open standard for your field (via FAIRsharing)</td>
-    </tr>
-    <tr>
-      <td><strong>Controlled vocabularies / ontology</strong></td>
-      <td>SOP 7 metadata</td>
-      <td>Your domain’s standard (SNOMED, OME, GA4GH, NFDI4Microbiota, EDAM…)</td>
-    </tr>
-    <tr>
-      <td><strong>Repository</strong></td>
-      <td>SOP 11 publishing</td>
-      <td>Domain repository via re3data; Zenodo as fallback</td>
-    </tr>
-    <tr>
-      <td><strong>Data sensitivity</strong></td>
-      <td>SOP 5, SOP 9, SOP 11</td>
-      <td>Open → cRDM VRC; person-derived → UKW route + controlled access</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Everything else — folder skeleton, naming rules, raw-is-immutable, git-for-code, ELN-in-48h, the README map, the DMP, the two gates — is identical for every PhD project.</p>
-
-<hr />
-
-<h2 id="mapping-to-the-vrc-research-data-lifecycle">Mapping to the VRC research data lifecycle</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>VRC lifecycle phase</th>
-      <th>Blueprint SOP(s)</th>
-      <th>Zone / gate</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1. Plan</td>
-      <td>SOP 10 (DMP), SOP 1 (structure)</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td>2. Acquire</td>
-      <td>SOP 2 (naming), SOP 3 (raw), SOP 6 (ELN)</td>
-      <td>Green Room</td>
-    </tr>
-    <tr>
-      <td>3. Process</td>
-      <td>SOP 3 (primary/processed), SOP 7 (metadata)</td>
-      <td>Green Room → <strong>Gate G1</strong> → shared</td>
-    </tr>
-    <tr>
-      <td>4. Analyse</td>
-      <td>SOP 4 (git), SOP 9 (compute), SOP 8 (links)</td>
-      <td>shared / curated</td>
-    </tr>
-    <tr>
-      <td>5. Preserve</td>
-      <td>SOP 5 (backup), RZ archive</td>
-      <td>shared / curated</td>
-    </tr>
-    <tr>
-      <td>6. Publish</td>
-      <td>SOP 11</td>
-      <td>shared → <strong>Gate G2</strong> → published</td>
-    </tr>
-    <tr>
-      <td>7. Reuse</td>
-      <td>published datasets become the next student’s findable input</td>
-      <td>published</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr />
-
-<h2 id="quick-start-checklist">Quick-start checklist</h2>
-
-<p><strong>Day 1</strong></p>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Get VRC accounts: GitLab/GitHub org, Nextcloud, LabFolder, JupyterHub/HPC <code class="language-plaintext highlighter-rouge">&lt;FILL IN&gt;</code></li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Confirm your <strong>data sensitivity</strong> route (open cRDM vs. UKW) with supervisor + helpdesk</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Clone the project template (SOP 1); create the folder skeleton</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Read SOPs 1–3</li>
-</ul>
-
-<p><strong>Week 1</strong></p>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><code class="language-plaintext highlighter-rouge">git init</code> + first commit + push; add <code class="language-plaintext highlighter-rouge">.gitignore</code> (SOP 4)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Set <code class="language-plaintext highlighter-rouge">data/raw/</code> read-only; set up Nextcloud + rclone backup (SOP 5)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Pick your domain’s controlled vocabularies; write the metadata template + data dictionary (SOP 7)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Start the DMP in RDMO (SOP 10)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Write the first README (SOP 8)</li>
-</ul>
-
-<p><strong>Ongoing</strong></p>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Record every experiment in the ELN within 48 h (SOP 6)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Commit code daily; keep raw → primary → processed as a code-only pipeline (SOP 3)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Keep the same IDs across filenames, metadata, and ELN (SOP 8)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Treat Gate G1 and Gate G2 as deliberate steps, not paperwork</li>
-</ul>
-
-<hr />
-
-<h2 id="knowledgebase--resources-by-category">Knowledgebase — resources by category</h2>
-
-<p><strong>Reference handbook (read this first)</strong></p>
-<ul>
-  <li>The Turing Way — reproducible, ethical, collaborative data science: https://book.the-turing-way.org/</li>
-</ul>
-
-<p><strong>FAIR &amp; RDM portals</strong></p>
-<ul>
-  <li>GO FAIR — FAIR principles: https://www.go-fair.org/fair-principles/</li>
-  <li>Forschungsdaten.info (German RDM portal): https://www.forschungsdaten.info/en/</li>
-  <li>OpenAIRE RDM guide: https://www.openaire.eu/how-to-comply-with-h2020-mandates-for-data-management-plans</li>
-</ul>
-
-<p><strong>NFDI (German national research data infrastructure)</strong></p>
-<ul>
-  <li>NFDI4Microbiota knowledge base: https://knowledgebase.nfdi4microbiota.de/</li>
-  <li>NFDI4Health (health data): https://www.nfdi4health.de/</li>
-  <li>NFDI4BioImage (microscopy/imaging) training: https://nfdi4bioimage.github.io/training/readme.html</li>
-  <li>Metadata standards catalog: https://github.com/NFDI4Microbiota/MetadataStandards</li>
-  <li>Find your consortium: https://www.nfdi.de/</li>
-</ul>
-
-<p><strong>Project structure &amp; naming</strong></p>
-<ul>
-  <li>Reproducible project template: https://github.com/the-turing-way/reproducible-project-template</li>
-  <li>Cookiecutter Data Science: https://cookiecutter-data-science.drivendata.org/</li>
-  <li>File-naming worksheet (Caltech): https://authors.library.caltech.edu/103626/</li>
-</ul>
-
-<p><strong>DMP tools</strong></p>
-<ul>
-  <li>RDMO / DMP4NFDI: https://rdmorganiser.github.io/en/</li>
-  <li>DMPonline: https://dmponline.dcc.ac.uk/</li>
-</ul>
-
-<p><strong>Repositories &amp; publishing</strong></p>
-<ul>
-  <li>re3data (registry): https://www.re3data.org/ · FAIRsharing: https://fairsharing.org/ · Repository Finder: https://repositoryfinder.datacite.org/</li>
-  <li>Zenodo (generalist + DOI): https://zenodo.org/ · EGA (controlled-access clinical): https://ega-archive.org/</li>
-</ul>
-
-<p><strong>Skills training</strong></p>
-<ul>
-  <li>Git: https://swcarpentry.github.io/git-novice/ · HPC intro: https://carpentries-incubator.github.io/hpc-intro/ · DataLad: https://www.datalad.org/</li>
-</ul>
-
-<hr />
-
-<p><em>Living document. When a procedure changes, update the SOP and note the version. Replace all <code class="language-plaintext highlighter-rouge">&lt;FILL IN&gt;</code> and *domain</em> placeholders with your project’s specifics before sharing with students. Companion documents: VRC Architecture Vision (the strategic frame), cRDM FAIR Checklist (Gate G2), cRDM Service Lifecycle SOP, cRDM Mail-Access SOP.*</p>
+<p><em>More background and external guidance: <a href="external_resources.html">External RDM Resources</a> and <a href="https://book.the-turing-way.org/">The Turing Way</a>.</em></p>
 
 
     <div class="tags">
-        
-        <b>Tags: </b>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
     </div>
 
@@ -1122,7 +636,7 @@ squeue <span class="nt">-u</span> <span class="nv">$USER</span>               <s
       
         <span>Page last updated:</span> 2026-06-07<br/>
       
-      Site last generated: Jun 7, 2026 <br />
+      Site last generated: Jun 8, 2026 <br />
       <p>
         <img src="images/crdm_logo.png" alt="Company logo" />
       </p>

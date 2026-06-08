@@ -191,11 +191,11 @@
 ,
 
 {
-"title": "RDM Onboarding Blueprint for PhD Projects",
-"tags": "SOPonboardingPhDRDMFAIRVRC",
-"keywords": "",
+"title": "How to start a project",
+"tags": "",
+"keywords": "RDM, FAIR, workflow, project start, onboarding, data lifecycle, DMP",
 "url": "phd_onboarding_blueprint.html",
-"summary": "A day-one, FAIR-by-default workflow for every new PhD project in the VRC, anchored to the data zones, gates, and component catalog."
+"summary": "One workflow, ordered along the research data lifecycle. Start with a data management plan and follow the steps — each links to the tool and the detailed how-to you need."
 }
 ,
 
@@ -247,9 +247,18 @@
 {
 "title": "Start here",
 "tags": "",
-"keywords": "RDM, FAIR, quick start, PhD, onboarding, overview",
+"keywords": "RDM, FAIR, quick start, PhD, onboarding, overview, VRC, pillars",
 "url": "index.html",
 "summary": "The 5-minute version: why research data management pays off for you, the rules of thumb, and where to go next."
+}
+,
+
+{
+"title": "Use cases &amp; subprojects",
+"tags": "",
+"keywords": "use cases, subprojects, showcase, FAIR, Infection Atlas, CellWhisperer, cycleHCR, DECIDE",
+"url": "use_cases.html",
+"summary": "DECIDE subprojects done the FAIR way — each a worked example of good scientific practice, with its data, documentation, code, DMP and results prepared and interlinked in one project space."
 }
 ,
 

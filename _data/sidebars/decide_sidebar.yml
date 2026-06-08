@@ -12,8 +12,11 @@ entries:
     - title: Overview
       url: /index.html
       output: web
-    - title: PhD Onboarding Blueprint
+    - title: How to start a project
       url: /phd_onboarding_blueprint.html
+      output: web
+    - title: Use cases & subprojects
+      url: /use_cases.html
       output: web
 
   - title: How-to (SOPs)
@@ -28,11 +31,11 @@ entries:
     - title: FAIR Self-Check
       url: /fair_self_check.html
       output: web
-    - title: Sharing & Publishing Checklist
-      url: /checklist_sharing_publishing.html
-      output: web
     - title: GDPR & Sensitive Data
       url: /sop_gdpr_sensitive_data.html
+      output: web
+    - title: Sharing & Publishing Checklist
+      url: /checklist_sharing_publishing.html
       output: web
 
   - title: Templates & tools

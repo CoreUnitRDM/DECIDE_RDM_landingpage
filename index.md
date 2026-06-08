@@ -137,7 +137,7 @@ Follow standard Creative Commons licenses (e.g., CC BY, CC 0) to balance reuse a
 _Architecture of the Virtual Research Campus (VRC): From the Perspective of Researchers_  
 © Core Unit RDM
 
-![Architecture of the Virtual Research Campus (VRC)](/images/2025-06-02_JB_VRC-Wuerzburg_CurrentUserPerspective.png)
+![Architecture of the Virtual Research Campus (VRC)](/images/VRC_v2.png)
 
 - **Data Generation & Documentation**  
   - Raw data is generated in the lab (animal experiments, cell culture, measurement instruments).  

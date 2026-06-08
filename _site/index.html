@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="The 5-minute version: why research data management pays off for you, the rules of thumb, and where to go next.">
-<meta name="keywords" content=" RDM, FAIR, quick start, PhD, onboarding, overview">
+<meta name="keywords" content=" RDM, FAIR, quick start, PhD, onboarding, overview, VRC, pillars">
 <title>Start here | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -269,7 +269,14 @@
           
           
           
-          <li><a title="PhD Onboarding Blueprint" href="phd_onboarding_blueprint.html">PhD Onboarding Blueprint</a></li>
+          <li><a title="How to start a project" href="phd_onboarding_blueprint.html">How to start a project</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Use cases & subprojects" href="use_cases.html">Use cases & subprojects</a></li>
           
           
           
@@ -306,14 +313,14 @@
           
           
           
-          <li><a title="Sharing & Publishing Checklist" href="checklist_sharing_publishing.html">Sharing & Publishing Checklist</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="GDPR & Sensitive Data" href="sop_gdpr_sensitive_data.html">GDPR & Sensitive Data</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Sharing & Publishing Checklist" href="checklist_sharing_publishing.html">Sharing & Publishing Checklist</a></li>
           
           
           
@@ -505,6 +512,8 @@ $('#toc').on('click', 'a', function() {
 
    <p>Research data management sounds like admin. It isn’t — it’s how you protect your thesis, publish faster, and turn your results into something the world can trust and build on. <strong>This page is the 5-minute version.</strong> Skim it, remember the rules of thumb, and follow a link only when you want the detail.</p>
 
+<p style="margin:18px 0;"><img src="/images/onboarding_flow_bold.svg" alt="From new scientist to FAIR-informed researcher: register, plan, train, connect, publish" style="width:100%;max-width:760px;" /></p>
+
 <h2 id="why-bother-the-30-second-case">Why bother? (the 30-second case)</h2>
 
 <p>Good RDM isn’t paperwork for funders — it’s leverage for <em>your</em> research:</p>
@@ -550,19 +559,62 @@ $('#toc').on('click', 'a', function() {
 </style>
 
 <div class="sh-cards">
-  <a class="sh-card" href="phd_onboarding_blueprint.html"><div class="sh-ico"><i class="fa fa-rocket"></i></div><h3>Start my PhD project</h3><p>The day-one onboarding blueprint, step by step.</p></a>
+  <a class="sh-card" href="phd_onboarding_blueprint.html"><div class="sh-ico"><i class="fa fa-rocket"></i></div><h3>Start a project</h3><p>The day-one workflow, step by step.</p></a>
   <a class="sh-card" href="sop_fair_rdm.html"><div class="sh-ico"><i class="fa fa-check-circle"></i></div><h3>Make my project FAIR</h3><p>Tool-by-tool FAIR steps, plus a quick self-check.</p></a>
   <a class="sh-card" href="checklist_sharing_publishing.html"><div class="sh-ico"><i class="fa fa-share-alt"></i></div><h3>Share or publish data</h3><p>What to verify before data leaves your hands.</p></a>
   <a class="sh-card" href="dmp_template.html"><div class="sh-ico"><i class="fa fa-file-text-o"></i></div><h3>Write my DMP</h3><p>A data management plan, pre-filled for the VRC.</p></a>
-  <a class="sh-card" href="metadata_templates.html"><div class="sh-ico"><i class="fa fa-table"></i></div><h3>Plan my metadata</h3><p>The template and the right standard for your field.</p></a>
+  <a class="sh-card" href="use_cases.html"><div class="sh-ico"><i class="fa fa-cubes"></i></div><h3>See it done</h3><p>Showcase subprojects, fully FAIR.</p></a>
   <a class="sh-card" href="sop_gdpr_sensitive_data.html"><div class="sh-ico"><i class="fa fa-lock"></i></div><h3>Handle sensitive data</h3><p>GDPR, patient data, and the UKW boundary.</p></a>
 </div>
 
-<h2 id="the-infrastructure-behind-this-the-vrc">The infrastructure behind this: the VRC</h2>
+<h2 id="our-approach-the-vrc-and-three-pillars">Our approach: the VRC and three pillars</h2>
 
-<p>This knowledge hub is run by the <strong>cRDM — core unit Research Data Management</strong> of the Medical Faculty (<a href="https://www.med.uni-wuerzburg.de/fdm/">med.uni-wuerzburg.de/fdm</a>). Together with the <strong>Bioinformatics</strong> group we operate the shared <strong>Nextcloud, JupyterHub, and HPC</strong>, and combine them with the <strong>Rechenzentrum (RZ)</strong> and <strong>SMI</strong> services into one <strong>Virtual Research Campus (VRC)</strong> — a single, joined-up environment for your data from planning to publication. Seamless connectors between these services are actively in the making.</p>
+<p>DECIDE RDM rests on a simple model.</p>
 
-<p>Using the VRC services means agreeing to the cRDM terms of use (Nutzungsordnung): <a href="https://www.med.uni-wuerzburg.de/fileadmin/07030400/2026/2026-03_Nutzungsordnung_cRDM_de.pdf">Nutzungsordnung cRDM (PDF, DE)</a>.</p>
+<div style="max-width:760px;margin:18px auto;">
+<svg width="100%" viewBox="0 0 760 292" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="vrc-t vrc-d">
+<title id="vrc-t">The DECIDE VRC: the researcher journey, the cRDM pillars, and their foundation</title>
+<desc id="vrc-d">Top: the researcher journey — Data (I find it), Documentation (I understand it), Analysis (I reproduce it). Middle: the cRDM service pillars — Knowledgebase, Infrastructure (the VRC), Training. Bottom: a foundation of good scientific practice, data sovereignty, data security, and collaboration.</desc>
+<defs>
+<marker id="va" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L8 5L1 9" fill="none" stroke="#9aa7b2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></marker>
+</defs>
+<text x="50" y="16" font-size="11" font-weight="700" fill="#2f6fa8" letter-spacing="0.5">RESEARCHER JOURNEY — what every project does</text>
+<g font-family="inherit">
+<rect x="50" y="28" width="198" height="60" rx="10" fill="#1A3A5C" stroke="#2B6CB0" />
+<text x="149" y="54" text-anchor="middle" fill="#fff" font-size="15" font-weight="600">Data</text>
+<text x="149" y="74" text-anchor="middle" fill="#9fc3e8" font-size="11" font-style="italic">&#8220;I find it&#8221;</text>
+<rect x="281" y="28" width="198" height="60" rx="10" fill="#1A3A5C" stroke="#2B6CB0" />
+<text x="380" y="54" text-anchor="middle" fill="#fff" font-size="15" font-weight="600">Documentation</text>
+<text x="380" y="74" text-anchor="middle" fill="#9fc3e8" font-size="11" font-style="italic">&#8220;I understand it&#8221;</text>
+<rect x="512" y="28" width="198" height="60" rx="10" fill="#1A3A5C" stroke="#2B6CB0" />
+<text x="611" y="54" text-anchor="middle" fill="#fff" font-size="15" font-weight="600">Analysis</text>
+<text x="611" y="74" text-anchor="middle" fill="#9fc3e8" font-size="11" font-style="italic">&#8220;I reproduce it&#8221;</text>
+</g>
+<line x1="250" y1="58" x2="279" y2="58" stroke="#9aa7b2" stroke-width="1.8" marker-end="url(#va)" />
+<line x1="481" y1="58" x2="510" y2="58" stroke="#9aa7b2" stroke-width="1.8" marker-end="url(#va)" />
+<text x="50" y="112" font-size="11" font-weight="700" fill="#5aa02c" letter-spacing="0.5">ENABLED BY THE cRDM PILLARS &#8595;</text>
+<g font-family="inherit">
+<rect x="50" y="124" width="198" height="58" rx="10" fill="#1A3A5C" stroke="#2B6CB0" />
+<text x="149" y="150" text-anchor="middle" fill="#fff" font-size="15" font-weight="600">Knowledgebase</text>
+<text x="149" y="169" text-anchor="middle" fill="#9fc3e8" font-size="11">this site &#183; SOPs &#183; standards</text>
+<rect x="281" y="124" width="198" height="58" rx="10" fill="#1A3A5C" stroke="#2B6CB0" />
+<text x="380" y="150" text-anchor="middle" fill="#fff" font-size="15" font-weight="600">Infrastructure</text>
+<text x="380" y="169" text-anchor="middle" fill="#9fc3e8" font-size="11">the VRC &#183; cloud &#183; HPC &#183; ELN</text>
+<rect x="512" y="124" width="198" height="58" rx="10" fill="#1A3A5C" stroke="#2B6CB0" />
+<text x="611" y="150" text-anchor="middle" fill="#fff" font-size="15" font-weight="600">Training</text>
+<text x="611" y="169" text-anchor="middle" fill="#9fc3e8" font-size="11">WueCampus &#183; workshops</text>
+</g>
+<rect x="40" y="216" width="680" height="58" rx="12" fill="#3f7a3f" />
+<text x="380" y="240" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Foundation &#8212; good scientific practice</text>
+<text x="380" y="260" text-anchor="middle" fill="#dff0d8" font-size="11">data sovereignty &#183; data security &#183; collaborative, reproducible research</text>
+</svg>
+</div>
+
+<p>As a researcher you move your work through three pillars — <strong>Data</strong> (find it), <strong>Documentation</strong> (understand it), <strong>Analysis</strong> (reproduce it). cRDM makes that possible through three service pillars: a <strong>Knowledgebase</strong> (this site — SOPs and standards), the <strong>Infrastructure</strong> (the <strong>Virtual Research Campus</strong>: shared Nextcloud, JupyterHub, HPC and ELN, run together with Bioinformatics and combined with RZ/SMI services), and <strong>Training</strong> (WueCampus, workshops, consulting).</p>
+
+<p>All of it rests on good scientific practice — and on three things the VRC is built to protect: <strong>data sovereignty</strong> (your data stays under your control, with fine-grained access you set), <strong>data security</strong> (patient-identifying data never leaves UKW — the VRC is for research data, not patient data), and <strong>collaborative, reproducible research</strong>.</p>
+
+<p>This hub is run by the <strong>cRDM — core unit Research Data Management</strong> of the Medical Faculty (<a href="https://www.med.uni-wuerzburg.de/fdm/">med.uni-wuerzburg.de/fdm</a>). Using the VRC services means agreeing to the cRDM terms of use (Nutzungsordnung): <a href="https://www.med.uni-wuerzburg.de/fileadmin/07030400/2026/2026-03_Nutzungsordnung_cRDM_de.pdf">Nutzungsordnung cRDM (PDF, DE)</a>.</p>
 
 
     <div class="tags">
@@ -587,7 +639,7 @@ $('#toc').on('click', 'a', function() {
       
         <span>Page last updated:</span> 2026-06-07<br/>
       
-      Site last generated: Jun 7, 2026 <br />
+      Site last generated: Jun 8, 2026 <br />
       <p>
         <img src="images/crdm_logo.png" alt="Company logo" />
       </p>
