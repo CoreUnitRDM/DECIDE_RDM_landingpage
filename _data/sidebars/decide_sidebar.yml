@@ -87,3 +87,6 @@ entries:
     - title: External RDM Resources
       url: /external_resources.html
       output: web
+    - title: Support & FAQ
+      url: /faq.html
+      output: web

@@ -3,25 +3,25 @@
   
   
   <url>
-    <loc>http://localhost:4000/upcoming-nfdi4microbiota-events.html</loc>
+    <loc>/upcoming-nfdi4microbiota-events.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/nfdi4microbiota-trainings.html</loc>
+    <loc>/nfdi4microbiota-trainings.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/nfdi4microbiota-newsletter.html</loc>
+    <loc>/nfdi4microbiota-newsletter.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/latest-nfdi4microbiota-news.html</loc>
+    <loc>/latest-nfdi4microbiota-news.html</loc>
   </url>
   
   
@@ -32,169 +32,13 @@
   
   
   <url>
-    <loc>http://localhost:4000/about_decide.html</loc>
+    <loc>/index.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/about_fair.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/about_metadata.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/about_rdm.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/archiving.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/index.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/checklist_sharing_publishing.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/decide_data_lifecycle.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/dmp_template.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/external_resources.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/fair_self_check.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/rdm_plan_full.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/infection_atlas.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/jupyterhub.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/labfolder.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/metadata_management.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/metadata_templates.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_git_collaboration.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/news.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/news_archive.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/nextcloud.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/phd_onboarding_blueprint.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/rdm_plan.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/rdm_planer2.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/sop_fair_rdm.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/sop_gdpr_sensitive_data.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/sop_rdm_lifecycle.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/index.html</loc>
+    <loc>/rdm_plan_full.html</loc>
   </url>
   
   
@@ -202,34 +46,6 @@
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/use_cases.html</loc>
-  </url>
   
   
 </urlset>
