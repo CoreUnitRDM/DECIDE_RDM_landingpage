@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content="eventsmicrobiotanfdi4microbiota,  ">
-<title>Upcoming NFDI4Microbiota Events in 2025 | Info and Services on DECIDE RDM</title>
+<meta name="description" content="Concrete, tool-by-tool steps to satisfy each FAIR principle using VRC Würzburg infrastructure.">
+<meta name="keywords" content="SOPFAIRRDMVRC,  ">
+<title>SOP — Making your project FAIR in the VRC | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -200,7 +200,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Upcoming NFDI4Microbiota Events in 2025 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the SOP — Making your project FAIR in the VRC page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -220,7 +220,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Upcoming NFDI4Microbiota Events in 2025">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="SOP — Making your project FAIR in the VRC">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -299,7 +299,7 @@
           
           
           
-          <li><a title="Make your project FAIR" href="sop_fair_rdm.html">Make your project FAIR</a></li>
+          <li class="active"><a title="Make your project FAIR" href="sop_fair_rdm.html">Make your project FAIR</a></li>
           
           
           
@@ -471,71 +471,120 @@
 
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
-            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
-
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Upcoming NFDI4Microbiota Events in 2025</h1>
-        <p class="post-meta"><time datetime="2025-01-28T00:00:00+00:00" itemprop="datePublished">Jan 28, 2025</time> /
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-        </p>
+            <div class="post-header">
+   <h1 class="post-title-main">SOP — Making your project FAIR in the VRC</h1>
+</div>
 
 
-    </header>
 
-    <div class="post-content" itemprop="articleBody">
+<div class="post-content">
 
+   
+    <div class="summary">Concrete, tool-by-tool steps to satisfy each FAIR principle using VRC Würzburg infrastructure.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/josef-streusalz/DECIDE_RDM_landingpage/tree/main/pages/mydoc/sop_fair_rdm.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <p><strong>FAIR is the <em>exit standard</em>.</strong> Anything that leaves your personal Green Room into a shared or published zone must be Findable, Accessible, Interoperable, and Reusable. This SOP gives the concrete VRC action for each principle — not the theory. Tick the matching items in <code class="language-plaintext highlighter-rouge">FAIR_self_check.md</code> before each gate (G1 leaving the Green Room, G2 publishing).</p>
+
+<h2 id="findable--concrete-vrc-steps">Findable — concrete VRC steps</h2>
+<ul>
+  <li>Apply the metadata template <strong>at upload time</strong>, not later. Templates live in the cRDM Nextcloud share and at <code class="language-plaintext highlighter-rouge">github.com/CoreUnitRDM/MetaDataTemplates</code>; attach the filled Excel/CSV to the project’s <code class="language-plaintext highlighter-rouge">data/metadata/</code> folder.</li>
+  <li>Use <strong>one identifier everywhere</strong>: the same <code class="language-plaintext highlighter-rouge">subject_id</code> / <code class="language-plaintext highlighter-rouge">sample_id</code> appears in the filename (SOP file-naming), the metadata table, and the Labfolder entry.</li>
+  <li>At publication, get a <strong>persistent identifier (DOI)</strong> via WueData (JMU institutional repository, <code class="language-plaintext highlighter-rouge">&lt;FILL IN URL&gt;</code>) or a domain repository — never rely on a Nextcloud link as the citable handle.</li>
+</ul>
+
+<h2 id="accessible--concrete-vrc-steps">Accessible — concrete VRC steps</h2>
+<ul>
+  <li>Store shared data in a <strong>Nextcloud group folder</strong> with role-based access (requested from the cRDM helpdesk), not in personal shares or public links.</li>
+  <li>Authentication is via your <strong>JMU/Informatikcloud identity (SSO)</strong>; MFA is mandatory for sensitive zones.</li>
+  <li>Keep <strong>metadata discoverable even when data is restricted</strong>: deposit the descriptive record openly and route the data itself through the correct controlled channel (EGA / NFDI4Health Study Hub for human-derived; UKW for patient-identifying — see the GDPR SOP).</li>
+</ul>
+
+<h2 id="interoperable--concrete-vrc-steps">Interoperable — concrete VRC steps</h2>
+<ul>
+  <li>Convert to <strong>open standard formats</strong> as your <em>primary</em> data: OME-TIFF/OME-Zarr (imaging), FASTQ→BAM/CRAM/VCF (omics), CSV/Parquet over XLSX, JSON/MD over Word. Proprietary originals stay in <code class="language-plaintext highlighter-rouge">data/raw/</code> untouched.</li>
+  <li>Use <strong>controlled vocabularies</strong>, not free text: MIxS/ENVO (microbiota), OME-XML/REMBI (imaging), SNOMED CT / LOINC / ICD (clinical), ChEBI/RRID (wetlab). Look up terms via the EBI OLS.</li>
+  <li>Code missing values explicitly with standard tokens (see Metadata Template Suggestions) — never leave a cell blank.</li>
+</ul>
+
+<h2 id="reusable--concrete-vrc-steps">Reusable — concrete VRC steps</h2>
+<ul>
+  <li>Declare a <strong>licence</strong> before publishing: data → CC BY 4.0 or CC0; code → MIT / Apache-2.0 / GPL-3.0.</li>
+  <li>Make the pipeline <strong>reproducible</strong>: <code class="language-plaintext highlighter-rouge">raw → primary → processed</code> must regenerate from <code class="language-plaintext highlighter-rouge">src/</code> alone, versioned in VRC GitLab (public code mirrored to <code class="language-plaintext highlighter-rouge">github.com/CoreUnitRDM</code> or Zenodo after publication).</li>
+  <li>Ship <strong>documentation alongside data</strong>: README (the map), the data dictionary, and the DMP travel with the project (see the project bootstrap).</li>
+</ul>
+
+<h2 id="vrc-tool-map-at-a-glance">VRC tool map at a glance</h2>
+<p>| FAIR need | VRC tool |
+|—|—|
+| Storage + access control | cRDM Nextcloud group folders (<code class="language-plaintext highlighter-rouge">coreunitrdm.biozentrum.uni-wuerzburg.de</code>) |
+| Documentation | Labfolder ELN (via RZ), README, data dictionary |
+| Metadata templates | CoreUnitRDM MetaDataTemplates + Nextcloud metadata app |
+| Code / provenance | VRC GitLab (+ GitHub/Zenodo mirror at publication) |
+| Compute | JupyterHub + HPC Julia I/II / HPC Bioinformatics |
+| Preservation | RZ Archive Server (10-year retention) |
+| Publication + DOI | WueData / Zenodo / domain repository |
+| DMP | RDMO (JMU) or DataPLAN |</p>
+
+<p><em>Related: SOP — RDM Lifecycle · FAIR self-check · GDPR &amp; sensitive data SOP · Metadata Template Suggestions.</em></p>
+
+
+    <div class="tags">
         
-
-        <p>The NFDI4Microbiota initiative offers a series of exciting events in 2025 to foster collaboration and innovation in microbiota research.</p>
-
-<h3 id="highlighted-events"><strong>Highlighted Events</strong></h3>
-<ol>
-  <li>
-    <p><strong>Annual Conference on Microbiota Data Integration</strong><br />
-<strong>Date</strong>: May 15–17, 2025<br />
-<strong>Location</strong>: Heidelberg, Germany<br />
-Focus on data integration and interoperability for microbiota research.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Hackathon on Microbiota Standards</strong><br />
-<strong>Date</strong>: September 10–12, 2025<br />
-<strong>Location</strong>: Online<br />
-Collaborative sessions to develop community standards for microbiota data sharing.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Microbiota Data FAIRification Workshop</strong><br />
-<strong>Date</strong>: November 22, 2025<br />
-<strong>Location</strong>: Bonn, Germany<br />
-Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoperable, Reusable).<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-</ol>
-
-<p>For the complete list of events, visit the <a href="https://nfdi4microbiota.de/newsroom/events.html">NFDI4Microbiota Events Page</a>.</p>
-
-
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </div>
 
 
 
-</article>
 
 
 
 
-
-
+</div>
 
 <hr class="shaded"/>
 
@@ -544,6 +593,8 @@ Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoper
   <div class="row">
     <div class="col-lg-12 footer">
       &copy;2026 DECIDE-Konsortium (SFB 1583). All rights reserved. <br />
+      
+        <span>Page last updated:</span> 2026-06-07<br/>
       
       Site last generated: Jul 2, 2026 <br />
       <p>

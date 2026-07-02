@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content="eventsmicrobiotanfdi4microbiota,  ">
-<title>Upcoming NFDI4Microbiota Events in 2025 | Info and Services on DECIDE RDM</title>
+<meta name="description" content="The six-phase research data lifecycle with the concrete VRC tool, action, and data zone at each phase.">
+<meta name="keywords" content="SOPRDMlifecycleVRC,  ">
+<title>SOP — The RDM lifecycle in the VRC | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -200,7 +200,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Upcoming NFDI4Microbiota Events in 2025 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the SOP — The RDM lifecycle in the VRC page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -220,7 +220,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Upcoming NFDI4Microbiota Events in 2025">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="SOP — The RDM lifecycle in the VRC">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -292,7 +292,7 @@
           
           
           
-          <li><a title="RDM Lifecycle" href="sop_rdm_lifecycle.html">RDM Lifecycle</a></li>
+          <li class="active"><a title="RDM Lifecycle" href="sop_rdm_lifecycle.html">RDM Lifecycle</a></li>
           
           
           
@@ -471,71 +471,150 @@
 
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
-            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
-
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Upcoming NFDI4Microbiota Events in 2025</h1>
-        <p class="post-meta"><time datetime="2025-01-28T00:00:00+00:00" itemprop="datePublished">Jan 28, 2025</time> /
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-        </p>
+            <div class="post-header">
+   <h1 class="post-title-main">SOP — The RDM lifecycle in the VRC</h1>
+</div>
 
 
-    </header>
 
-    <div class="post-content" itemprop="articleBody">
+<div class="post-content">
 
-        
+   
+    <div class="summary">The six-phase research data lifecycle with the concrete VRC tool, action, and data zone at each phase.</div>
+   
 
-        <p>The NFDI4Microbiota initiative offers a series of exciting events in 2025 to foster collaboration and innovation in microbiota research.</p>
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
 
-<h3 id="highlighted-events"><strong>Highlighted Events</strong></h3>
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/josef-streusalz/DECIDE_RDM_landingpage/tree/main/pages/mydoc/sop_rdm_lifecycle.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <p>The lifecycle is the spine of the whole VRC. Six phases (after NFDI4Microbiota / the DECIDE site), each with the concrete VRC tool to use, the action to take, and the <strong>data zone</strong> you are operating in. The zone tells you which rules apply: <strong>Green Room</strong> (personal, no FAIR requirements) → <strong>Shared</strong> (group, metadata + access control) → <strong>Published</strong> (world, DOI + licence). Two <strong>gates</strong> sit between them: G1 (Green Room → Shared) and G2 (Shared → Published).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>What you do</th>
+      <th>VRC tool / action</th>
+      <th>Zone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. Plan</strong></td>
+      <td>Write the DMP, choose the metadata model, scaffold the project</td>
+      <td>RDMO (JMU) or DataPLAN → DMP into <code class="language-plaintext highlighter-rouge">docs/DMP/</code>; run <code class="language-plaintext highlighter-rouge">init_vrc_project.sh</code> to create the standard folder</td>
+      <td>Green Room</td>
+    </tr>
+    <tr>
+      <td><strong>2. Collect</strong></td>
+      <td>Acquire data, document it in real time</td>
+      <td>Instrument → <code class="language-plaintext highlighter-rouge">data/raw/</code> (lock read-only, checksum); record in <strong>Labfolder</strong> within 48 h; same <code class="language-plaintext highlighter-rouge">subject_id</code> everywhere</td>
+      <td>Green Room</td>
+    </tr>
+    <tr>
+      <td><strong>3. Process &amp; Analyze</strong></td>
+      <td>Convert raw → primary → processed; run analysis</td>
+      <td>Conversion scripts in <code class="language-plaintext highlighter-rouge">src/</code> (open formats); <strong>JupyterHub</strong> on <strong>HPC Julia/Bioinformatics</strong>; code in <strong>VRC GitLab</strong></td>
+      <td><strong>Gate G1</strong> → Shared</td>
+    </tr>
+    <tr>
+      <td><strong>4. Preserve</strong></td>
+      <td>Store, back up, and archive long-term</td>
+      <td>cRDM <strong>Nextcloud group folder</strong> (nightly backup to RZ); <strong>RZ Archive Server</strong> for 10-year retention; open formats only</td>
+      <td>Shared</td>
+    </tr>
+    <tr>
+      <td><strong>5. Share / Publish</strong></td>
+      <td>Release data findably and citably with the right access level</td>
+      <td><strong>Gate G2</strong>: DOI via WueData/Zenodo/domain repo; declare licence; controlled-access (EGA / NFDI4Health) for sensitive</td>
+      <td><strong>Gate G2</strong> → Published</td>
+    </tr>
+    <tr>
+      <td><strong>6. Reuse</strong></td>
+      <td>Make it the next project’s input</td>
+      <td>Persistent links + searchable metadata; published dataset becomes Phase-1 input for follow-up work (e.g. atlas / network analyses)</td>
+      <td>Published</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="gate-g1--leaving-the-green-room-collectprocess--shared">Gate G1 — leaving the Green Room (Collect/Process → Shared)</h2>
+<p>Before data enters a Nextcloud group folder:</p>
 <ol>
-  <li>
-    <p><strong>Annual Conference on Microbiota Data Integration</strong><br />
-<strong>Date</strong>: May 15–17, 2025<br />
-<strong>Location</strong>: Heidelberg, Germany<br />
-Focus on data integration and interoperability for microbiota research.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Hackathon on Microbiota Standards</strong><br />
-<strong>Date</strong>: September 10–12, 2025<br />
-<strong>Location</strong>: Online<br />
-Collaborative sessions to develop community standards for microbiota data sharing.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Microbiota Data FAIRification Workshop</strong><br />
-<strong>Date</strong>: November 22, 2025<br />
-<strong>Location</strong>: Bonn, Germany<br />
-Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoperable, Reusable).<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
+  <li>Metadata template applied (<code class="language-plaintext highlighter-rouge">data/metadata/</code>).</li>
+  <li>Pseudonymise/anonymise if patient-derived (see GDPR SOP) — <strong>patient-identifying data does not enter the cRDM VRC</strong>.</li>
+  <li>Correct group folder + access policy chosen.</li>
+  <li>DMP reference confirmed; raw locked read-only.</li>
 </ol>
 
-<p>For the complete list of events, visit the <a href="https://nfdi4microbiota.de/newsroom/events.html">NFDI4Microbiota Events Page</a>.</p>
+<h2 id="gate-g2--publishing-shared--published">Gate G2 — publishing (Shared → Published)</h2>
+<p>Before release:</p>
+<ol>
+  <li>Full FAIR metadata; DOI assigned (repository, not a Nextcloud link).</li>
+  <li>Licence declared; README complete.</li>
+  <li>Ethics + DPO clearance confirmed where applicable.</li>
+  <li>DMP updated one last time.</li>
+</ol>
+
+<h2 id="worked-vrc-example-microscopy-phd-crc-1525">Worked VRC example (microscopy PhD, CRC 1525)</h2>
+<p>Acquire on the confocal → files in HPC home (<strong>Green Room</strong>). Decide the session is real → fill the imaging metadata template, upload to the consortium <strong>Nextcloud group folder</strong>, record in Labfolder (<strong>Gate G1 → Shared</strong>). Convert <code class="language-plaintext highlighter-rouge">.czi</code>→OME-TIFF in <code class="language-plaintext highlighter-rouge">src/</code>, analyse on JupyterHub, version in GitLab (<strong>Process</strong>). Paper accepted → deposit images to IDR, code to Zenodo with a DOI, reference both (<strong>Gate G2 → Published</strong>).</p>
+
+<p><em>Related: SOP — FAIR RDM · Checklist before sharing/publishing in Nextcloud · GDPR &amp; sensitive data SOP.</em></p>
 
 
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </div>
 
 
 
-</article>
 
 
 
 
-
-
+</div>
 
 <hr class="shaded"/>
 
@@ -544,6 +623,8 @@ Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoper
   <div class="row">
     <div class="col-lg-12 footer">
       &copy;2026 DECIDE-Konsortium (SFB 1583). All rights reserved. <br />
+      
+        <span>Page last updated:</span> 2026-06-07<br/>
       
       Site last generated: Jul 2, 2026 <br />
       <p>

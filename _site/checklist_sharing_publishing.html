@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content="eventsmicrobiotanfdi4microbiota,  ">
-<title>Upcoming NFDI4Microbiota Events in 2025 | Info and Services on DECIDE RDM</title>
+<meta name="description" content="What to verify at each step: private folder → share a folder → push to a TEAM/group folder → share publicly → publish with a DOI.">
+<meta name="keywords" content="checklistNextcloudsharingpublishingFAIRGDPRVRC,  ">
+<title>Checklist — before sharing or publishing in Nextcloud (VRC) | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -200,7 +200,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Upcoming NFDI4Microbiota Events in 2025 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Checklist — before sharing or publishing in Nextcloud (VRC) page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -220,7 +220,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Upcoming NFDI4Microbiota Events in 2025">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Checklist — before sharing or publishing in Nextcloud (VRC)">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -320,7 +320,7 @@
           
           
           
-          <li><a title="Sharing & Publishing Checklist" href="checklist_sharing_publishing.html">Sharing & Publishing Checklist</a></li>
+          <li class="active"><a title="Sharing & Publishing Checklist" href="checklist_sharing_publishing.html">Sharing & Publishing Checklist</a></li>
           
           
           
@@ -471,71 +471,144 @@
 
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
-            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
-
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Upcoming NFDI4Microbiota Events in 2025</h1>
-        <p class="post-meta"><time datetime="2025-01-28T00:00:00+00:00" itemprop="datePublished">Jan 28, 2025</time> /
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-        </p>
+            <div class="post-header">
+   <h1 class="post-title-main">Checklist — before sharing or publishing in Nextcloud (VRC)</h1>
+</div>
 
 
-    </header>
 
-    <div class="post-content" itemprop="articleBody">
+<div class="post-content">
 
+   
+    <div class="summary">What to verify at each step: private folder → share a folder → push to a TEAM/group folder → share publicly → publish with a DOI.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/josef-streusalz/DECIDE_RDM_landingpage/tree/main/pages/mydoc/checklist_sharing_publishing.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <p>Each step out of your private space is a deliberate act with its own checks. The steps map onto the VRC zones: <strong>private = Green Room</strong>, <strong>shared/group = Shared zone (Gate G1)</strong>, <strong>public/DOI = Published (Gate G2)</strong>. Work top to bottom; do not skip a tier.</p>
+
+<blockquote>
+  <p><strong>Hard stops that apply at every tier</strong></p>
+  <ul>
+    <li><strong>Patient-identifying data never enters the cRDM Nextcloud.</strong> It stays at UKW. (GDPR SOP)</li>
+    <li>If data is patient-derived, it must be <strong>pseudonymised and verified</strong> before it leaves your private space.</li>
+    <li>A <strong>Nextcloud public link is not a publication</strong> and not a citable handle — for that you need a repository + DOI (last tier).</li>
+  </ul>
+</blockquote>
+
+<h2 id="tier-0--private--personal-folder-green-room">Tier 0 — Private / personal folder (Green Room)</h2>
+<p>Your own Nextcloud space or HPC home. No metadata or FAIR requirements. This is where you think before you share. Nothing to check — but nothing here is backed by group access control, so don’t treat it as the project’s only copy.</p>
+
+<h2 id="tier-1--share-a-folder-with-specific-people-internal-share">Tier 1 — Share a folder with specific people (internal share)</h2>
+<p><em>Nextcloud → folder → Share → add internal user/group.</em> Use for handing a colleague a specific dataset.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />No patient-identifying data; pseudonymisation verified if applicable</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Filenames follow the convention; <code class="language-plaintext highlighter-rouge">subject_id</code> consistent</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Set the right permission level (read vs edit); add an <strong>expiry date</strong></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Recipient is JMU/UKW/approved partner (not a private external account)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />You are sharing a copy of the relevant data, not your whole Green Room</li>
+</ul>
+
+<h2 id="tier-2--push-to-a-team--group-folder-shared-zone--gate-g1">Tier 2 — Push to a TEAM / group folder (Shared zone — Gate G1)</h2>
+<p><em>Nextcloud Group Folders → consortium folder with role-based ACL (request from the cRDM helpdesk).</em> This is the proper promotion to the Shared zone — the real Gate G1.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Metadata template applied</strong> and placed in <code class="language-plaintext highlighter-rouge">data/metadata/</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Pseudonymised/anonymised if patient-derived; key kept only at UKW, separate, access-logged</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Correct group folder + access policy (who in the consortium can see/edit)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Standard folder structure present; <code class="language-plaintext highlighter-rouge">README.md</code> written</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />DMP referenced; raw data locked read-only and checksummed</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Same identifiers across filename ↔ metadata ↔ Labfolder</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />If sensitive: DPO-approved processing record exists before the move</li>
+</ul>
+
+<h2 id="tier-3--share-with-the-public-via-a-nextcloud-link">Tier 3 — Share with the public via a Nextcloud link</h2>
+<p><em>Nextcloud → Share → “Share link”.</em> Use sparingly — for a quick public hand-off, <strong>not</strong> as the archival/citable copy.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Absolutely no sensitive, personal, or licence-restricted content</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />A <strong>licence</strong> is attached (CC BY 4.0 / CC0 for data)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Link has a <strong>password</strong> and an <strong>expiry date</strong>; permission is read-only</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Metadata + README included so the recipient can interpret it</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />You understand this link can disappear — for anything to be cited, use Tier 4</li>
+</ul>
+
+<h2 id="tier-4--publish-with-a-doi-gate-g2--the-real-publication">Tier 4 — Publish with a DOI (Gate G2 — the real publication)</h2>
+<p>Deposit to a repository, not a Nextcloud link.</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Repository chosen: WueData / Zenodo / domain repo (IDR, ENA, EGA, PRIDE, NFDI4Health Study Hub)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Two-track for sensitive projects: open outputs → open repo + DOI; pseudonymised clinical → controlled-access (EGA / Study Hub) under a Data Access Agreement</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Full FAIR metadata; <strong>DOI</strong> assigned</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Licence declared (data + code); code mirrored to GitHub/Zenodo</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Ethics + DPO clearance covers the publication</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />DMP updated one last time; README at publication is complete</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Published dataset linked from the manuscript before submission</li>
+</ul>
+
+<p><em>Related: SOP — RDM Lifecycle · SOP — FAIR RDM · GDPR &amp; sensitive data SOP · FAIR self-check.</em></p>
+
+
+    <div class="tags">
         
-
-        <p>The NFDI4Microbiota initiative offers a series of exciting events in 2025 to foster collaboration and innovation in microbiota research.</p>
-
-<h3 id="highlighted-events"><strong>Highlighted Events</strong></h3>
-<ol>
-  <li>
-    <p><strong>Annual Conference on Microbiota Data Integration</strong><br />
-<strong>Date</strong>: May 15–17, 2025<br />
-<strong>Location</strong>: Heidelberg, Germany<br />
-Focus on data integration and interoperability for microbiota research.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Hackathon on Microbiota Standards</strong><br />
-<strong>Date</strong>: September 10–12, 2025<br />
-<strong>Location</strong>: Online<br />
-Collaborative sessions to develop community standards for microbiota data sharing.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Microbiota Data FAIRification Workshop</strong><br />
-<strong>Date</strong>: November 22, 2025<br />
-<strong>Location</strong>: Bonn, Germany<br />
-Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoperable, Reusable).<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-</ol>
-
-<p>For the complete list of events, visit the <a href="https://nfdi4microbiota.de/newsroom/events.html">NFDI4Microbiota Events Page</a>.</p>
-
-
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <a href="tag_publishing.html" class="btn btn-default navbar-btn cursorNorm" role="button">publishing</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </div>
 
 
 
-</article>
 
 
 
 
-
-
+</div>
 
 <hr class="shaded"/>
 
@@ -544,6 +617,8 @@ Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoper
   <div class="row">
     <div class="col-lg-12 footer">
       &copy;2026 DECIDE-Konsortium (SFB 1583). All rights reserved. <br />
+      
+        <span>Page last updated:</span> 2026-06-07<br/>
       
       Site last generated: Jul 2, 2026 <br />
       <p>

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content="eventsmicrobiotanfdi4microbiota,  ">
-<title>Upcoming NFDI4Microbiota Events in 2025 | Info and Services on DECIDE RDM</title>
+<meta name="description" content="Learn about the importance of metadata, its role in research data management, and available resources for metadata standards.">
+<meta name="keywords" content="MetadataResearch Data ManagementFAIR Principles,  Metadata, Research Data Management, Metadata Standards">
+<title>About Metadata in Research Data Management | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -200,7 +200,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Upcoming NFDI4Microbiota Events in 2025 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the About Metadata in Research Data Management page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -220,7 +220,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Upcoming NFDI4Microbiota Events in 2025">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="About Metadata in Research Data Management">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -394,7 +394,7 @@
           
           
           
-          <li><a title="About Metadata" href="about_metadata.html">About Metadata</a></li>
+          <li class="active"><a title="About Metadata" href="about_metadata.html">About Metadata</a></li>
           
           
           
@@ -471,71 +471,172 @@
 
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
-            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
-
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Upcoming NFDI4Microbiota Events in 2025</h1>
-        <p class="post-meta"><time datetime="2025-01-28T00:00:00+00:00" itemprop="datePublished">Jan 28, 2025</time> /
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-        </p>
+            <div class="post-header">
+   <h1 class="post-title-main">About Metadata in Research Data Management</h1>
+</div>
 
 
-    </header>
 
-    <div class="post-content" itemprop="articleBody">
+<div class="post-content">
 
+   
+    <div class="summary">Learn about the importance of metadata, its role in research data management, and available resources for metadata standards.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/josef-streusalz/DECIDE_RDM_landingpage/tree/main/pages/mydoc/about_metadata.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <h2 id="what-is-metadata">What is Metadata?</h2>
+
+<p>Metadata is a cornerstone of effective Research Data Management (RDM), enabling researchers to describe, organize, and share data efficiently. It ensures that data is not only findable and accessible but also interpretable and reusable. By adhering to metadata standards, researchers can align their work with FAIR principles and advance the scientific community’s ability to collaborate effectively.</p>
+
+<p>For more information, visit the following resources:</p>
+<ul>
+  <li><a href="https://www.med.uni-wuerzburg.de/fdm/helpdesk/metadaten/">Metadata in Research Data Management - University of Würzburg</a></li>
+  <li><a href="https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/md.html">Metadata Standards - NFDI4Microbiota Knowledge Base</a></li>
+</ul>
+
+<p>Metadata is often described as “data about data.” It provides context to research data, including:</p>
+<ul>
+  <li><strong>Descriptive Metadata</strong>: Information such as title, creator, and keywords.</li>
+  <li><strong>Structural Metadata</strong>: Details about data organization and relationships.</li>
+  <li><strong>Administrative Metadata</strong>: Technical and logistical information, including versioning and access rights.</li>
+</ul>
+
+<p>Metadata serves as the foundation for data discoverability, accessibility, and reuse.</p>
+
+<hr />
+
+<h2 id="why-metadata-matters-in-rdm">Why Metadata Matters in RDM</h2>
+
+<p>Metadata plays a crucial role in:</p>
+<ul>
+  <li><strong>Data Discoverability</strong>: Helping researchers locate relevant datasets through search tools.</li>
+  <li><strong>Data Accessibility</strong>: Providing essential context for understanding datasets.</li>
+  <li><strong>Data Reusability</strong>: Ensuring data can be effectively interpreted, validated, and repurposed by others.</li>
+  <li><strong>Interoperability</strong>: Enabling seamless integration and use of datasets across platforms.</li>
+</ul>
+
+<p>Robust metadata enhances research transparency, supports reproducibility, and maximizes the value of research investments.</p>
+
+<hr />
+
+<h2 id="metadata-standards">Metadata Standards</h2>
+
+<p>Adhering to metadata standards is essential for maintaining data quality and interoperability. Standards vary by discipline and data type, ensuring that metadata captures the specific requirements of a field.</p>
+
+<h3 id="metadata-standards-in-the-decide-consortium">Metadata Standards in the DECIDE Consortium</h3>
+
+<p>The DECIDE consortium provides a metadata solution integrated into its <a href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/">Nextcloud platform</a>. These apps simplify metadata management by:</p>
+<ul>
+  <li>Offering templates and guidance for metadata creation.</li>
+  <li>Ensuring metadata aligns with FAIR principles.</li>
+  <li>Facilitating seamless sharing and storage of data with standardized metadata.</li>
+  <li>Allow searching for metadata.</li>
+</ul>
+
+<h3 id="recommended-resource-for-metadata-mangement">Recommended Resource for Metadata Mangement</h3>
+<p>Explore the <a href="https://github.com/NFDI4Microbiota/MetadataStandards">Metadata Standards Repository by NFDI4Microbiota</a>. This repository provides:</p>
+<ul>
+  <li>A comprehensive list of metadata standards tailored to different data types.</li>
+  <li>Practical guidance on implementing these standards in your research workflows.</li>
+</ul>
+
+<p>DECIDE Nextcloud <a href="https://github.com/josef-streusalz/MetaDataGeneratorNC">Metadata App</a>: Integrated solution for metadata management.</p>
+<ul>
+  <li>Nextcloud App to generate, download, and attach a metadata XML file to your project folder.</li>
+</ul>
+
+<p>Metadata search tools <a href="https://github.com/CoreUnitRDM/file_exploration">Metadata Search Widgets</a>: Search metadata in the nextcloud via webdav protocol and metadata xml files:</p>
+<ul>
+  <li>Provided as pyton or R code, or as shiny app (refined soon)</li>
+</ul>
+
+<p>By leveraging these resources and tools, researchers can ensure that their metadata supports high-quality, FAIR-aligned research data management.
+Researchers can search the repository for their data type and find relevant standards to enhance metadata quality.</p>
+
+<hr />
+
+<h2 id="challenges-and-best-practices-in-metadata-management">Challenges and Best Practices in Metadata Management</h2>
+
+<h3 id="challenges">Challenges</h3>
+<ul>
+  <li><strong>Lack of Standardization</strong>: Inconsistent use of metadata standards across fields.</li>
+  <li><strong>Metadata Complexity</strong>: Difficulty in balancing detailed metadata with usability.</li>
+  <li><strong>Awareness and Training</strong>: Limited knowledge among researchers about metadata best practices.</li>
+</ul>
+
+<h3 id="best-practices">Best Practices</h3>
+<ul>
+  <li>Use discipline-specific metadata standards</li>
+  <li>Automate metadata generation where possible (e.g., through ELNs templates, device export, or metadata apps).</li>
+  <li>Attach metadata files to you project folder, or data files directly</li>
+  <li>Provide comprehensive descriptions, including provenance and licensing details.</li>
+</ul>
+
+<hr />
+
+<h2 id="references">References</h2>
+<ul>
+  <li><a href="https://knowledgebase.nfdi4microbiota.de/Research-Data-Management/md.html">Metadata Standards - NFDI4Microbiota Knowledge Base</a></li>
+  <li><a href="https://www.med.uni-wuerzburg.de/fdm/helpdesk/metadaten/">Metadata cRMD - University of Würzburg</a></li>
+  <li><a href="https://github.com/NFDI4Microbiota/MetadataStandards">Metadata Standards Repository</a></li>
+</ul>
+
+
+
+    <div class="tags">
         
-
-        <p>The NFDI4Microbiota initiative offers a series of exciting events in 2025 to foster collaboration and innovation in microbiota research.</p>
-
-<h3 id="highlighted-events"><strong>Highlighted Events</strong></h3>
-<ol>
-  <li>
-    <p><strong>Annual Conference on Microbiota Data Integration</strong><br />
-<strong>Date</strong>: May 15–17, 2025<br />
-<strong>Location</strong>: Heidelberg, Germany<br />
-Focus on data integration and interoperability for microbiota research.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Hackathon on Microbiota Standards</strong><br />
-<strong>Date</strong>: September 10–12, 2025<br />
-<strong>Location</strong>: Online<br />
-Collaborative sessions to develop community standards for microbiota data sharing.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Microbiota Data FAIRification Workshop</strong><br />
-<strong>Date</strong>: November 22, 2025<br />
-<strong>Location</strong>: Bonn, Germany<br />
-Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoperable, Reusable).<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-</ol>
-
-<p>For the complete list of events, visit the <a href="https://nfdi4microbiota.de/newsroom/events.html">NFDI4Microbiota Events Page</a>.</p>
-
-
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </div>
 
 
 
-</article>
 
 
 
 
-
-
+</div>
 
 <hr class="shaded"/>
 
@@ -544,6 +645,8 @@ Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoper
   <div class="row">
     <div class="col-lg-12 footer">
       &copy;2026 DECIDE-Konsortium (SFB 1583). All rights reserved. <br />
+      
+        <span>Page last updated:</span> January 26, 2025<br/>
       
       Site last generated: Jul 2, 2026 <br />
       <p>

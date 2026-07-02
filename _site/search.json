@@ -2,6 +2,51 @@
 [
 
 {
+"title": "About DECIDE",
+"tags": "DECIDEinfectious diseasesresearch",
+"keywords": "DECIDE, infectious diseases, molecular mechanisms, research consortium",
+"url": "about_decide.html",
+"summary": "Learn more about the DECIDE consortium and its mission to investigate infectious diseases comprehensively."
+}
+,
+
+{
+"title": "About FAIR Principles",
+"tags": "FAIR PrinciplesResearch Data ManagementFAIR",
+"keywords": "FAIR, Findable, Accessible, Interoperable, Reusable, Research Data",
+"url": "about_fair.html",
+"summary": "Understand the FAIR principles and their importance in research data management."
+}
+,
+
+{
+"title": "About Metadata in Research Data Management",
+"tags": "MetadataResearch Data ManagementFAIR Principles",
+"keywords": "Metadata, Research Data Management, Metadata Standards",
+"url": "about_metadata.html",
+"summary": "Learn about the importance of metadata, its role in research data management, and available resources for metadata standards."
+}
+,
+
+{
+"title": "About Research Data Management (RDM)",
+"tags": "Research Data ManagementRDMFAIR",
+"keywords": "Research Data Management, RDM, Data Life Cycle, FAIR principles",
+"url": "about_rdm.html",
+"summary": "Learn about Research Data Management, its benefits, challenges, and the RDM life cycle."
+}
+,
+
+{
+"title": "Archiving Data with Würzburg University Services",
+"tags": "archivingdatastorageWürzburg University",
+"keywords": "",
+"url": "archiving.html",
+"summary": ""
+}
+,
+
+{
 "title": "Research Data Management (RDM) Plan for DECIDE",
 "tags": "RDM PlanDECIDEData ManagementFAIR",
 "keywords": "DECIDE RDM Plan, Research Data Management, FAIR principles, Data Lifecycle",
@@ -11,11 +56,209 @@
 ,
 
 {
+"title": "Checklist — before sharing or publishing in Nextcloud (VRC)",
+"tags": "checklistNextcloudsharingpublishingFAIRGDPRVRC",
+"keywords": "",
+"url": "checklist_sharing_publishing.html",
+"summary": "What to verify at each step: private folder → share a folder → push to a TEAM/group folder → share publicly → publish with a DOI."
+}
+,
+
+{
+"title": "DECIDE Research Data Lifecycle",
+"tags": "Research Data ManagementRDMFAIR",
+"keywords": "Research Data Management, RDM, Data Life Cycle, FAIR principles",
+"url": "decide_data_lifecycle.html",
+"summary": "Learn about Research Data Life Cycle Implementation in DECIDE"
+}
+,
+
+{
+"title": "DMP Template — VRC Würzburg (DFG-aligned)",
+"tags": "DMPtemplateRDMVRC",
+"keywords": "",
+"url": "dmp_template.html",
+"summary": "A fill-in Data Management Plan template with VRC infrastructure pre-filled. Generate the formal version in DataPLAN/RDMO; use this as the working reference."
+}
+,
+
+{
+"title": "External RDM Resources",
+"tags": "Research Data ManagementRDMFAIRResources",
+"keywords": "RDM resources, NFDI, knowledge base, metadata standards, training, sensitive data, FAIR",
+"url": "external_resources.html",
+"summary": "Curated external knowledge bases and resources from the NFDI community to support RDM in DECIDE."
+}
+,
+
+{
+"title": "FAIR self-check",
+"tags": "checklistFAIRself-checkVRC",
+"keywords": "",
+"url": "fair_self_check.html",
+"summary": "A quick tick-box self-assessment to run before each gate — G1 (leaving the Green Room) and G2 (publishing). Companion to SOP — Making your project FAIR."
+}
+,
+
+{
 "title": "Research Data Management (RDM) Plan for DECIDE",
 "tags": "RDM PlanDECIDEData ManagementFAIR",
 "keywords": "DECIDE RDM Plan, Research Data Management, FAIR principles, Data Lifecycle",
 "url": "rdm_plan_full.html",
 "summary": "Explore the RDM plan of the DECIDE project, including data organizations, FAIR data management, and long-term goals for a FAIR and secure data lifecycle."
+}
+,
+
+{
+"title": "Infection Atlas (Coming Soon)",
+"tags": "InfectionAtlasComing SoonNFDI4Plants",
+"keywords": "Infection Atlas, Placeholder, Coming Soon, Research, NFDI4Plants",
+"url": "infection_atlas.html",
+"summary": "Placeholder page for the upcoming Infection Atlas. Stay tuned for more details."
+}
+,
+
+{
+"title": "Getting Started with JupyterHub",
+"tags": "jupyterhubdata analysisvpnwürzburghpc",
+"keywords": "",
+"url": "jupyterhub.html",
+"summary": ""
+}
+,
+
+{
+"title": "Practical Guide to Using Electronic Lab Notebooks (ELNs) at Würzburg University",
+"tags": "elnlabforwardnextcloudgithubmetadatawürzburg university",
+"keywords": "",
+"url": "labfolder.html",
+"summary": "Learn about elabfolder"
+}
+,
+
+{
+"title": "Metadata Management",
+"tags": "Metadata ManagementFAIRDecideNFDI StandardsData Reuse",
+"keywords": "metadata management, FAIR, Decide consortium, NFDI standards, experimental metadata, Excel, XML, Nextcloud, DeppMeta search, data reuse, knowledge graph, Single Cell Atlas, ArrayExpress, Gene Expression Omnibus",
+"url": "metadata_management.html",
+"summary": "Placeholder page for the upcoming Metadata Management system for experimental metadata within the Decide consortium."
+}
+,
+
+{
+"title": "Metadata Template Suggestions — VRC Würzburg",
+"tags": "metadatatemplateFAIRVRC",
+"keywords": "",
+"url": "metadata_templates.html",
+"summary": "The core multi-table metadata model, per-domain field/standard suggestions, the missing-value tokens, and where to get the templates."
+}
+,
+
+{
+"title": "Git notes and tips",
+"tags": "gitgithubinteractionfile sharingpush",
+"keywords": "",
+"url": "mydoc_git_collaboration.html",
+"summary": "If you're interacting with your team using Git, the notes and tips will help you collaborate efficiently."
+}
+,
+
+{
+"title": "News",
+"tags": "",
+"keywords": "news, blog, updates, release notes, announcements",
+"url": "news.html",
+"summary": ""
+}
+,
+
+{
+"title": "News",
+"tags": "",
+"keywords": "news, blog, updates, release notes, announcements",
+"url": "news_archive.html",
+"summary": ""
+}
+,
+
+{
+"title": "Using Nextcloud for Research Data Management",
+"tags": "nextclouddata managementcloud storagewürzburg universityrclone",
+"keywords": "Research Data Management, RDM, Cloud, Version control, Backup, Activity Log, Storage, Exchange, Rclone",
+"url": "nextcloud.html",
+"summary": "Practical guide for using Nextcloud for secure data storage, sharing, collaboration, and integration with research workflows."
+}
+,
+
+{
+"title": "How to start a project",
+"tags": "",
+"keywords": "RDM, FAIR, workflow, project start, onboarding, data lifecycle, DMP",
+"url": "phd_onboarding_blueprint.html",
+"summary": "One workflow, ordered along the research data lifecycle. Start with a data management plan and follow the steps — each links to the tool and the detailed how-to you need."
+}
+,
+
+{
+"title": "Research Data Management (RDM) Plan for DECIDE",
+"tags": "RDM PlanDECIDEData ManagementFAIR",
+"keywords": "DECIDE RDM Plan, Research Data Management, FAIR principles, Data Lifecycle",
+"url": "rdm_plan.html",
+"summary": "Explore the RDM plan of the DECIDE project, including file formats, metadata management, and long-term goals for a FAIR and secure data lifecycle."
+}
+,
+
+{
+"title": "RDM Planner Tool",
+"tags": "RDM PlanData ManagementNFDI4Plants",
+"keywords": "RDM Plan, Data Management Plan, NFDI4Plants",
+"url": "rdm_planer2.html",
+"summary": "Explore the NFDI4Plants RDM Planer Tool for creating and managing comprehensive Data Management Plans."
+}
+,
+
+{
+"title": "SOP — Making your project FAIR in the VRC",
+"tags": "SOPFAIRRDMVRC",
+"keywords": "",
+"url": "sop_fair_rdm.html",
+"summary": "Concrete, tool-by-tool steps to satisfy each FAIR principle using VRC Würzburg infrastructure."
+}
+,
+
+{
+"title": "SOP — GDPR &amp; sensitive data in the VRC",
+"tags": "SOPGDPRsensitive dataclinicalprivacyVRC",
+"keywords": "",
+"url": "sop_gdpr_sensitive_data.html",
+"summary": "How to handle personal and patient-derived data in the VRC: legal basis, pseudonymisation, the UKW boundary, sensitive-data storage, compute, and two-track publishing."
+}
+,
+
+{
+"title": "SOP — The RDM lifecycle in the VRC",
+"tags": "SOPRDMlifecycleVRC",
+"keywords": "",
+"url": "sop_rdm_lifecycle.html",
+"summary": "The six-phase research data lifecycle with the concrete VRC tool, action, and data zone at each phase."
+}
+,
+
+{
+"title": "Start here",
+"tags": "",
+"keywords": "RDM, FAIR, quick start, PhD, onboarding, overview, VRC, pillars",
+"url": "index.html",
+"summary": "The 5-minute version: why research data management pays off for you, the rules of thumb, and where to go next."
+}
+,
+
+{
+"title": "Use cases &amp; subprojects",
+"tags": "",
+"keywords": "use cases, subprojects, showcase, FAIR, Infection Atlas, CellWhisperer, cycleHCR, metadata, DECIDE",
+"url": "use_cases.html",
+"summary": "DECIDE subprojects done the FAIR way — each with its data, documentation and analysis one click apart."
 }
 ,
 

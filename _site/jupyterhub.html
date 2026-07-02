@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content="eventsmicrobiotanfdi4microbiota,  ">
-<title>Upcoming NFDI4Microbiota Events in 2025 | Info and Services on DECIDE RDM</title>
+<meta name="keywords" content="jupyterhubdata analysisvpnwürzburghpc,  ">
+<title>Getting Started with JupyterHub | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -153,7 +153,7 @@
                         
                         
                         
-                        <li><a href="jupyterhub">JupyterHub</a></li>
+                        <li class="dropdownActive"><a href="jupyterhub">JupyterHub</a></li>
                         
                         
                         
@@ -200,7 +200,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Upcoming NFDI4Microbiota Events in 2025 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Getting Started with JupyterHub page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -220,7 +220,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Upcoming NFDI4Microbiota Events in 2025">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Getting Started with JupyterHub">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -357,7 +357,7 @@
           
           
           
-          <li><a title="JupyterHub" href="jupyterhub.html">JupyterHub</a></li>
+          <li class="active"><a title="JupyterHub" href="jupyterhub.html">JupyterHub</a></li>
           
           
           
@@ -471,71 +471,194 @@
 
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
-            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
-
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Upcoming NFDI4Microbiota Events in 2025</h1>
-        <p class="post-meta"><time datetime="2025-01-28T00:00:00+00:00" itemprop="datePublished">Jan 28, 2025</time> /
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-        </p>
+            <div class="post-header">
+   <h1 class="post-title-main">Getting Started with JupyterHub</h1>
+</div>
 
 
-    </header>
 
-    <div class="post-content" itemprop="articleBody">
+<div class="post-content">
 
-        
+   
 
-        <p>The NFDI4Microbiota initiative offers a series of exciting events in 2025 to foster collaboration and innovation in microbiota research.</p>
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
 
-<h3 id="highlighted-events"><strong>Highlighted Events</strong></h3>
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/josef-streusalz/DECIDE_RDM_landingpage/tree/main/pages/mydoc/jupyterhub.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <h1 id="getting-started-with-jupyterhub-at-würzburg-university">Getting Started with JupyterHub at Würzburg University</h1>
+
+<p>JupyterHub provides a collaborative and user-friendly environment for <strong>data analysis</strong>, <strong>computational workflows</strong>, and <strong>notebook-based research</strong>, specifically tailored for the Bioinformatics team at Würzburg University. It runs directly on the department’s HPC environment and can also serve as a gateway to other high-performance resources.</p>
+
+<hr />
+
+<h2 id="1-prerequisite-connect-to-the-vpn">1. Prerequisite: Connect to the VPN</h2>
+
+<p>Before accessing JupyterHub, you must first connect to the <strong>University of Würzburg VPN</strong>.</p>
+
+<h3 id="how-to-connect">How to Connect:</h3>
+
 <ol>
-  <li>
-    <p><strong>Annual Conference on Microbiota Data Integration</strong><br />
-<strong>Date</strong>: May 15–17, 2025<br />
-<strong>Location</strong>: Heidelberg, Germany<br />
-Focus on data integration and interoperability for microbiota research.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
+  <li>Visit the <a href="https://www.rz.uni-wuerzburg.de/dienste/it-sicherheit/vpn/">VPN Guide – Würzburg University</a></li>
+  <li>Follow instructions for your system:
+    <ul>
+      <li>Windows / macOS / Linux / iOS / Android</li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Hackathon on Microbiota Standards</strong><br />
-<strong>Date</strong>: September 10–12, 2025<br />
-<strong>Location</strong>: Online<br />
-Collaborative sessions to develop community standards for microbiota data sharing.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Microbiota Data FAIRification Workshop</strong><br />
-<strong>Date</strong>: November 22, 2025<br />
-<strong>Location</strong>: Bonn, Germany<br />
-Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoperable, Reusable).<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
+  <li>Log in using your university credentials.</li>
 </ol>
 
-<p>For the complete list of events, visit the <a href="https://nfdi4microbiota.de/newsroom/events.html">NFDI4Microbiota Events Page</a>.</p>
+<hr />
+
+<h2 id="2-request-access-to-jupyterhub-and-hpc">2. Request Access to JupyterHub and HPC</h2>
+
+<p>JupyterHub runs on the Bioinformatics HPC system. Before using it or accessing the University’s central HPC (“Julia 2”), please contact:</p>
+
+<ul>
+  <li><strong>Prof. Thomas Dandekar</strong> – <a href="mailto:dandekar@biozentrum.uni-wuerzburg.de">dandekar@biozentrum.uni-wuerzburg.de</a></li>
+  <li><strong>Johannes Balkenhol</strong> - <a href="mailto:johannes.balkenhol@uni-wuerzburg.de">johannes.balkenhol@uni-wuerzburg.de</a></li>
+  <li><strong>Stefan Obermeier</strong> – <a href="mailto:stefan.obermeier@biozentrum.uni-wuerzburg.de">stefan.obermeier@biozentrum.uni-wuerzburg.de</a></li>
+</ul>
+
+<p>For using the university-wide HPC “Julia 2”, visit:<br />
+🔗 <a href="https://www.rz.uni-wuerzburg.de/dienste/rzserver/high-performance-computing/">HPC at Würzburg University</a></p>
+
+<hr />
+
+<h2 id="3-log-in-to-jupyterhub">3. Log In to JupyterHub</h2>
+
+<p>Once VPN is connected and access is granted:</p>
+
+<ol>
+  <li>Open your browser and go to:<br />
+🔗 <a href="https://jupyterhub.uni-wuerzburg.de/">https://jupyterhub.uni-wuerzburg.de/</a></li>
+  <li>Alternatively, access via <strong>Nextcloud</strong>:
+    <ul>
+      <li>Look for the <strong>JupyterHub icon</strong> listed as an external service.</li>
+    </ul>
+  </li>
+  <li>Or ask the Bioinformatics administrators for the internal IP if needed.</li>
+  <li>Log in using your <strong>University of Würzburg credentials</strong>.</li>
+</ol>
+
+<hr />
+
+<h2 id="4-tools-notebooks-and-resources">4. Tools, Notebooks, and Resources</h2>
+
+<h3 id="a-widgets--helper-scripts">A. Widgets &amp; Helper Scripts</h3>
+
+<p>Helpful scripts for:</p>
+
+<ul>
+  <li>Mounting cloud data</li>
+  <li>Extracting metadata</li>
+  <li>Visualizing datasets</li>
+</ul>
+
+<p>🔗 <a href="https://github.com/CoreUnitRDM">GitHub – CoreUnitRDM Tools</a></p>
+
+<h3 id="b-pre-built-notebooks">B. Pre-built Notebooks</h3>
+
+<p>Get started quickly with:</p>
+
+<ul>
+  <li>Data exploration workflows</li>
+  <li>Statistical analysis pipelines</li>
+  <li>Visualization templates</li>
+</ul>
+
+<p>🗂️ Ask an administrator for the current shared notebook collection.</p>
+
+<hr />
+
+<h2 id="5-best-practices-for-jupyterhub-users">5. Best Practices for JupyterHub Users</h2>
+
+<ul>
+  <li>
+    <p><strong>Organize Your Workspace</strong><br />
+Use folders to keep each project clean and separated.</p>
+  </li>
+  <li>
+    <p><strong>Document Code and Results</strong><br />
+Add Markdown cells and comments throughout your notebook.</p>
+  </li>
+  <li>
+    <p><strong>Backup Frequently</strong><br />
+Download notebooks or sync to your Nextcloud folder.</p>
+  </li>
+  <li>
+    <p><strong>Use Resources Considerately</strong><br />
+Avoid blocking shared memory or long-running processes unnecessarily.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="6-learn-more-official-jupyterhub-resources">6. Learn More: Official JupyterHub Resources</h2>
+
+<ul>
+  <li>🌐 <a href="https://jupyterhub.readthedocs.io/en/stable/">What is JupyterHub?</a></li>
+  <li>📘 <a href="https://jupyter-notebook.readthedocs.io/en/stable/">Intro to Jupyter Notebooks</a></li>
+</ul>
+
+<hr />
 
 
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </div>
 
 
 
-</article>
 
 
 
 
-
-
+</div>
 
 <hr class="shaded"/>
 

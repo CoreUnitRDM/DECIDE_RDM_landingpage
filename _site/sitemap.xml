@@ -32,7 +32,67 @@
   
   
   <url>
+    <loc>/about_decide.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/about_fair.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/about_metadata.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/about_rdm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/archiving.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>/index.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/checklist_sharing_publishing.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/decide_data_lifecycle.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/dmp_template.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/external_resources.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/fair_self_check.html</loc>
   </url>
   
   
@@ -43,9 +103,133 @@
   
   
   
+  <url>
+    <loc>/infection_atlas.html</loc>
+  </url>
   
   
   
+  <url>
+    <loc>/jupyterhub.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/labfolder.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/metadata_management.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/metadata_templates.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/mydoc_git_collaboration.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/news.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/news_archive.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/nextcloud.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/phd_onboarding_blueprint.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/rdm_plan.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/rdm_planer2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/sop_fair_rdm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/sop_gdpr_sensitive_data.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/sop_rdm_lifecycle.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>/index.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>/use_cases.html</loc>
+  </url>
   
   
 </urlset>

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content="eventsmicrobiotanfdi4microbiota,  ">
-<title>Upcoming NFDI4Microbiota Events in 2025 | Info and Services on DECIDE RDM</title>
+<meta name="description" content="The core multi-table metadata model, per-domain field/standard suggestions, the missing-value tokens, and where to get the templates.">
+<meta name="keywords" content="metadatatemplateFAIRVRC,  ">
+<title>Metadata Template Suggestions — VRC Würzburg | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -200,7 +200,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Upcoming NFDI4Microbiota Events in 2025 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Metadata Template Suggestions — VRC Würzburg page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -220,7 +220,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Upcoming NFDI4Microbiota Events in 2025">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Metadata Template Suggestions — VRC Würzburg">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -343,7 +343,7 @@
           
           
           
-          <li><a title="Metadata Templates" href="metadata_templates.html">Metadata Templates</a></li>
+          <li class="active"><a title="Metadata Templates" href="metadata_templates.html">Metadata Templates</a></li>
           
           
           
@@ -471,71 +471,172 @@
 
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
-            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
-
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Upcoming NFDI4Microbiota Events in 2025</h1>
-        <p class="post-meta"><time datetime="2025-01-28T00:00:00+00:00" itemprop="datePublished">Jan 28, 2025</time> /
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-        </p>
+            <div class="post-header">
+   <h1 class="post-title-main">Metadata Template Suggestions — VRC Würzburg</h1>
+</div>
 
 
-    </header>
 
-    <div class="post-content" itemprop="articleBody">
+<div class="post-content">
 
-        
+   
+    <div class="summary">The core multi-table metadata model, per-domain field/standard suggestions, the missing-value tokens, and where to get the templates.</div>
+   
 
-        <p>The NFDI4Microbiota initiative offers a series of exciting events in 2025 to foster collaboration and innovation in microbiota research.</p>
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
 
-<h3 id="highlighted-events"><strong>Highlighted Events</strong></h3>
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/josef-streusalz/DECIDE_RDM_landingpage/tree/main/pages/mydoc/metadata_templates.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <p>Decide the metadata model <strong>before</strong> you collect. Templates live in the cRDM Nextcloud share and at <code class="language-plaintext highlighter-rouge">github.com/CoreUnitRDM/MetaDataTemplates</code>; a Nextcloud metadata app / generator is in development. Attach the filled template to <code class="language-plaintext highlighter-rouge">data/metadata/</code> and keep a <code class="language-plaintext highlighter-rouge">data_dictionary.md</code> defining every column.</p>
+
+<h2 id="the-core-model-all-domains">The core model (all domains)</h2>
+<p>Use a <strong>normalised, multi-table</strong> structure rather than one wide sheet:</p>
 <ol>
-  <li>
-    <p><strong>Annual Conference on Microbiota Data Integration</strong><br />
-<strong>Date</strong>: May 15–17, 2025<br />
-<strong>Location</strong>: Heidelberg, Germany<br />
-Focus on data integration and interoperability for microbiota research.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Hackathon on Microbiota Standards</strong><br />
-<strong>Date</strong>: September 10–12, 2025<br />
-<strong>Location</strong>: Online<br />
-Collaborative sessions to develop community standards for microbiota data sharing.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Microbiota Data FAIRification Workshop</strong><br />
-<strong>Date</strong>: November 22, 2025<br />
-<strong>Location</strong>: Bonn, Germany<br />
-Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoperable, Reusable).<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
+  <li><strong>Subject / sample table</strong> — one row per individual or sample; biological metadata.</li>
+  <li><strong>Experiment / acquisition table</strong> — one row per recording; technical metadata + file path.</li>
+  <li><strong>Link table</strong> — connects subjects to experiments (many-to-many, foreign keys).</li>
 </ol>
 
-<p>For the complete list of events, visit the <a href="https://nfdi4microbiota.de/newsroom/events.html">NFDI4Microbiota Events Page</a>.</p>
+<p><strong>Rules (non-negotiable):</strong></p>
+<ul>
+  <li>One row = one entity. No merged cells, no multi-value cells.</li>
+  <li>Machine-readable headers with units: <code class="language-plaintext highlighter-rouge">subject_id</code>, <code class="language-plaintext highlighter-rouge">shear_rate_s</code>, <code class="language-plaintext highlighter-rouge">n_frames</code> — no spaces.</li>
+  <li>Controlled vocabularies (ontologies) for categorical fields; enforce with Excel dropdown validation.</li>
+  <li>Never leave a blank to mean “not done” — use an explicit token (below).</li>
+  <li>Ship a data dictionary: every column, its unit, allowed values.</li>
+</ul>
+
+<h2 id="missing-value-tokens-use-instead-of-blanks">Missing-value tokens (use instead of blanks)</h2>
+<p>After the INSDC / DataCite / NFDI4Microbiota conventions:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Situation</th>
+      <th>Token</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Field doesn’t apply to this sample</td>
+      <td><code class="language-plaintext highlighter-rouge">not applicable</code></td>
+    </tr>
+    <tr>
+      <td>Value exists but can’t be obtained</td>
+      <td><code class="language-plaintext highlighter-rouge">not available</code></td>
+    </tr>
+    <tr>
+      <td>Measurement was never taken</td>
+      <td><code class="language-plaintext highlighter-rouge">not collected</code></td>
+    </tr>
+    <tr>
+      <td>Value withheld for now (embargo)</td>
+      <td><code class="language-plaintext highlighter-rouge">not provided</code></td>
+    </tr>
+    <tr>
+      <td>Value exists but is confidential (privacy/legal)</td>
+      <td><code class="language-plaintext highlighter-rouge">restricted access</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="per-domain-suggestions">Per-domain suggestions</h2>
+<p><strong>Microscopy / bioimaging</strong></p>
+<ul>
+  <li>Standard: OME-XML / OME-NGFF; REMBI for reporting; FBbi ontology</li>
+  <li>Key fields: instrument, objective, <code class="language-plaintext highlighter-rouge">pixel_size_um</code>, channels + fluorophores, <code class="language-plaintext highlighter-rouge">n_frames</code>, time-step, sample, condition</li>
+  <li>Populate from Bio-Formats on conversion; supplement channel/condition mapping by hand</li>
+  <li>Community: NFDI4BIOIMAGE · repos: IDR, BioImage Archive</li>
+  <li>Gotcha: channel order and pixel-size units are the #1 source of wrong analyses — capture explicitly.</li>
+</ul>
+
+<p><strong>Omics (genomics / transcriptomics / proteomics / metabolomics)</strong></p>
+<ul>
+  <li>Standard: MIxS (+ MIMS/MIGS/MIMARKS), GA4GH Phenopackets, MIAPE (proteomics)</li>
+  <li>Key fields: library prep, platform, read length, reference genome, sample sheet linking sample↔file</li>
+  <li>Templates: CoreUnitRDM MetaDataTemplates; ENA submission checklists</li>
+  <li>Repos: ENA/SRA (open), EGA (controlled human), MetaboLights, PRIDE</li>
+  <li>Gotcha: sample-sheet errors propagate through the whole pipeline — validate before running.</li>
+</ul>
+
+<p><strong>Clinical research</strong></p>
+<ul>
+  <li>Standard: FHIR / CDISC; vocabularies SNOMED CT, LOINC, ICD-10/11; OMOP common data model</li>
+  <li>Key fields: <strong>pseudonymised ID only</strong>, visit, instrument/assay, consent reference</li>
+  <li>Tools: REDCap; study metadata via NFDI4Health Study Hub</li>
+  <li>Gotcha: consent scope — data collected for study X cannot be reused for question Y without consent extension. No identifiers in any free-text field.</li>
+</ul>
+
+<p><strong>Wetlab / molecular biology</strong></p>
+<ul>
+  <li>Standard: RRID (reagents/antibodies), Cellosaurus (cell lines + STR), ChEBI (chemicals)</li>
+  <li>Key fields: reagent lot/batch, antibody catalogue + RRID, cell passage, protocol DOI (protocols.io)</li>
+  <li>Repos: Zenodo for assays + code</li>
+  <li>Gotcha: lot numbers and passage live in metadata, not in your head.</li>
+</ul>
+
+<p><strong>Mixed / multimodal (clinical + imaging + omics)</strong></p>
+<ul>
+  <li>One <strong>master pseudonymised ID</strong> is the foreign key across all tables.</li>
+  <li>Treat the whole project at the sensitivity of its strictest layer.</li>
+</ul>
+
+<p><em>Related: SOP — FAIR RDM · DMP Template · Checklist before sharing/publishing in Nextcloud.</em></p>
 
 
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </div>
 
 
 
-</article>
 
 
 
 
-
-
+</div>
 
 <hr class="shaded"/>
 
@@ -544,6 +645,8 @@ Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoper
   <div class="row">
     <div class="col-lg-12 footer">
       &copy;2026 DECIDE-Konsortium (SFB 1583). All rights reserved. <br />
+      
+        <span>Page last updated:</span> 2026-06-07<br/>
       
       Site last generated: Jul 2, 2026 <br />
       <p>

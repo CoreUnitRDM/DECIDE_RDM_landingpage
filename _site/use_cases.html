@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content="eventsmicrobiotanfdi4microbiota,  ">
-<title>Upcoming NFDI4Microbiota Events in 2025 | Info and Services on DECIDE RDM</title>
+<meta name="description" content="DECIDE subprojects done the FAIR way — each with its data, documentation and analysis one click apart.">
+<meta name="keywords" content=" use cases, subprojects, showcase, FAIR, Infection Atlas, CellWhisperer, cycleHCR, metadata, DECIDE">
+<title>Use cases & subprojects | Info and Services on DECIDE RDM</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -200,7 +200,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Upcoming NFDI4Microbiota Events in 2025 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:johannes.balkenhol@uni-wuerzburg.de?subject=RDm in DECIDE feedback&body=I have some feedback about the Use cases & subprojects page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -220,7 +220,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Upcoming NFDI4Microbiota Events in 2025">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Use cases &amp; subprojects">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -276,7 +276,7 @@
           
           
           
-          <li><a title="Use cases & subprojects" href="use_cases.html">Use cases & subprojects</a></li>
+          <li class="active"><a title="Use cases & subprojects" href="use_cases.html">Use cases & subprojects</a></li>
           
           
           
@@ -471,71 +471,132 @@
 
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
-            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
-
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Upcoming NFDI4Microbiota Events in 2025</h1>
-        <p class="post-meta"><time datetime="2025-01-28T00:00:00+00:00" itemprop="datePublished">Jan 28, 2025</time> /
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-        </p>
+            <div class="post-header">
+   <h1 class="post-title-main">Use cases & subprojects</h1>
+</div>
 
 
-    </header>
 
-    <div class="post-content" itemprop="articleBody">
+<div class="post-content">
 
+   
+    <div class="summary">DECIDE subprojects done the FAIR way — each with its data, documentation and analysis one click apart.</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+    <a target="_blank" rel="noopener" href="https://github.com/josef-streusalz/DECIDE_RDM_landingpage/tree/main/pages/mydoc/use_cases.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+    
+
+   <p>These are DECIDE subprojects taken end-to-end the FAIR way — our show-off examples of good scientific practice. Where a project is FAIR-ready, its <strong>Data</strong>, <strong>Documentation</strong> and <strong>Analysis</strong> are one click apart: the cloud folder, the protocols, and the runnable notebook. Access is governed by <strong>Nextcloud’s fine-grained permissions</strong>; some links are on the university network only (VPN).</p>
+
+<style>
+.uc-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:20px 0 8px;}
+.uc-card{border:1px solid #e3e3e3;border-radius:10px;padding:16px 18px;background:#fff;}
+.uc-card.soon{opacity:.75;border-style:dashed;}
+.uc-card .tag{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:#2f6fa8;border-radius:5px;padding:2px 7px;margin-bottom:8px;letter-spacing:.02em;}
+.uc-card .tag.plat{background:#5aa02c;}
+.uc-card .tag.soon{background:#9aa7b2;}
+.uc-card .tag.tool{background:#7a5195;}
+.uc-card h3{margin:0 0 5px;font-size:15.5px;color:#16527e;border:0;padding:0;}
+.uc-card p{margin:0;font-size:13px;color:#555;line-height:1.5;}
+.uc-links{margin-top:11px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+.uc-links a{font-size:12px;font-weight:600;color:#16527e;background:#eef4fa;border:1px solid #d6e4f0;border-radius:6px;padding:3px 9px;text-decoration:none;}
+.uc-links a:hover{background:#3b81c4;color:#fff;text-decoration:none;}
+.uc-links a.bot{background:#eaf6ec;border-color:#cfe8d4;color:#2f6b39;}
+.uc-links a.bot:hover{background:#5aa02c;color:#fff;}
+.uc-links .muted{font-size:12px;color:#9aa7b2;}
+.uc-note{font-size:12px;color:#9aa7b2;margin:6px 0 0;}
+</style>
+
+<h2 id="showcase-use-cases--crc-projects">Showcase use cases — CRC projects</h2>
+
+<div class="uc-cards">
+  <div class="uc-card"><span class="tag">A03 · Gomez de Agüero</span><h3>Triple RNA-seq · neonatal skin</h3><p>Colonisation vs infection at the newborn skin–microbiota interface, with data sharing and HPC setup.</p><div class="uc-links"><span class="muted">Links in preparation</span></div></div>
+  <div class="uc-card"><span class="tag">A04 · Faber</span><h3>Decision nodes in co-infection</h3><p>Molecular decision nodes in <i>C. difficile</i> / <i>B. theta</i> co-infection, prepared for FAIR publication.</p><div class="uc-links"><span class="muted">Links in preparation</span></div></div>
+  <div class="uc-card"><span class="tag">A06 · Löffler</span><h3>Dual RNA-seq · lung</h3><p>Host and pathogen transcriptomes captured in parallel in lung infection.</p><div class="uc-links"><span class="muted">Links in preparation</span></div></div>
+  <div class="uc-card"><span class="tag">B01 · Akash (Rudel)</span><h3>Chlamydia host–pathogen interaction</h3><p>Dissecting the Chlamydia–host interface; FAIR data folder in preparation.</p><div class="uc-links"><span class="muted">Links in preparation</span></div></div>
+  <div class="uc-card soon"><span class="tag soon">C03 · Kurzai / Ohlsen</span><h3>Coming soon</h3><p>Showcase in preparation — topic being finalised.</p></div>
+</div>
+
+<h2 id="platform--data-services--z02--inf">Platform &amp; data services — Z02 / INF</h2>
+
+<div class="uc-cards">
+  <div class="uc-card"><span class="tag plat">Z02 · Saliba</span><h3>Infection Atlas</h3><p>An integrated single-cell expression landscape for DECIDE RNA-seq and single-cell studies.</p><div class="uc-links"><span class="muted">Atlas link coming</span></div></div>
+
+  <div class="uc-card"><span class="tag plat">Z02 · Beste</span><h3>CellWhisperer — talk to your data</h3><p>Talk to your sequencing data: query single-cell datasets in natural language.</p><div class="uc-links">
+    <a href="http://132.187.22.206:8000/hub/user-redirect/lab/tree/Projects_shared/cellwhisperer/cellwhisperer/data">Data</a>
+    <a href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php/f/3941734">Documentation</a>
+    <a href="http://132.187.22.206:5005/">Analysis</a>
+    <a class="bot" href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php/call/ictm8wrv">Ask the bot</a>
+  </div></div>
+
+  <div class="uc-card"><span class="tag plat">Z02 · Beste</span><h3>cycleHCR spatial imaging</h3><p>Highly multiplexed spatial imaging, analysed collaboratively on the HPC.</p><div class="uc-links">
+    <a href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php/f/3941874">Data</a>
+    <a href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php/f/3941844">Documentation</a>
+    <a href="http://132.187.22.206:8000/hub/user-redirect/lab/tree/Projects_shared/cycleHCR">Analysis</a>
+  </div></div>
+
+  <div class="uc-card"><span class="tag plat">Z02 / INF · Immendahl</span><h3>Metadata engine</h3><p>Standardises and enriches metadata across DECIDE datasets — the connective tissue for FAIR.</p><div class="uc-links"><span class="muted">Links in preparation</span></div></div>
+</div>
+
+<p class="uc-note">The "ask the bot" link opens a Nextcloud Talk assistant trained on consortium literature. Analysis links (JupyterHub, port 8000 / CellWhisperer, port 5005) run on the HPC and require the university network (VPN).</p>
+
+<h2 id="bioinformatics-tools">Bioinformatics tools</h2>
+
+<div class="uc-cards">
+  <div class="uc-card"><span class="tag tool">Würzburg Bioinformatics</span><h3>Analysis tools &amp; pipelines</h3><p>Network and omics analysis tools from the Würzburg Bioinformatics group — dynamic network and enzyme analysis (Prosimat), Boolean network simulation (JimenaE), metabolic analysis (YanaSquare), and RNA-seq analysis (RNAanalyzer), plus semi-automated omics and integrated-network pipelines.</p><div class="uc-links">
+    <a href="https://bioinfo-wuerz.de/">Open the tools portal</a>
+  </div></div>
+</div>
+
+<hr />
+
+<p>Need help while working in the VRC? See the <a href="faq.html">Support &amp; FAQ</a> — real answers from VRC support on transfers, sync, cloud documents, and FAIR analysis.</p>
+
+<p><em>New subprojects are added here as they reach FAIR-ready state. To list yours, contact the cRDM helpdesk. Related: <a href="phd_onboarding_blueprint.html">How to start a project</a> · <a href="jupyterhub.html">JupyterHub</a> · <a href="external_resources.html">External RDM Resources</a>.</em></p>
+
+
+    <div class="tags">
         
-
-        <p>The NFDI4Microbiota initiative offers a series of exciting events in 2025 to foster collaboration and innovation in microbiota research.</p>
-
-<h3 id="highlighted-events"><strong>Highlighted Events</strong></h3>
-<ol>
-  <li>
-    <p><strong>Annual Conference on Microbiota Data Integration</strong><br />
-<strong>Date</strong>: May 15–17, 2025<br />
-<strong>Location</strong>: Heidelberg, Germany<br />
-Focus on data integration and interoperability for microbiota research.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Hackathon on Microbiota Standards</strong><br />
-<strong>Date</strong>: September 10–12, 2025<br />
-<strong>Location</strong>: Online<br />
-Collaborative sessions to develop community standards for microbiota data sharing.<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-  <li>
-    <p><strong>Microbiota Data FAIRification Workshop</strong><br />
-<strong>Date</strong>: November 22, 2025<br />
-<strong>Location</strong>: Bonn, Germany<br />
-Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoperable, Reusable).<br />
-<a href="https://nfdi4microbiota.de/newsroom/events.html">Event Details</a></p>
-  </li>
-</ol>
-
-<p>For the complete list of events, visit the <a href="https://nfdi4microbiota.de/newsroom/events.html">NFDI4Microbiota Events Page</a>.</p>
-
-
     </div>
 
 
 
-</article>
 
 
 
 
-
-
+</div>
 
 <hr class="shaded"/>
 
@@ -544,6 +605,8 @@ Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoper
   <div class="row">
     <div class="col-lg-12 footer">
       &copy;2026 DECIDE-Konsortium (SFB 1583). All rights reserved. <br />
+      
+        <span>Page last updated:</span> 2026-07-02<br/>
       
       Site last generated: Jul 2, 2026 <br />
       <p>
