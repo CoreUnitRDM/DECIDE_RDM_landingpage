@@ -5,8 +5,8 @@
         <description>Information on DECIDE RDM.</description>
         <link>/</link>
         <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 02 Jul 2026 16:46:07 +0000</pubDate>
-        <lastBuildDate>Thu, 02 Jul 2026 16:46:07 +0000</lastBuildDate>
+        <pubDate>Mon, 06 Jul 2026 20:49:35 +0200</pubDate>
+        <lastBuildDate>Mon, 06 Jul 2026 20:49:35 +0200</lastBuildDate>
         <generator>Jekyll v3.10.0</generator>
         
         <item>
@@ -41,7 +41,7 @@ Workshop focused on making microbiota data FAIR (Findable, Accessible, Interoper
 &lt;p&gt;For the complete list of events, visit the &lt;a href=&quot;https://nfdi4microbiota.de/newsroom/events.html&quot;&gt;NFDI4Microbiota Events Page&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-            <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+            <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
             <link>/upcoming-nfdi4microbiota-events.html</link>
             <guid isPermaLink="true">/upcoming-nfdi4microbiota-events.html</guid>
             
@@ -86,7 +86,7 @@ Session on implementing FAIR principles in microbiota research.&lt;br /&gt;
 &lt;p&gt;Visit the &lt;a href=&quot;https://nfdi4microbiota.de/services/trainings.html&quot;&gt;NFDI4Microbiota Training Page&lt;/a&gt; for more information.&lt;/p&gt;
 
 </description>
-            <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+            <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
             <link>/nfdi4microbiota-trainings.html</link>
             <guid isPermaLink="true">/nfdi4microbiota-trainings.html</guid>
             
@@ -113,7 +113,7 @@ Session on implementing FAIR principles in microbiota research.&lt;br /&gt;
 &lt;p&gt;Sign up today on the &lt;a href=&quot;https://nfdi4microbiota.de/newsroom/newsletter.html&quot;&gt;NFDI4Microbiota Newsletter Page&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-            <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+            <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
             <link>/nfdi4microbiota-newsletter.html</link>
             <guid isPermaLink="true">/nfdi4microbiota-newsletter.html</guid>
             
@@ -149,7 +149,7 @@ Collaboration to enhance microbiota research across Europe.&lt;br /&gt;
 &lt;p&gt;For more updates, visit the &lt;a href=&quot;https://nfdi4microbiota.de/newsroom/news.html&quot;&gt;NFDI4Microbiota Newsroom&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-            <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+            <pubDate>Tue, 28 Jan 2025 00:00:00 +0100</pubDate>
             <link>/latest-nfdi4microbiota-news.html</link>
             <guid isPermaLink="true">/latest-nfdi4microbiota-news.html</guid>
             
