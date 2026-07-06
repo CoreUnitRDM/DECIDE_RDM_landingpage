@@ -1,8 +1,8 @@
 ---
 title: "Use cases & subprojects"
-keywords: use cases, subprojects, showcase, FAIR, Infection Atlas, CellWhisperer, cycleHCR, metadata, DECIDE
-summary: "DECIDE subprojects done the FAIR way — each with its data, documentation and analysis one click apart."
-last_updated: 2026-07-02
+keywords: use cases, subprojects, showcase, FAIR, public data, catalogue, Infection Atlas, CellWhisperer, cycleHCR, DECIDE
+summary: "DECIDE subprojects done the FAIR way — with a public data catalogue and, per project, data, documentation and analysis one click apart."
+last_updated: 2026-07-06
 permalink: use_cases.html
 sidebar: decide_sidebar
 ---
@@ -14,10 +14,12 @@ These are DECIDE subprojects taken end-to-end the FAIR way — our show-off exam
 .uc-card{border:1px solid #e3e3e3;border-radius:10px;padding:16px 18px;background:#fff;}
 .uc-card.soon{opacity:.75;border-style:dashed;}
 .uc-card.flagship{border-color:#c9a227;box-shadow:0 0 0 1px #f0e0a8 inset;}
+.uc-card.catalogue{border-color:#2f6fa8;background:#f4f8fc;box-shadow:0 0 0 1px #d6e4f0 inset;}
 .uc-card .tag{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:#2f6fa8;border-radius:5px;padding:2px 7px;margin-bottom:8px;letter-spacing:.02em;}
 .uc-card .tag.plat{background:#5aa02c;}
 .uc-card .tag.soon{background:#9aa7b2;}
 .uc-card .tag.tool{background:#7a5195;}
+.uc-card .tag.cat{background:#146b74;}
 .uc-card .flag{display:inline-block;font-size:10px;font-weight:700;color:#8a6d1a;background:#fdf3d7;border:1px solid #f0e0a8;border-radius:5px;padding:1px 6px;margin-left:5px;vertical-align:middle;}
 .uc-card h3{margin:0 0 5px;font-size:15.5px;color:#16527e;border:0;padding:0;}
 .uc-card p{margin:0;font-size:13px;color:#555;line-height:1.5;}
@@ -26,12 +28,21 @@ These are DECIDE subprojects taken end-to-end the FAIR way — our show-off exam
 .uc-links a:hover{background:#3b81c4;color:#fff;text-decoration:none;}
 .uc-links a.bot{background:#eaf6ec;border-color:#cfe8d4;color:#2f6b39;}
 .uc-links a.bot:hover{background:#5aa02c;color:#fff;}
+.uc-links a.big{font-size:13px;padding:5px 13px;}
 .uc-links .off{font-size:12px;color:#9aa7b2;border:1px dashed #d9d9d9;border-radius:6px;padding:3px 9px;}
 .uc-status{margin-top:11px;font-size:12px;font-weight:600;}
 .uc-status.setup{color:#2f6fa8;}
 .uc-status.plan{color:#9aa7b2;font-weight:500;}
 .uc-note{font-size:12px;color:#9aa7b2;margin:6px 0 0;}
 </style>
+
+## Public data catalogue
+
+<div class="uc-cards" markdown="0">
+  <div class="uc-card catalogue"><span class="tag cat">DECIDE · open data</span><h3>Public data catalogue</h3><p>Browse DECIDE's openly available datasets, organised by subproject — each project's public data is appended here as it is released.</p><div class="uc-links">
+    <a class="big" href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php/f/1155997">Open the catalogue</a>
+  </div></div>
+</div>
 
 ## Showcase use cases — CRC projects
 
