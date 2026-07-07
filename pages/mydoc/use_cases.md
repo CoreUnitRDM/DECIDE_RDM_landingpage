@@ -20,6 +20,8 @@ These are DECIDE subprojects taken end-to-end the FAIR way — our show-off exam
 .uc-card .tag.soon{background:#9aa7b2;}
 .uc-card .tag.tool{background:#7a5195;}
 .uc-card .tag.cat{background:#146b74;}
+.uc-card .tag.club{background:#c9670e;}
+.uc-card.club{border-color:#c9670e;background:#fdf6f0;box-shadow:0 0 0 1px #f0dcc9 inset;}
 .uc-card .flag{display:inline-block;font-size:10px;font-weight:700;color:#8a6d1a;background:#fdf3d7;border:1px solid #f0e0a8;border-radius:5px;padding:1px 6px;margin-left:5px;vertical-align:middle;}
 .uc-card h3{margin:0 0 5px;font-size:15.5px;color:#16527e;border:0;padding:0;}
 .uc-card p{margin:0;font-size:13px;color:#555;line-height:1.5;}
@@ -36,11 +38,14 @@ These are DECIDE subprojects taken end-to-end the FAIR way — our show-off exam
 .uc-note{font-size:12px;color:#9aa7b2;margin:6px 0 0;}
 </style>
 
-## Public data catalogue
+## Catalogues
 
 <div class="uc-cards" markdown="0">
   <div class="uc-card catalogue"><span class="tag cat">DECIDE · open data</span><h3>Public data catalogue</h3><p>Browse DECIDE's openly available datasets, organised by subproject — each project's public data is appended here as it is released.</p><div class="uc-links">
     <a class="big" href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php/f/1155997">Open the catalogue</a>
+  </div></div>
+  <div class="uc-card club"><span class="tag club">DECIDE · Science Club</span><h3>Science Club knowledgebase</h3><p>The Science Club's shared knowledgebase in the cloud — talks, materials and resources collected by the community.</p><div class="uc-links">
+    <a class="big" href="https://www.coreunitrdm.biozentrum.uni-wuerzburg.de/index.php/f/3556966">Open the Science Club</a>
   </div></div>
 </div>
 
